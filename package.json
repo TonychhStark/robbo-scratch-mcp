@@ -2,13 +2,54 @@
   "name": "robbo-sb3",
   "version": "1.0.0",
   "description": "Генератор .sb3 для Robbo Scratch 3: MCP-сервер и CLI для Cursor и других ИИ-агентов",
+  "mcpName": "io.github.tonychhstark/robbo-scratch-mcp",
+  "keywords": [
+    "scratch",
+    "scratch3",
+    "sb3",
+    "robbo",
+    "robboscratch",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "cursor",
+    "education",
+    "robotics",
+    "arduino"
+  ],
+  "author": "TonychhStark",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonychhStark/robbo-scratch-mcp.git"
+  },
+  "homepage": "https://github.com/TonychhStark/robbo-scratch-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/TonychhStark/robbo-scratch-mcp/issues"
+  },
   "main": "lib/api.js",
-  "bin": { "robbo-sb3": "cli.js", "robbo-sb3-mcp": "mcp/server.js" },
+  "bin": {
+    "robbo-sb3": "cli.js",
+    "robbo-sb3-mcp": "mcp/server.js"
+  },
   "scripts": {
     "test": "node tests/run.js",
     "mcp": "node mcp/server.js",
     "update": "node tools/update-from-robbo.js"
   },
-  "engines": { "node": ">=14" },
-  "license": "MIT"
+  "files": [
+    "cli.js",
+    "mcp/",
+    "lib/",
+    "data/",
+    "docs/",
+    "assets/",
+    "examples/",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  }
 }

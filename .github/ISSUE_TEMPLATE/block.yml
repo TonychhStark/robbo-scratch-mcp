@@ -1,0 +1,23 @@
+name: 🧩 Блок или устройство
+description: Не хватает блока, неверное поле/значение, новое устройство Robbo
+labels: [blocks]
+body:
+  - type: input
+    id: opcode
+    attributes:
+      label: Блок
+      description: opcode или название в Robbo Scratch
+      placeholder: "robot_turnright / «повернуть направо на … градусов»"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что не так
+      description: Блока нет в каталоге, неверные значения списка, блок ведёт себя иначе…
+    validations:
+      required: true
+  - type: input
+    id: robbo
+    attributes:
+      label: Версия Robbo Scratch

@@ -1,5 +1,13 @@
 # robbo-sb3 — ИИ делает проекты для Robbo Scratch 3
 
+[![Тесты](https://github.com/TonychhStark/robbo-scratch-mcp/actions/workflows/test.yml/badge.svg)](https://github.com/TonychhStark/robbo-scratch-mcp/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+![Node.js ≥14](https://img.shields.io/badge/node-%E2%89%A514-brightgreen)
+![MCP](https://img.shields.io/badge/MCP-server-blue)
+![Блоков: 223](https://img.shields.io/badge/%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2-223-orange)
+
+[English version](README.en.md)
+
 Набор для Cursor IDE: ИИ-агент пишет программу в простом формате, а инструмент
 собирает из неё настоящий `.sb3`, который открывается в Robbo Scratch 3.
 
@@ -28,6 +36,48 @@
 > Если MCP-сервер не запускается из-за `${workspaceFolder}`, впишите абсолютные
 > пути в `.cursor/mcp.json`, например
 > `"args": ["C:/robbo-sb3/mcp/server.js"]` и `"ROBBO_WORKDIR": "C:/robbo-sb3"`.
+
+## Другие ИИ-клиенты (без скачивания папки)
+
+Сервер можно запускать прямо из GitHub через `npx` (нужен Node.js ≥ 18 и git).
+`ROBBO_WORKDIR` — папка, куда будут сохраняться проекты.
+
+**Claude Desktop** — `claude_desktop_config.json`:
+```json
+{
+  "mcpServers": {
+    "robbo-scratch": {
+      "command": "npx",
+      "args": ["-y", "-p", "github:TonychhStark/robbo-scratch-mcp", "robbo-sb3-mcp"],
+      "env": { "ROBBO_WORKDIR": "C:/Users/я/Documents/robbo" }
+    }
+  }
+}
+```
+
+**VS Code (Copilot)** — `.vscode/mcp.json`:
+```json
+{
+  "servers": {
+    "robbo-scratch": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "-p", "github:TonychhStark/robbo-scratch-mcp", "robbo-sb3-mcp"],
+      "env": { "ROBBO_WORKDIR": "${workspaceFolder}" }
+    }
+  }
+}
+```
+
+**Claude Code:**
+```
+claude mcp add robbo-scratch -- npx -y -p github:TonychhStark/robbo-scratch-mcp robbo-sb3-mcp
+```
+
+Windsurf, Cline и другие клиенты: та же команда `npx` с аргументами в их настройках MCP.
+
+Сервер даёт 6 инструментов и 2 ресурса с документацией
+(`robbo://docs/format`, `robbo://docs/blocks`).
 
 ## Что умеет агент
 
@@ -76,3 +126,9 @@ node tools/update-from-robbo.js "C:\путь\к\robboscratch3"
 - Блоки «Набор расширений» (датчик цвета, клешня) появятся в палитре, только если
   набор включён в Robbo Scratch.
 - Блоки, которые разработчики Robbo скрыли или не доделали, исключены из каталога.
+
+## Участие и лицензия
+
+Ошибки и пожелания — в [Issues](https://github.com/TonychhStark/robbo-scratch-mcp/issues),
+как помочь — в [CONTRIBUTING.md](CONTRIBUTING.md), история изменений — в [CHANGELOG.md](CHANGELOG.md).
+Лицензия — [MIT](LICENSE).

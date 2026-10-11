@@ -57,6 +57,20 @@ const TOOLS = [
   },
 ];
 
+const fs = require('fs');
+const path = require('path');
+const pkg = require('../package.json');
+
+// Protocol versions we can speak; the newest one the client asks for wins.
+const SUPPORTED_PROTOCOLS = ['2025-06-18', '2025-03-26', '2024-11-05'];
+const negotiateProtocol = requested => (SUPPORTED_PROTOCOLS.includes(requested) ? requested : SUPPORTED_PROTOCOLS[0]);
+
+const DOCS = path.join(__dirname, '..', 'docs');
+const RESOURCES = [
+  { uri: 'robbo://docs/format', name: 'FORMAT.md', title: 'Формат robbo-json', description: 'Как описать программу для Robbo Scratch 3', mimeType: 'text/markdown', file: 'FORMAT.md' },
+  { uri: 'robbo://docs/blocks', name: 'BLOCKS.md', title: 'Все блоки Robbo Scratch 3', description: 'Каталог блоков с полями и допустимыми значениями', mimeType: 'text/markdown', file: 'BLOCKS.md' },
+];
+
 const send = msg => process.stdout.write(JSON.stringify(msg) + '\n');
 const reply = (id, result) => send({ jsonrpc: '2.0', id, result });
 const fail = (id, code, message) => send({ jsonrpc: '2.0', id, error: { code, message } });
@@ -65,9 +79,9 @@ function handle(msg) {
   const { id, method, params } = msg;
   if (method === 'initialize') {
     return reply(id, {
-      protocolVersion: (params && params.protocolVersion) || '2024-11-05',
-      capabilities: { tools: {} },
-      serverInfo: { name: 'robbo-scratch', version: '1.0.0' },
+      protocolVersion: negotiateProtocol(params && params.protocolVersion),
+      capabilities: { tools: {}, resources: {} },
+      serverInfo: { name: 'robbo-scratch', version: pkg.version },
       instructions: 'Генерация .sb3 для Robbo Scratch 3. Порядок: robbo_format_guide → robbo_list_blocks → robbo_validate → robbo_build_sb3.',
     });
   }
@@ -83,8 +97,15 @@ function handle(msg) {
       return reply(id, { content: [{ type: 'text', text: `Ошибка: ${e.message}` }], isError: true });
     }
   }
-  if (method === 'resources/list') return reply(id, { resources: [] });
+  if (method === 'resources/list') return reply(id, { resources: RESOURCES.map(({ file, ...r }) => r) });
+  if (method === 'resources/read') {
+    const r = RESOURCES.find(x => x.uri === (params && params.uri));
+    if (!r) return fail(id, -32002, `Resource not found: ${params && params.uri}`);
+    return reply(id, { contents: [{ uri: r.uri, mimeType: r.mimeType, text: fs.readFileSync(path.join(DOCS, r.file), 'utf8') }] });
+  }
+  if (method === 'resources/templates/list') return reply(id, { resourceTemplates: [] });
   if (method === 'prompts/list') return reply(id, { prompts: [] });
+  // Notifications (no id), e.g. notifications/initialized, need no answer.
   if (id !== undefined && id !== null) return fail(id, -32601, `Method not found: ${method}`);
 }
 

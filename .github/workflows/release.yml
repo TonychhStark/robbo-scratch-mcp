@@ -1,0 +1,29 @@
+name: Релиз
+
+# Запускается при отправке метки версии: git tag v1.1.0 && git push --tags
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm test
+      - name: Архив для скачивания
+        run: |
+          mkdir -p dist/robbo-sb3
+          git archive HEAD | tar -x -C dist/robbo-sb3
+          rm -rf dist/robbo-sb3/.github dist/robbo-sb3/tests
+          cd dist && zip -qr "robbo-sb3-${GITHUB_REF_NAME}.zip" robbo-sb3
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/robbo-sb3-*.zip
+          generate_release_notes: true

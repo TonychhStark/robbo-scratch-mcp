@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.tonychhstark/robbo-scratch-mcp",
+  "title": "Robbo Scratch 3",
+  "description": "Generate .sb3 projects for Robbo Scratch 3: robot, laboratory, quadcopter, Otto, Arduino.",
+  "repository": {
+    "url": "https://github.com/TonychhStark/robbo-scratch-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "robbo-sb3",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "ROBBO_WORKDIR",
+          "description": "Folder where projects/ will be saved (defaults to current directory)",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

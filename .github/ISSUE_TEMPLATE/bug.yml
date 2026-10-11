@@ -1,0 +1,28 @@
+name: 🐞 Ошибка
+description: Файл не собирается, не открывается в Robbo Scratch или работает не так
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      description: Что вы делали, что ожидали и что получилось
+    validations:
+      required: true
+  - type: textarea
+    id: program
+    attributes:
+      label: Программа (robbo-json) или текст ошибки
+      description: Можно приложить .robbo.json или .sb3 из папки projects/
+      render: json
+  - type: input
+    id: versions
+    attributes:
+      label: Версии
+      description: Node.js (`node -v`), Robbo Scratch, ИИ-клиент (Cursor, Claude Desktop…)
+      placeholder: "Node 20.11, Robbo Scratch 3.x, Cursor 1.x"
+  - type: dropdown
+    id: os
+    attributes:
+      label: Система
+      options: [Windows, macOS, Linux]
