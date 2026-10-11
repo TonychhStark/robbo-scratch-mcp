@@ -1,0 +1,11091 @@
+{
+ "extension_pen_down": {
+  "message0": "%1 %2 pen down",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/pen-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   }
+  ],
+  "category": "more",
+  "extensions": [
+   "colours_more",
+   "shape_statement",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 pen down"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/pen-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    }
+   ]
+  }
+ },
+ "extension_music_drum": {
+  "message0": "%1 %2 play drum %3",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/music-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   },
+   {
+    "type": "input_value",
+    "name": "NUMBER"
+   }
+  ],
+  "category": "more",
+  "extensions": [
+   "colours_more",
+   "shape_statement",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 play drum %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/music-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    },
+    {
+     "type": "input_value",
+     "name": "NUMBER"
+    }
+   ]
+  }
+ },
+ "extension_wedo_motor": {
+  "message0": "%1 %2 turn a motor %3",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/wedo2-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   },
+   {
+    "type": "field_image",
+    "src": "rotate-right.svg",
+    "width": 24,
+    "height": 24
+   }
+  ],
+  "category": "more",
+  "extensions": [
+   "colours_more",
+   "shape_statement",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 turn a motor %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/wedo2-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    },
+    {
+     "type": "field_image",
+     "src": "rotate-right.svg",
+     "width": 24,
+     "height": 24
+    }
+   ]
+  }
+ },
+ "extension_wedo_hat": {
+  "message0": "%1 %2 when I am wearing a hat",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/wedo2-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   }
+  ],
+  "category": "more",
+  "extensions": [
+   "colours_more",
+   "shape_hat",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 when I am wearing a hat"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/wedo2-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    }
+   ]
+  }
+ },
+ "extension_wedo_boolean": {
+  "message0": "%1 %2 O RLY?",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/wedo2-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   }
+  ],
+  "category": "more",
+  "extensions": [
+   "colours_more",
+   "output_boolean",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 O RLY?"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/wedo2-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    }
+   ]
+  }
+ },
+ "extension_wedo_tilt_reporter": {
+  "message0": "%1 %2 tilt angle %3",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/wedo2-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   },
+   {
+    "type": "input_value",
+    "name": "TILT"
+   }
+  ],
+  "category": "more",
+  "extensions": [
+   "colours_more",
+   "output_number",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 tilt angle %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/wedo2-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    },
+    {
+     "type": "input_value",
+     "name": "TILT"
+    }
+   ]
+  }
+ },
+ "extension_wedo_tilt_menu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "TILT",
+    "options": [
+     [
+      "Any",
+      "Any"
+     ],
+     [
+      "Whirl",
+      "Whirl"
+     ],
+     [
+      "South",
+      "South"
+     ],
+     [
+      "Back in time",
+      "Back in time"
+     ]
+    ]
+   }
+  ],
+  "extensions": [
+   "colours_more",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "TILT",
+     "options": [
+      [
+       "Any",
+       "Any"
+      ],
+      [
+       "Whirl",
+       "Whirl"
+      ],
+      [
+       "South",
+       "South"
+      ],
+      [
+       "Back in time",
+       "Back in time"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "extension_music_reporter": {
+  "message0": "%1 %2 hey now, you're an all-star",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/music-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   }
+  ],
+  "category": "more",
+  "extensions": [
+   "colours_more",
+   "output_number",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 hey now, you're an all-star"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/music-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    }
+   ]
+  }
+ },
+ "extension_microbit_display": {
+  "message0": "%1 %2 display %3",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/microbit-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   },
+   {
+    "type": "input_value",
+    "name": "MATRIX"
+   }
+  ],
+  "category": "pen",
+  "extensions": [
+   "colours_pen",
+   "shape_statement",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 display %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/microbit-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    },
+    {
+     "type": "input_value",
+     "name": "MATRIX"
+    }
+   ]
+  }
+ },
+ "extension_music_play_note": {
+  "message0": "%1 %2 play note %3 for %4 beats",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "extensions/music-block-icon.svg",
+    "width": 40,
+    "height": 40
+   },
+   {
+    "type": "field_vertical_separator"
+   },
+   {
+    "type": "input_value",
+    "name": "NOTE"
+   },
+   {
+    "type": "input_value",
+    "name": "BEATS"
+   }
+  ],
+  "category": "pen",
+  "extensions": [
+   "colours_pen",
+   "shape_statement",
+   "scratch_extension"
+  ],
+  "ru": {
+   "message0": "%1 %2 play note %3 for %4 beats"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "extensions/music-block-icon.svg",
+     "width": 40,
+     "height": 40
+    },
+    {
+     "type": "field_vertical_separator"
+    },
+    {
+     "type": "input_value",
+     "name": "NOTE"
+    },
+    {
+     "type": "input_value",
+     "name": "BEATS"
+    }
+   ]
+  }
+ },
+ "robot_motors_on_for_seconds": {
+  "message0": "Motors on for %1 seconds",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SECONDS"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Моторы вкл на %1 секунд"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SECONDS"
+    }
+   ]
+  }
+ },
+ "robot_motors_on": {
+  "message0": "Motors on",
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Моторы вкл"
+  },
+  "ru_args": {}
+ },
+ "robot_motors_off": {
+  "message0": "Motors off",
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Моторы выкл"
+  },
+  "ru_args": {}
+ },
+ "robot_directions": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "ROBOT_DIRECTION",
+    "options": [
+     [
+      "Forward",
+      "direction_forward"
+     ],
+     [
+      "Backward",
+      "direction_backward"
+     ],
+     [
+      "turn left",
+      "direction_left"
+     ],
+     [
+      "turn right",
+      "direction_right"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#00AF41",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "ROBOT_DIRECTION",
+     "options": [
+      [
+       "Вперёд",
+       "direction_forward"
+      ],
+      [
+       "Назад",
+       "direction_backward"
+      ],
+      [
+       "Налево",
+       "direction_left"
+      ],
+      [
+       "Направо",
+       "direction_right"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "robot_set_direction_to": {
+  "message0": "Set robot direction to %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ROBOT_DIRECTION"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Уст направление робота %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ROBOT_DIRECTION"
+    }
+   ]
+  }
+ },
+ "robot_motors_on_for_steps": {
+  "message0": "Motors on for %1 steps",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "STEPS"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Моторы вкл на %1 шагов"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "STEPS"
+    }
+   ]
+  }
+ },
+ "robot_reset_trip_meters": {
+  "message0": "Reset trip meters",
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Обнулить счётчик шагов"
+  },
+  "ru_args": {}
+ },
+ "robot_turnright": {
+  "message0": "turn %1 %2 degrees",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "rotate-right.svg",
+    "width": 24,
+    "height": 24
+   },
+   {
+    "type": "input_value",
+    "name": "DEGREES"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Повернуть на %1 на %2 градусов"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "rotate-right.svg",
+     "width": 24,
+     "height": 24
+    },
+    {
+     "type": "input_value",
+     "name": "DEGREES"
+    }
+   ]
+  }
+ },
+ "robot_turnleft": {
+  "message0": "turn %1 %2 degrees",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "rotate-left.svg",
+    "width": 24,
+    "height": 24
+   },
+   {
+    "type": "input_value",
+    "name": "DEGREES"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Повернуть %1 на %2 градусов"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "rotate-left.svg",
+     "width": 24,
+     "height": 24
+    },
+    {
+     "type": "input_value",
+     "name": "DEGREES"
+    }
+   ]
+  }
+ },
+ "robot_set_motors_power": {
+  "message0": "set motors power %1 %",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "POWER"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Уст мощность моторов %1 %"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "POWER"
+    }
+   ]
+  }
+ },
+ "robot_set_motors_power_left_right_separately": {
+  "message0": "set motors power L %1 R %2 %",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "POWER_LEFT"
+   },
+   {
+    "type": "input_value",
+    "name": "POWER_RIGHT"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Уст мощность моторов Л %1 П %2 %"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "POWER_LEFT"
+    },
+    {
+     "type": "input_value",
+     "name": "POWER_RIGHT"
+    }
+   ]
+  }
+ },
+ "robot_one_motor_directions": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "ROBOT_ONE_MOTOR_DIRECTION",
+    "options": [
+     [
+      "Forward",
+      "direction_forward"
+     ],
+     [
+      "Backward",
+      "direction_backward"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#00AF41",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "ROBOT_ONE_MOTOR_DIRECTION",
+     "options": [
+      [
+       "Вперёд",
+       "direction_forward"
+      ],
+      [
+       "Назад",
+       "direction_backward"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "robot_set_motors_left_right_power_and_direction_separately": {
+  "message0": "L %1 R %2 set power L %3  R %4 %",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ROBOT_LEFT_MOTOR_DIRECTION"
+   },
+   {
+    "type": "input_value",
+    "name": "ROBOT_RIGHT_MOTOR_DIRECTION"
+   },
+   {
+    "type": "input_value",
+    "name": "POWER_LEFT"
+   },
+   {
+    "type": "input_value",
+    "name": "POWER_RIGHT"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Л %1 П %2 уст мощность Л %3  П %4 %"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ROBOT_LEFT_MOTOR_DIRECTION"
+    },
+    {
+     "type": "input_value",
+     "name": "ROBOT_RIGHT_MOTOR_DIRECTION"
+    },
+    {
+     "type": "input_value",
+     "name": "POWER_LEFT"
+    },
+    {
+     "type": "input_value",
+     "name": "POWER_RIGHT"
+    }
+   ]
+  }
+ },
+ "robot_sensors": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "ROBOT_SENSORS",
+    "options": [
+     [
+      "sensor1",
+      "sensor1"
+     ],
+     [
+      "sensor2",
+      "sensor2"
+     ],
+     [
+      "sensor3",
+      "sensor3"
+     ],
+     [
+      "sensor4",
+      "sensor4"
+     ],
+     [
+      "sensor5",
+      "sensor5"
+     ],
+     [
+      "trip meter L",
+      "sensor_trip_meter_left"
+     ],
+     [
+      "trip meter R",
+      "sensor_trip_meter_right"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#00AF41",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "ROBOT_SENSORS",
+     "options": [
+      [
+       "Датчик1",
+       "sensor1"
+      ],
+      [
+       "Датчик2",
+       "sensor2"
+      ],
+      [
+       "Датчик3",
+       "sensor3"
+      ],
+      [
+       "Датчик4",
+       "sensor4"
+      ],
+      [
+       "Датчик5",
+       "sensor5"
+      ],
+      [
+       "Счётчик шагов Л",
+       "sensor_trip_meter_left"
+      ],
+      [
+       "Счётчик шагов П",
+       "sensor_trip_meter_right"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "robot_get_sensor_data": {
+  "message0": "Robot %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ROBOT_SENSORS"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Робот %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ROBOT_SENSORS"
+    }
+   ]
+  }
+ },
+ "robot_sensors_for_rgb": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "ROBOT_SENSORS_FOR_RGB",
+    "options": [
+     [
+      "sensor1",
+      "sensor1"
+     ],
+     [
+      "sensor2",
+      "sensor2"
+     ],
+     [
+      "sensor3",
+      "sensor3"
+     ],
+     [
+      "sensor4",
+      "sensor4"
+     ],
+     [
+      "sensor5",
+      "sensor5"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#00AF41",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "ROBOT_SENSORS_FOR_RGB",
+     "options": [
+      [
+       "Датчик1",
+       "sensor1"
+      ],
+      [
+       "Датчик2",
+       "sensor2"
+      ],
+      [
+       "Датчик3",
+       "sensor3"
+      ],
+      [
+       "Датчик4",
+       "sensor4"
+      ],
+      [
+       "Датчик5",
+       "sensor5"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "rgb_values": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "RGB_VALUES",
+    "options": [
+     [
+      "red",
+      "red"
+     ],
+     [
+      "green",
+      "green"
+     ],
+     [
+      "blue",
+      "blue"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#00AF41",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "RGB_VALUES",
+     "options": [
+      [
+       "Красный",
+       "red"
+      ],
+      [
+       "Зелёный",
+       "green"
+      ],
+      [
+       "Синий",
+       "blue"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "robot_colors": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "COLORS",
+    "options": [
+     [
+      "red",
+      "red"
+     ],
+     [
+      "magenta",
+      "magenta"
+     ],
+     [
+      "yellow",
+      "yellow"
+     ],
+     [
+      "green",
+      "green"
+     ],
+     [
+      "blue",
+      "blue"
+     ],
+     [
+      "cyan",
+      "cyan"
+     ],
+     [
+      "black",
+      "black"
+     ],
+     [
+      "gray",
+      "gray"
+     ],
+     [
+      "white",
+      "white"
+     ],
+     [
+      "unknown",
+      "unknown"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#00AF41",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "COLORS",
+     "options": [
+      [
+       "красный",
+       "red"
+      ],
+      [
+       "мажента",
+       "magenta"
+      ],
+      [
+       "жёлтый",
+       "yellow"
+      ],
+      [
+       "зелёный",
+       "green"
+      ],
+      [
+       "синий",
+       "blue"
+      ],
+      [
+       "циан",
+       "cyan"
+      ],
+      [
+       "чёрный",
+       "black"
+      ],
+      [
+       "серый",
+       "gray"
+      ],
+      [
+       "белый",
+       "white"
+      ],
+      [
+       "неизвестный",
+       "unknown"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "robot_get_rgb_sensor_data": {
+  "message0": "Robot Color Sensor RGB %1 %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ROBOT_SENSORS_FOR_RGB"
+   },
+   {
+    "type": "input_value",
+    "name": "RGB_VALUES"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Датчик цвета RGB %1 %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ROBOT_SENSORS_FOR_RGB"
+    },
+    {
+     "type": "input_value",
+     "name": "RGB_VALUES"
+    }
+   ]
+  }
+ },
+ "robot_is_current_color": {
+  "message0": "Robot Color Sensor %1 %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ROBOT_SENSORS_FOR_RGB"
+   },
+   {
+    "type": "input_value",
+    "name": "COLORS"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "Датчик цвета %1 %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ROBOT_SENSORS_FOR_RGB"
+    },
+    {
+     "type": "input_value",
+     "name": "COLORS"
+    }
+   ]
+  }
+ },
+ "robot_start_button_pressed": {
+  "message0": "Robot start button pressed?",
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "Кнопка start на Роботе нажата?"
+  },
+  "ru_args": {}
+ },
+ "robot_positions": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "ROBOT_POSITION",
+    "options": [
+     [
+      "position1",
+      "position1"
+     ],
+     [
+      "position2",
+      "position2"
+     ],
+     [
+      "position3",
+      "position3"
+     ],
+     [
+      "position4",
+      "position4"
+     ],
+     [
+      "position5",
+      "position5"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#00AF41",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "ROBOT_POSITION",
+     "options": [
+      [
+       "Позиция1",
+       "position1"
+      ],
+      [
+       "Позиция2",
+       "position2"
+      ],
+      [
+       "Позиция3",
+       "position3"
+      ],
+      [
+       "Позиция4",
+       "position4"
+      ],
+      [
+       "Позиция5",
+       "position5"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "robot_turn_led_on": {
+  "message0": "turn robot led in %1 on",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ROBOT_POSITION"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Вкл светодиод на роботе %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ROBOT_POSITION"
+    }
+   ]
+  }
+ },
+ "robot_turn_led_off": {
+  "message0": "turn robot led in %1 off",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ROBOT_POSITION"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Выкл светодиод на роботе %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ROBOT_POSITION"
+    }
+   ]
+  }
+ },
+ "robot_claw_closed": {
+  "message0": "Claw closed %1 %",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CLAW_CLOSED_PERCENT"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Клешня закрыта на %1 %"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CLAW_CLOSED_PERCENT"
+    }
+   ]
+  }
+ },
+ "claw_states": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "CLAW_STATES",
+    "options": [
+     [
+      "Open",
+      "claw_open"
+     ],
+     [
+      "Half-open",
+      "claw_half_open"
+     ],
+     [
+      "Closed",
+      "claw_closed"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#00AF41",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "CLAW_STATES",
+     "options": [
+      [
+       "Открыта",
+       "claw_open"
+      ],
+      [
+       "Полуоткрыта",
+       "claw_half_open"
+      ],
+      [
+       "Закрыта",
+       "claw_closed"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "robot_claw_state": {
+  "message0": "Claw %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CLAW_STATES"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Клешня %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CLAW_STATES"
+    }
+   ]
+  }
+ },
+ "robot_wall_color": {
+  "message0": "Set wall color %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "COLOR"
+   }
+  ],
+  "category": "robot",
+  "extensions": [
+   "colours_robot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить цвет стены %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "COLOR"
+    }
+   ]
+  }
+ },
+ "high_low": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "HIGH_LOW",
+    "options": [
+     [
+      "HIGH",
+      "1"
+     ],
+     [
+      "LOW",
+      "0"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "HIGH_LOW",
+     "options": [
+      [
+       "HIGH",
+       "1"
+      ],
+      [
+       "LOW",
+       "0"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "sosonic": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "SOSONIC",
+    "options": [
+     [
+      "2",
+      "2"
+     ],
+     [
+      "3",
+      "3"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "SOSONIC",
+     "options": [
+      [
+       "2",
+       "2"
+      ],
+      [
+       "3",
+       "3"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "newcat_firstblock": {
+  "message0": "YOUR %1 NUMBER!!!",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ARG_FOR_BLOCKS_NAME"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "YOUR %1 NUMBER!!!"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ARG_FOR_BLOCKS_NAME"
+    }
+   ]
+  }
+ },
+ "shag_type": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "SHAG_TYPE",
+    "options": [
+     [
+      "полу-",
+      "2"
+     ],
+     [
+      "полно-",
+      "1"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "SHAG_TYPE",
+     "options": [
+      [
+       "полу-",
+       "2"
+      ],
+      [
+       "полно-",
+       "1"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "newcat_shag_init": {
+  "message0": "Set pins %1 %2 %3 %4 for %5 step motor",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PIN1"
+   },
+   {
+    "type": "input_value",
+    "name": "PIN2"
+   },
+   {
+    "type": "input_value",
+    "name": "PIN3"
+   },
+   {
+    "type": "input_value",
+    "name": "PIN4"
+   },
+   {
+    "type": "input_value",
+    "name": "SHAG_TYPE"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить пины %1 %2 %3 %4 для %5 шагового двигателя"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PIN1"
+    },
+    {
+     "type": "input_value",
+     "name": "PIN2"
+    },
+    {
+     "type": "input_value",
+     "name": "PIN3"
+    },
+    {
+     "type": "input_value",
+     "name": "PIN4"
+    },
+    {
+     "type": "input_value",
+     "name": "SHAG_TYPE"
+    }
+   ]
+  }
+ },
+ "newcat_set_shag": {
+  "message0": "Set speed %1 and %2 steps",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SPEED"
+   },
+   {
+    "type": "input_value",
+    "name": "SHAG"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить скорость %1 на %2 шагов"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SPEED"
+    },
+    {
+     "type": "input_value",
+     "name": "SHAG"
+    }
+   ]
+  }
+ },
+ "newcat_set_dig": {
+  "message0": "Set digital pin %1 output as %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PIN"
+   },
+   {
+    "type": "input_value",
+    "name": "HIGH_LOW"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить цифровой пин %1 на выход %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PIN"
+    },
+    {
+     "type": "input_value",
+     "name": "HIGH_LOW"
+    }
+   ]
+  }
+ },
+ "pwm_pins": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "PWM_PINS",
+    "options": [
+     [
+      "3",
+      "3"
+     ],
+     [
+      "5",
+      "5"
+     ],
+     [
+      "6",
+      "6"
+     ],
+     [
+      "9",
+      "9"
+     ],
+     [
+      "10",
+      "10"
+     ],
+     [
+      "11",
+      "11"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "PWM_PINS",
+     "options": [
+      [
+       "3",
+       "3"
+      ],
+      [
+       "5",
+       "5"
+      ],
+      [
+       "6",
+       "6"
+      ],
+      [
+       "9",
+       "9"
+      ],
+      [
+       "10",
+       "10"
+      ],
+      [
+       "11",
+       "11"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "newcat_set_ana": {
+  "message0": "Set analog pin %1 output as %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PWM_PINS"
+   },
+   {
+    "type": "input_value",
+    "name": "NUM"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить аналог пин %1 на выход %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PWM_PINS"
+    },
+    {
+     "type": "input_value",
+     "name": "NUM"
+    }
+   ]
+  }
+ },
+ "newcat_read_ana": {
+  "message0": "Read analog pin %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PIN"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Считать значение с %1 пина"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PIN"
+    }
+   ]
+  }
+ },
+ "pin_anal": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "PIN_ANAL",
+    "options": [
+     [
+      "a0",
+      "14"
+     ],
+     [
+      "a1",
+      "15"
+     ],
+     [
+      "a2",
+      "16"
+     ],
+     [
+      "a3",
+      "17"
+     ],
+     [
+      "a4",
+      "18"
+     ],
+     [
+      "a5",
+      "19"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "PIN_ANAL",
+     "options": [
+      [
+       "a0",
+       "14"
+      ],
+      [
+       "a1",
+       "15"
+      ],
+      [
+       "a2",
+       "16"
+      ],
+      [
+       "a3",
+       "17"
+      ],
+      [
+       "a4",
+       "18"
+      ],
+      [
+       "a5",
+       "19"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "newcat_go_dig": {
+  "message0": "Make pin %1 digital",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PIN"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Сделать пин %1 цифровым"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PIN"
+    }
+   ]
+  }
+ },
+ "newcat_go_sonic": {
+  "message0": "Make pins %1 echo %2 trig for sonic",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SOSONIC"
+   },
+   {
+    "type": "input_value",
+    "name": "PIN2"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить пины %1 echo %2 trig для ультрасоника"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SOSONIC"
+    },
+    {
+     "type": "input_value",
+     "name": "PIN2"
+    }
+   ]
+  }
+ },
+ "newcat_go_anal": {
+  "message0": "Make pin %1 analog",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PIN_ANAL"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Сделать пин %1 аналоговым"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PIN_ANAL"
+    }
+   ]
+  }
+ },
+ "newcat_read_dig": {
+  "message0": "Read digital pin %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PIN"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "Считать цифровой пин %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PIN"
+    }
+   ]
+  }
+ },
+ "newcat_play_sound": {
+  "message0": "Play tone pin %1 note %2 dur %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PIN"
+   },
+   {
+    "type": "input_value",
+    "name": "NOTE_TYPE"
+   },
+   {
+    "type": "input_value",
+    "name": "NOTE_DURA"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Играть ноту на %1 пине, нота %2 длительность %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PIN"
+    },
+    {
+     "type": "input_value",
+     "name": "NOTE_TYPE"
+    },
+    {
+     "type": "input_value",
+     "name": "NOTE_DURA"
+    }
+   ]
+  }
+ },
+ "newcat_servo": {
+  "message0": "Move servo on pin %1 on angle %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PIN"
+   },
+   {
+    "type": "input_value",
+    "name": "ANGLE"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить сервомотор на %1 пине на угол %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PIN"
+    },
+    {
+     "type": "input_value",
+     "name": "ANGLE"
+    }
+   ]
+  }
+ },
+ "stolb": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "STOLB",
+    "options": [
+     [
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "1"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "STOLB",
+     "options": [
+      [
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "newcat_set_kursor": {
+  "message0": "Set cursor in %1 %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM"
+   },
+   {
+    "type": "input_value",
+    "name": "STOLB"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить курсор в %1 %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM"
+    },
+    {
+     "type": "input_value",
+     "name": "STOLB"
+    }
+   ]
+  }
+ },
+ "newcat_set_hum": {
+  "message0": "Set humidity %1 pin, temperature %2 pin",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM"
+   },
+   {
+    "type": "input_value",
+    "name": "NUM2"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установть влажность %1 пин, тепмература %2 пин"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM"
+    },
+    {
+     "type": "input_value",
+     "name": "NUM2"
+    }
+   ]
+  }
+ },
+ "newcat_set_pult": {
+  "message0": "Set pin %1 for pult",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить пин %1 для пульта"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM"
+    }
+   ]
+  }
+ },
+ "newcat_set_text": {
+  "message0": "Set text %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "MESSAGE"
+   }
+  ],
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить текст %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "MESSAGE"
+    }
+   ]
+  }
+ },
+ "newcat_init_lcd": {
+  "message0": "Init or clear LCD display",
+  "category": "newcat",
+  "extensions": [
+   "colours_newcat",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Инициализировать или очистить дисплей"
+  },
+  "ru_args": {}
+ },
+ "copter_fly_up": {
+  "message0": "Fly up",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Взлёт"
+  },
+  "ru_args": {}
+ },
+ "copter_land": {
+  "message0": "Land",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Посадка"
+  },
+  "ru_args": {}
+ },
+ "copter_stop": {
+  "message0": "Stop!",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "СТОП!"
+  },
+  "ru_args": {}
+ },
+ "copter_status": {
+  "message0": "Status",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Статус"
+  },
+  "ru_args": {}
+ },
+ "copter_fly_distance": {
+  "message0": "Fly  %1 meters",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "METERS"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Лететь %1 метров"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "METERS"
+    }
+   ]
+  }
+ },
+ "copter_fly_time": {
+  "message0": "Fly %1 seconds",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SECONDS"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Лететь %1 секунд"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SECONDS"
+    }
+   ]
+  }
+ },
+ "copter_fly_for_time_with_speed": {
+  "message0": "Fly %1 seconds with vx %2  speed vy %3  speed (m/s)",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SECONDS"
+   },
+   {
+    "type": "input_value",
+    "name": "X_SPEED"
+   },
+   {
+    "type": "input_value",
+    "name": "Y_SPEED"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Лететь %1 секунд со скоростью vх %2  vу %3 (м/с)"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SECONDS"
+    },
+    {
+     "type": "input_value",
+     "name": "X_SPEED"
+    },
+    {
+     "type": "input_value",
+     "name": "Y_SPEED"
+    }
+   ]
+  }
+ },
+ "copter_fly_backward": {
+  "message0": "Fly backward %1 cm",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CENTIMETERS"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Лететь назад %1 см"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CENTIMETERS"
+    }
+   ]
+  }
+ },
+ "copter_change_x_by": {
+  "message0": "Change x by %1 meters",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DISTANCE_DELTA"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Изменить координату по x на %1 метров"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DISTANCE_DELTA"
+    }
+   ]
+  }
+ },
+ "copter_change_y_by": {
+  "message0": "Change y by %1 meters",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DISTANCE_DELTA"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Изменить координату по у на %1 метров"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DISTANCE_DELTA"
+    }
+   ]
+  }
+ },
+ "copter_change_z_by": {
+  "message0": "Change z by %1 meters",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DISTANCE_DELTA"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Изменить координату по z на %1 метров"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DISTANCE_DELTA"
+    }
+   ]
+  }
+ },
+ "copter_x_coord": {
+  "message0": "x position (meters)",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Координата по x (метры)"
+  },
+  "ru_args": {}
+ },
+ "copter_y_coord": {
+  "message0": "y position (meters)",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Координата по y (метры)"
+  },
+  "ru_args": {}
+ },
+ "copter_z_coord": {
+  "message0": "z position (meters)",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Высота (метры) "
+  },
+  "ru_args": {}
+ },
+ "copter_yaw": {
+  "message0": "Yaw (degrees)",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Угол поворота (градусы)"
+  },
+  "ru_args": {}
+ },
+ "copter_fly_for_seconds_to_coords": {
+  "message0": "Fly %1 seconds to x: %2 y: %3 z: %4 (meters)",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SECONDS"
+   },
+   {
+    "type": "input_value",
+    "name": "X_COORD"
+   },
+   {
+    "type": "input_value",
+    "name": "Y_COORD"
+   },
+   {
+    "type": "input_value",
+    "name": "Z_COORD"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Лететь %1 секунд к x: %2 y: %3 z: %4 (метры)"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SECONDS"
+    },
+    {
+     "type": "input_value",
+     "name": "X_COORD"
+    },
+    {
+     "type": "input_value",
+     "name": "Y_COORD"
+    },
+    {
+     "type": "input_value",
+     "name": "Z_COORD"
+    }
+   ]
+  }
+ },
+ "copter_fly_to_coords": {
+  "message0": "Fly to x: %1 y: %2 z: %3 (meters)",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "X_COORD"
+   },
+   {
+    "type": "input_value",
+    "name": "Y_COORD"
+   },
+   {
+    "type": "input_value",
+    "name": "Z_COORD"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Лететь к x: %1 y: %2 z: %3 (метры)"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "X_COORD"
+    },
+    {
+     "type": "input_value",
+     "name": "Y_COORD"
+    },
+    {
+     "type": "input_value",
+     "name": "Z_COORD"
+    }
+   ]
+  }
+ },
+ "copter_rotate": {
+  "message0": "Rotate %1 degrees",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DEGREES"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Повернуть на %1 градусов"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DEGREES"
+    }
+   ]
+  }
+ },
+ "copter_directions": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "COPTER_DIRECTIONS",
+    "options": [
+     [
+      "Forward",
+      "direction_forward"
+     ],
+     [
+      "Backward",
+      "direction_backward"
+     ],
+     [
+      "Left",
+      "direction_left"
+     ],
+     [
+      "Right",
+      "direction_right"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#989898",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "COPTER_DIRECTIONS",
+     "options": [
+      [
+       "Вперёд",
+       "direction_forward"
+      ],
+      [
+       "Назад",
+       "direction_backward"
+      ],
+      [
+       "Налево",
+       "direction_left"
+      ],
+      [
+       "Направо",
+       "direction_right"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "copter_set_direction": {
+  "message0": "Set direction to %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DIRECTION"
+   }
+  ],
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить направление %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DIRECTION"
+    }
+   ]
+  }
+ },
+ "copter_direction": {
+  "message0": "direction",
+  "category": "quadcopter",
+  "extensions": [
+   "colours_quadcopter",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Направление"
+  },
+  "ru_args": {}
+ },
+ "procedures_definition": {
+  "message0": "define %1",
+  "args0": [
+   {
+    "type": "input_statement",
+    "name": "custom_block"
+   }
+  ],
+  "extensions": [
+   "colours_more",
+   "shape_hat",
+   "procedure_def_contextmenu"
+  ],
+  "ru": {
+   "message0": "определить %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_statement",
+     "name": "custom_block"
+    }
+   ]
+  }
+ },
+ "procedures_call": {
+  "extensions": [
+   "colours_more",
+   "shape_statement",
+   "procedure_call_contextmenu"
+  ],
+  "ru": {},
+  "ru_args": {}
+ },
+ "procedures_prototype": {
+  "extensions": [
+   "colours_more",
+   "shape_statement"
+  ],
+  "ru": {},
+  "ru_args": {}
+ },
+ "procedures_declaration": {
+  "extensions": [
+   "colours_more",
+   "shape_statement"
+  ],
+  "ru": {},
+  "ru_args": {}
+ },
+ "argument_reporter_boolean": {
+  "message0": " %1",
+  "args0": [
+   {
+    "type": "field_label_serializable",
+    "name": "VALUE",
+    "text": ""
+   }
+  ],
+  "extensions": [
+   "colours_more",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": " %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_label_serializable",
+     "name": "VALUE",
+     "text": ""
+    }
+   ]
+  }
+ },
+ "argument_reporter_string_number": {
+  "message0": " %1",
+  "args0": [
+   {
+    "type": "field_label_serializable",
+    "name": "VALUE",
+    "text": ""
+   }
+  ],
+  "extensions": [
+   "colours_more",
+   "output_number",
+   "output_string"
+  ],
+  "ru": {
+   "message0": " %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_label_serializable",
+     "name": "VALUE",
+     "text": ""
+    }
+   ]
+  }
+ },
+ "argument_editor_boolean": {
+  "message0": " %1",
+  "args0": [
+   {
+    "type": "field_input_removable",
+    "name": "TEXT",
+    "text": "foo"
+   }
+  ],
+  "colour": "#FFFFFF",
+  "colourSecondary": "#FFFFFF",
+  "colourTertiary": "#FFFFFF",
+  "extensions": [
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": " %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_input_removable",
+     "name": "TEXT",
+     "text": "foo"
+    }
+   ]
+  }
+ },
+ "argument_editor_string_number": {
+  "message0": " %1",
+  "args0": [
+   {
+    "type": "field_input_removable",
+    "name": "TEXT",
+    "text": "foo"
+   }
+  ],
+  "colour": "#FFFFFF",
+  "colourSecondary": "#FFFFFF",
+  "colourTertiary": "#FFFFFF",
+  "extensions": [
+   "output_number",
+   "output_string"
+  ],
+  "ru": {
+   "message0": " %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_input_removable",
+     "name": "TEXT",
+     "text": "foo"
+    }
+   ]
+  }
+ },
+ "sensing_touchingobject": {
+  "message0": "touching %1?",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TOUCHINGOBJECTMENU"
+   }
+  ],
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "касается %1?"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TOUCHINGOBJECTMENU"
+    }
+   ]
+  }
+ },
+ "sensing_touchingobjectmenu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "TOUCHINGOBJECTMENU",
+    "options": [
+     [
+      "mouse-pointer",
+      "_mouse_"
+     ],
+     [
+      "edge",
+      "_edge_"
+     ]
+    ]
+   }
+  ],
+  "extensions": [
+   "colours_sensing",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "TOUCHINGOBJECTMENU",
+     "options": [
+      [
+       "указатель мыши",
+       "_mouse_"
+      ],
+      [
+       "край",
+       "_edge_"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "sensing_touchingcolor": {
+  "message0": "touching color %1?",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "COLOR"
+   }
+  ],
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "касается цвета %1?"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "COLOR"
+    }
+   ]
+  }
+ },
+ "sensing_coloristouchingcolor": {
+  "message0": "color %1 is touching %2?",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "COLOR"
+   },
+   {
+    "type": "input_value",
+    "name": "COLOR2"
+   }
+  ],
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "цвет %1 касается цвета %2?"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "COLOR"
+    },
+    {
+     "type": "input_value",
+     "name": "COLOR2"
+    }
+   ]
+  }
+ },
+ "sensing_distanceto": {
+  "message0": "distance to %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DISTANCETOMENU"
+   }
+  ],
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "расстояние до %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DISTANCETOMENU"
+    }
+   ]
+  }
+ },
+ "sensing_distancetomenu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "DISTANCETOMENU",
+    "options": [
+     [
+      "mouse-pointer",
+      "_mouse_"
+     ]
+    ]
+   }
+  ],
+  "extensions": [
+   "colours_sensing",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "DISTANCETOMENU",
+     "options": [
+      [
+       "указатель мыши",
+       "_mouse_"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "sensing_askandwait": {
+  "message0": "ask %1 and wait",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "QUESTION"
+   }
+  ],
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "спросить %1 и ждать"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "QUESTION"
+    }
+   ]
+  }
+ },
+ "sensing_answer": {
+  "message0": "answer",
+  "category": "sensing",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "ответ"
+  },
+  "ru_args": {}
+ },
+ "sensing_keypressed": {
+  "message0": "key %1 pressed?",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "KEY_OPTION"
+   }
+  ],
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "клавиша %1 нажата?"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "KEY_OPTION"
+    }
+   ]
+  }
+ },
+ "sensing_keyoptions": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "KEY_OPTION",
+    "options": [
+     [
+      "space",
+      "space"
+     ],
+     [
+      "up arrow",
+      "up arrow"
+     ],
+     [
+      "down arrow",
+      "down arrow"
+     ],
+     [
+      "right arrow",
+      "right arrow"
+     ],
+     [
+      "left arrow",
+      "left arrow"
+     ],
+     [
+      "any",
+      "any"
+     ],
+     [
+      "a",
+      "a"
+     ],
+     [
+      "b",
+      "b"
+     ],
+     [
+      "c",
+      "c"
+     ],
+     [
+      "d",
+      "d"
+     ],
+     [
+      "e",
+      "e"
+     ],
+     [
+      "f",
+      "f"
+     ],
+     [
+      "g",
+      "g"
+     ],
+     [
+      "h",
+      "h"
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      "j",
+      "j"
+     ],
+     [
+      "k",
+      "k"
+     ],
+     [
+      "l",
+      "l"
+     ],
+     [
+      "m",
+      "m"
+     ],
+     [
+      "n",
+      "n"
+     ],
+     [
+      "o",
+      "o"
+     ],
+     [
+      "p",
+      "p"
+     ],
+     [
+      "q",
+      "q"
+     ],
+     [
+      "r",
+      "r"
+     ],
+     [
+      "s",
+      "s"
+     ],
+     [
+      "t",
+      "t"
+     ],
+     [
+      "u",
+      "u"
+     ],
+     [
+      "v",
+      "v"
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      "x",
+      "x"
+     ],
+     [
+      "y",
+      "y"
+     ],
+     [
+      "z",
+      "z"
+     ],
+     [
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "1"
+     ],
+     [
+      "2",
+      "2"
+     ],
+     [
+      "3",
+      "3"
+     ],
+     [
+      "4",
+      "4"
+     ],
+     [
+      "5",
+      "5"
+     ],
+     [
+      "6",
+      "6"
+     ],
+     [
+      "7",
+      "7"
+     ],
+     [
+      "8",
+      "8"
+     ],
+     [
+      "9",
+      "9"
+     ]
+    ]
+   }
+  ],
+  "extensions": [
+   "colours_sensing",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "KEY_OPTION",
+     "options": [
+      [
+       "пробел",
+       "space"
+      ],
+      [
+       "стрелка вверх",
+       "up arrow"
+      ],
+      [
+       "стрелка вниз",
+       "down arrow"
+      ],
+      [
+       "стрелка вправо",
+       "right arrow"
+      ],
+      [
+       "стрелка влево",
+       "left arrow"
+      ],
+      [
+       "любая",
+       "any"
+      ],
+      [
+       "a",
+       "a"
+      ],
+      [
+       "b",
+       "b"
+      ],
+      [
+       "c",
+       "c"
+      ],
+      [
+       "d",
+       "d"
+      ],
+      [
+       "e",
+       "e"
+      ],
+      [
+       "f",
+       "f"
+      ],
+      [
+       "g",
+       "g"
+      ],
+      [
+       "h",
+       "h"
+      ],
+      [
+       "i",
+       "i"
+      ],
+      [
+       "j",
+       "j"
+      ],
+      [
+       "k",
+       "k"
+      ],
+      [
+       "l",
+       "l"
+      ],
+      [
+       "m",
+       "m"
+      ],
+      [
+       "n",
+       "n"
+      ],
+      [
+       "o",
+       "o"
+      ],
+      [
+       "p",
+       "p"
+      ],
+      [
+       "q",
+       "q"
+      ],
+      [
+       "r",
+       "r"
+      ],
+      [
+       "s",
+       "s"
+      ],
+      [
+       "t",
+       "t"
+      ],
+      [
+       "u",
+       "u"
+      ],
+      [
+       "v",
+       "v"
+      ],
+      [
+       "w",
+       "w"
+      ],
+      [
+       "x",
+       "x"
+      ],
+      [
+       "y",
+       "y"
+      ],
+      [
+       "z",
+       "z"
+      ],
+      [
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "1"
+      ],
+      [
+       "2",
+       "2"
+      ],
+      [
+       "3",
+       "3"
+      ],
+      [
+       "4",
+       "4"
+      ],
+      [
+       "5",
+       "5"
+      ],
+      [
+       "6",
+       "6"
+      ],
+      [
+       "7",
+       "7"
+      ],
+      [
+       "8",
+       "8"
+      ],
+      [
+       "9",
+       "9"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "sensing_mousedown": {
+  "message0": "mouse down?",
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "мышь нажата?"
+  },
+  "ru_args": {}
+ },
+ "sensing_mousex": {
+  "message0": "mouse x",
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "x мыши"
+  },
+  "ru_args": {}
+ },
+ "sensing_mousey": {
+  "message0": "mouse y",
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "y мыши"
+  },
+  "ru_args": {}
+ },
+ "sensing_setdragmode": {
+  "message0": "set drag mode %1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "DRAG_MODE",
+    "options": [
+     [
+      "draggable",
+      "draggable"
+     ],
+     [
+      "not draggable",
+      "not draggable"
+     ]
+    ]
+   }
+  ],
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "перетаскивать %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "DRAG_MODE",
+     "options": [
+      [
+       "можно",
+       "draggable"
+      ],
+      [
+       "нельзя",
+       "not draggable"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "sensing_loudness": {
+  "message0": "loudness",
+  "category": "sensing",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "громкость"
+  },
+  "ru_args": {}
+ },
+ "sensing_loud": {
+  "message0": "loud?",
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "громко?"
+  },
+  "ru_args": {}
+ },
+ "sensing_timer": {
+  "message0": "timer",
+  "category": "sensing",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "таймер"
+  },
+  "ru_args": {}
+ },
+ "sensing_resettimer": {
+  "message0": "reset timer",
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "сбросить таймер"
+  },
+  "ru_args": {}
+ },
+ "sensing_of_object_menu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "OBJECT",
+    "options": [
+     [
+      "Sprite1",
+      "Sprite1"
+     ],
+     [
+      "Stage",
+      "_stage_"
+     ]
+    ]
+   }
+  ],
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "OBJECT",
+     "options": [
+      [
+       "Sprite1",
+       "Sprite1"
+      ],
+      [
+       "Stage",
+       "_stage_"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "sensing_of": {
+  "message0": "%1 of %2",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "PROPERTY",
+    "options": [
+     [
+      "x position",
+      "x position"
+     ],
+     [
+      "y position",
+      "y position"
+     ],
+     [
+      "direction",
+      "direction"
+     ],
+     [
+      "costume #",
+      "costume #"
+     ],
+     [
+      "costume name",
+      "costume name"
+     ],
+     [
+      "size",
+      "size"
+     ],
+     [
+      "volume",
+      "volume"
+     ],
+     [
+      "backdrop #",
+      "backdrop #"
+     ],
+     [
+      "backdrop name",
+      "backdrop name"
+     ]
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "OBJECT"
+   }
+  ],
+  "output": true,
+  "category": "sensing",
+  "outputShape": 2,
+  "extensions": [
+   "colours_sensing"
+  ],
+  "ru": {
+   "message0": "%1 от %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "PROPERTY",
+     "options": [
+      [
+       "положение x",
+       "x position"
+      ],
+      [
+       "положение y",
+       "y position"
+      ],
+      [
+       "направление",
+       "direction"
+      ],
+      [
+       "костюм #",
+       "costume #"
+      ],
+      [
+       "имя костюма",
+       "costume name"
+      ],
+      [
+       "размер",
+       "size"
+      ],
+      [
+       "громкость",
+       "volume"
+      ],
+      [
+       "фон #",
+       "backdrop #"
+      ],
+      [
+       "имя фона",
+       "backdrop name"
+      ]
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "OBJECT"
+    }
+   ]
+  }
+ },
+ "sensing_current": {
+  "message0": "current %1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "CURRENTMENU",
+    "options": [
+     [
+      "year",
+      "YEAR"
+     ],
+     [
+      "month",
+      "MONTH"
+     ],
+     [
+      "date",
+      "DATE"
+     ],
+     [
+      "day of week",
+      "DAYOFWEEK"
+     ],
+     [
+      "hour",
+      "HOUR"
+     ],
+     [
+      "minute",
+      "MINUTE"
+     ],
+     [
+      "second",
+      "SECOND"
+     ]
+    ]
+   }
+  ],
+  "category": "sensing",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "текущий %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "CURRENTMENU",
+     "options": [
+      [
+       "год",
+       "YEAR"
+      ],
+      [
+       "месяц",
+       "MONTH"
+      ],
+      [
+       "дата",
+       "DATE"
+      ],
+      [
+       "день недели",
+       "DAYOFWEEK"
+      ],
+      [
+       "час",
+       "HOUR"
+      ],
+      [
+       "минута",
+       "MINUTE"
+      ],
+      [
+       "секунда",
+       "SECOND"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "sensing_dayssince2000": {
+  "message0": "days since 2000",
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "дней с 2000 г"
+  },
+  "ru_args": {}
+ },
+ "sensing_username": {
+  "message0": "username",
+  "category": "sensing",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "имя участника"
+  },
+  "ru_args": {}
+ },
+ "sensing_userid": {
+  "message0": "user id",
+  "category": "sensing",
+  "extensions": [
+   "colours_sensing",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "id участника"
+  },
+  "ru_args": {}
+ },
+ "looks_sayforsecs": {
+  "message0": "say %1 for %2 seconds",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "MESSAGE"
+   },
+   {
+    "type": "input_value",
+    "name": "SECS"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "говорить %1 %2 секунд"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "MESSAGE"
+    },
+    {
+     "type": "input_value",
+     "name": "SECS"
+    }
+   ]
+  }
+ },
+ "looks_say": {
+  "message0": "say %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "MESSAGE"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "сказать %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "MESSAGE"
+    }
+   ]
+  }
+ },
+ "looks_thinkforsecs": {
+  "message0": "think %1 for %2 seconds",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "MESSAGE"
+   },
+   {
+    "type": "input_value",
+    "name": "SECS"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "думать %1 %2 секунд"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "MESSAGE"
+    },
+    {
+     "type": "input_value",
+     "name": "SECS"
+    }
+   ]
+  }
+ },
+ "looks_think": {
+  "message0": "think %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "MESSAGE"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "думать %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "MESSAGE"
+    }
+   ]
+  }
+ },
+ "looks_show": {
+  "message0": "show",
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "показаться"
+  },
+  "ru_args": {}
+ },
+ "looks_hide": {
+  "message0": "hide",
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "спрятаться"
+  },
+  "ru_args": {}
+ },
+ "looks_hideallsprites": {
+  "message0": "hide all sprites",
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "спрятать все спрайты"
+  },
+  "ru_args": {}
+ },
+ "looks_changeeffectby": {
+  "message0": "change %1 effect by %2",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "EFFECT",
+    "options": [
+     [
+      "color",
+      "COLOR"
+     ],
+     [
+      "fisheye",
+      "FISHEYE"
+     ],
+     [
+      "whirl",
+      "WHIRL"
+     ],
+     [
+      "pixelate",
+      "PIXELATE"
+     ],
+     [
+      "mosaic",
+      "MOSAIC"
+     ],
+     [
+      "brightness",
+      "BRIGHTNESS"
+     ],
+     [
+      "ghost",
+      "GHOST"
+     ]
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "CHANGE"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить эффект %1 на %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "EFFECT",
+     "options": [
+      [
+       "цвет",
+       "COLOR"
+      ],
+      [
+       "рыбий глаз",
+       "FISHEYE"
+      ],
+      [
+       "завихрение",
+       "WHIRL"
+      ],
+      [
+       "укрупнение пикселей",
+       "PIXELATE"
+      ],
+      [
+       "мозаика",
+       "MOSAIC"
+      ],
+      [
+       "яркость",
+       "BRIGHTNESS"
+      ],
+      [
+       "прозрачность",
+       "GHOST"
+      ]
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "CHANGE"
+    }
+   ]
+  }
+ },
+ "looks_seteffectto": {
+  "message0": "set %1 effect to %2",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "EFFECT",
+    "options": [
+     [
+      "color",
+      "COLOR"
+     ],
+     [
+      "fisheye",
+      "FISHEYE"
+     ],
+     [
+      "whirl",
+      "WHIRL"
+     ],
+     [
+      "pixelate",
+      "PIXELATE"
+     ],
+     [
+      "mosaic",
+      "MOSAIC"
+     ],
+     [
+      "brightness",
+      "BRIGHTNESS"
+     ],
+     [
+      "ghost",
+      "GHOST"
+     ]
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "VALUE"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "установить эффект %1 %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "EFFECT",
+     "options": [
+      [
+       "цвет",
+       "COLOR"
+      ],
+      [
+       "рыбий глаз",
+       "FISHEYE"
+      ],
+      [
+       "завихрение",
+       "WHIRL"
+      ],
+      [
+       "укрупнение пикселей",
+       "PIXELATE"
+      ],
+      [
+       "мозаика",
+       "MOSAIC"
+      ],
+      [
+       "яркость",
+       "BRIGHTNESS"
+      ],
+      [
+       "прозрачность",
+       "GHOST"
+      ]
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "VALUE"
+    }
+   ]
+  }
+ },
+ "looks_cleargraphiceffects": {
+  "message0": "clear graphic effects",
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "убрать графические эффекты"
+  },
+  "ru_args": {}
+ },
+ "looks_changesizeby": {
+  "message0": "change size by %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CHANGE"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить размер на %1 %"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CHANGE"
+    }
+   ]
+  }
+ },
+ "looks_setsizeto": {
+  "message0": "set size to %1 %",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SIZE"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "установить размер %1 %"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SIZE"
+    }
+   ]
+  }
+ },
+ "looks_size": {
+  "message0": "size",
+  "category": "looks",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_looks",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "размер"
+  },
+  "ru_args": {}
+ },
+ "looks_changestretchby": {
+  "message0": "change stretch by %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CHANGE"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить натяжение на %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CHANGE"
+    }
+   ]
+  }
+ },
+ "looks_setstretchto": {
+  "message0": "set stretch to %1 %",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "STRETCH"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "установить натяжение %1 %"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "STRETCH"
+    }
+   ]
+  }
+ },
+ "looks_costume": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "COSTUME",
+    "options": [
+     [
+      "costume1",
+      "COSTUME1"
+     ],
+     [
+      "costume2",
+      "COSTUME2"
+     ]
+    ]
+   }
+  ],
+  "colour": "#855CD6",
+  "colourSecondary": "#855CD6",
+  "colourTertiary": "#774DCB",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "COSTUME",
+     "options": [
+      [
+       "costume1",
+       "COSTUME1"
+      ],
+      [
+       "costume2",
+       "COSTUME2"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "looks_switchcostumeto": {
+  "message0": "switch costume to %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "COSTUME"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить костюм на %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "COSTUME"
+    }
+   ]
+  }
+ },
+ "looks_nextcostume": {
+  "message0": "next costume",
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "следующий костюм"
+  },
+  "ru_args": {}
+ },
+ "looks_switchbackdropto": {
+  "message0": "switch backdrop to %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "BACKDROP"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "переключить фон на %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "BACKDROP"
+    }
+   ]
+  }
+ },
+ "looks_backdrops": {
+  "id": "looks_backdrops",
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "BACKDROP",
+    "options": [
+     [
+      "backdrop1",
+      "BACKDROP1"
+     ]
+    ]
+   }
+  ],
+  "colour": "#855CD6",
+  "colourSecondary": "#855CD6",
+  "colourTertiary": "#774DCB",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "BACKDROP",
+     "options": [
+      [
+       "backdrop1",
+       "BACKDROP1"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "looks_gotofrontback": {
+  "message0": "go to %1 layer",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "FRONT_BACK",
+    "options": [
+     [
+      "front",
+      "front"
+     ],
+     [
+      "back",
+      "back"
+     ]
+    ]
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "перейти на %1 слой"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "FRONT_BACK",
+     "options": [
+      [
+       "передний",
+       "front"
+      ],
+      [
+       "задний",
+       "back"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "looks_goforwardbackwardlayers": {
+  "message0": "go %1 %2 layers",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "FORWARD_BACKWARD",
+    "options": [
+     [
+      "forward",
+      "forward"
+     ],
+     [
+      "backward",
+      "backward"
+     ]
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "NUM"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "перейти %1 на %2 слоя"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "FORWARD_BACKWARD",
+     "options": [
+      [
+       "вперёд",
+       "forward"
+      ],
+      [
+       "назад",
+       "backward"
+      ]
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "NUM"
+    }
+   ]
+  }
+ },
+ "looks_backdropnumbername": {
+  "message0": "backdrop %1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "NUMBER_NAME",
+    "options": [
+     [
+      "number",
+      "number"
+     ],
+     [
+      "name",
+      "name"
+     ]
+    ]
+   }
+  ],
+  "category": "looks",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_looks",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "фон %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "NUMBER_NAME",
+     "options": [
+      [
+       "номер",
+       "number"
+      ],
+      [
+       "имя",
+       "name"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "looks_costumenumbername": {
+  "message0": "costume %1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "NUMBER_NAME",
+    "options": [
+     [
+      "number",
+      "number"
+     ],
+     [
+      "name",
+      "name"
+     ]
+    ]
+   }
+  ],
+  "category": "looks",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_looks",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "костюм %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "NUMBER_NAME",
+     "options": [
+      [
+       "номер",
+       "number"
+      ],
+      [
+       "имя",
+       "name"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "looks_switchbackdroptoandwait": {
+  "message0": "switch backdrop to %1 and wait",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "BACKDROP"
+   }
+  ],
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "переключить фон на %1 и ждать"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "BACKDROP"
+    }
+   ]
+  }
+ },
+ "looks_nextbackdrop": {
+  "message0": "next backdrop",
+  "category": "looks",
+  "extensions": [
+   "colours_looks",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "следующий фон"
+  },
+  "ru_args": {}
+ },
+ "motion_movesteps": {
+  "message0": "move %1 steps",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "STEPS"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "идти %1 шагов"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "STEPS"
+    }
+   ]
+  }
+ },
+ "motion_turnright": {
+  "message0": "turn %1 %2 degrees",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "rotate-right.svg",
+    "width": 24,
+    "height": 24
+   },
+   {
+    "type": "input_value",
+    "name": "DEGREES"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "повернуть %1 на %2 градусов"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "rotate-right.svg",
+     "width": 24,
+     "height": 24
+    },
+    {
+     "type": "input_value",
+     "name": "DEGREES"
+    }
+   ]
+  }
+ },
+ "motion_turnleft": {
+  "message0": "turn %1 %2 degrees",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "rotate-left.svg",
+    "width": 24,
+    "height": 24
+   },
+   {
+    "type": "input_value",
+    "name": "DEGREES"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "повернуть %1 на %2 градусов"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "rotate-left.svg",
+     "width": 24,
+     "height": 24
+    },
+    {
+     "type": "input_value",
+     "name": "DEGREES"
+    }
+   ]
+  }
+ },
+ "motion_pointindirection": {
+  "message0": "point in direction %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DIRECTION"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "повернуться в направлении %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DIRECTION"
+    }
+   ]
+  }
+ },
+ "motion_pointtowards_menu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "TOWARDS",
+    "options": [
+     [
+      "mouse-pointer",
+      "_mouse_"
+     ],
+     [
+      "random direction",
+      "_random_"
+     ]
+    ]
+   }
+  ],
+  "colour": "#4280D7",
+  "colourSecondary": "#4280D7",
+  "colourTertiary": "#3373CC",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "TOWARDS",
+     "options": [
+      [
+       "указатель мыши",
+       "_mouse_"
+      ],
+      [
+       "случайно направление",
+       "_random_"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "motion_pointtowards": {
+  "message0": "point towards %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TOWARDS"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "повернуться к %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TOWARDS"
+    }
+   ]
+  }
+ },
+ "motion_goto_menu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "TO",
+    "options": [
+     [
+      "mouse-pointer",
+      "_mouse_"
+     ],
+     [
+      "random position",
+      "_random_"
+     ]
+    ]
+   }
+  ],
+  "colour": "#4280D7",
+  "colourSecondary": "#4280D7",
+  "colourTertiary": "#3373CC",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "TO",
+     "options": [
+      [
+       "указатель мыши",
+       "_mouse_"
+      ],
+      [
+       "случайное положение",
+       "_random_"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "motion_gotoxy": {
+  "message0": "go to x: %1 y: %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "X"
+   },
+   {
+    "type": "input_value",
+    "name": "Y"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "перейти в x: %1 y: %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "X"
+    },
+    {
+     "type": "input_value",
+     "name": "Y"
+    }
+   ]
+  }
+ },
+ "motion_goto": {
+  "message0": "go to %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TO"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "перейти на %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TO"
+    }
+   ]
+  }
+ },
+ "motion_glidesecstoxy": {
+  "message0": "glide %1 secs to x: %2 y: %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SECS"
+   },
+   {
+    "type": "input_value",
+    "name": "X"
+   },
+   {
+    "type": "input_value",
+    "name": "Y"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "плыть %1 секунд в точку x: %2 y: %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SECS"
+    },
+    {
+     "type": "input_value",
+     "name": "X"
+    },
+    {
+     "type": "input_value",
+     "name": "Y"
+    }
+   ]
+  }
+ },
+ "motion_glideto_menu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "TO",
+    "options": [
+     [
+      "mouse-pointer",
+      "_mouse_"
+     ],
+     [
+      "random position",
+      "_random_"
+     ]
+    ]
+   }
+  ],
+  "colour": "#4280D7",
+  "colourSecondary": "#4280D7",
+  "colourTertiary": "#3373CC",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "TO",
+     "options": [
+      [
+       "указатель мыши",
+       "_mouse_"
+      ],
+      [
+       "случайное положение",
+       "_random_"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "motion_glideto": {
+  "message0": "glide %1 secs to %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SECS"
+   },
+   {
+    "type": "input_value",
+    "name": "TO"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "плыть %1 секунд к %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SECS"
+    },
+    {
+     "type": "input_value",
+     "name": "TO"
+    }
+   ]
+  }
+ },
+ "motion_changexby": {
+  "message0": "change x by %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DX"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить x на %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DX"
+    }
+   ]
+  }
+ },
+ "motion_setx": {
+  "message0": "set x to %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "X"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "установить x в %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "X"
+    }
+   ]
+  }
+ },
+ "motion_changeyby": {
+  "message0": "change y by %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DY"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить y на %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DY"
+    }
+   ]
+  }
+ },
+ "motion_sety": {
+  "message0": "set y to %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "Y"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "установить y в %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "Y"
+    }
+   ]
+  }
+ },
+ "motion_ifonedgebounce": {
+  "message0": "if on edge, bounce",
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "если касается края, оттолкнуться"
+  },
+  "ru_args": {}
+ },
+ "motion_setrotationstyle": {
+  "message0": "set rotation style %1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "STYLE",
+    "options": [
+     [
+      "left-right",
+      "left-right"
+     ],
+     [
+      "don't rotate",
+      "don't rotate"
+     ],
+     [
+      "all around",
+      "all around"
+     ]
+    ]
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "установить способ вращения %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "STYLE",
+     "options": [
+      [
+       "влево-вправо",
+       "left-right"
+      ],
+      [
+       "не вращать",
+       "don't rotate"
+      ],
+      [
+       "кругом",
+       "all around"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "motion_xposition": {
+  "message0": "x position",
+  "category": "motion",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_motion",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "положение x"
+  },
+  "ru_args": {}
+ },
+ "motion_yposition": {
+  "message0": "y position",
+  "category": "motion",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_motion",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "положение y"
+  },
+  "ru_args": {}
+ },
+ "motion_direction": {
+  "message0": "direction",
+  "category": "motion",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_motion",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "направление"
+  },
+  "ru_args": {}
+ },
+ "motion_scroll_right": {
+  "message0": "scroll right %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DISTANCE"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "прокрутить вправо %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DISTANCE"
+    }
+   ]
+  }
+ },
+ "motion_scroll_up": {
+  "message0": "scroll up %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DISTANCE"
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "прокрутить вверх %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DISTANCE"
+    }
+   ]
+  }
+ },
+ "motion_align_scene": {
+  "message0": "align scene %1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "ALIGNMENT",
+    "options": [
+     [
+      "bottom-left",
+      "bottom-left"
+     ],
+     [
+      "bottom-right",
+      "bottom-right"
+     ],
+     [
+      "middle",
+      "middle"
+     ],
+     [
+      "top-left",
+      "top-left"
+     ],
+     [
+      "top-right",
+      "top-right"
+     ]
+    ]
+   }
+  ],
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "выровнять сцену %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "ALIGNMENT",
+     "options": [
+      [
+       "нижний левый",
+       "bottom-left"
+      ],
+      [
+       "нижний правый",
+       "bottom-right"
+      ],
+      [
+       "середина",
+       "middle"
+      ],
+      [
+       "верхний левый",
+       "top-left"
+      ],
+      [
+       "верхний правый",
+       "top-right"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "motion_xscroll": {
+  "message0": "x scroll",
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "x прокрутка"
+  },
+  "ru_args": {}
+ },
+ "motion_yscroll": {
+  "message0": "y scroll",
+  "category": "motion",
+  "extensions": [
+   "colours_motion",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "y прокрутка"
+  },
+  "ru_args": {}
+ },
+ "otto_dura": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LED_NUMS",
+    "options": [
+     [
+      "1/8",
+      "1"
+     ],
+     [
+      "1/4",
+      "2"
+     ],
+     [
+      "3/8",
+      "3"
+     ],
+     [
+      "1/2",
+      "4"
+     ],
+     [
+      "5/8",
+      "5"
+     ],
+     [
+      "3/4",
+      "6"
+     ],
+     [
+      "7/8",
+      "7"
+     ],
+     [
+      "1",
+      "8"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LED_NUMS",
+     "options": [
+      [
+       "1/8",
+       "1"
+      ],
+      [
+       "1/4",
+       "2"
+      ],
+      [
+       "3/8",
+       "3"
+      ],
+      [
+       "1/2",
+       "4"
+      ],
+      [
+       "5/8",
+       "5"
+      ],
+      [
+       "3/4",
+       "6"
+      ],
+      [
+       "7/8",
+       "7"
+      ],
+      [
+       "1",
+       "8"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "otto_on_off": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "ON_OFF",
+    "options": [
+     [
+      "on",
+      "1"
+     ],
+     [
+      "off",
+      "0"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#989898",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "ON_OFF",
+     "options": [
+      [
+       "включить",
+       "1"
+      ],
+      [
+       "выключить",
+       "0"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "otto_servo_nums": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "OTTO_SERVO",
+    "options": [
+     [
+      "Left leg",
+      "0"
+     ],
+     [
+      "Right leg",
+      "1"
+     ],
+     [
+      "Left foot",
+      "2"
+     ],
+     [
+      "Right foot",
+      "3"
+     ],
+     [
+      "Left hand",
+      "4"
+     ],
+     [
+      "Right hand",
+      "5"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#989898",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "OTTO_SERVO",
+     "options": [
+      [
+       "Левая нога",
+       "0"
+      ],
+      [
+       "Правая нога",
+       "1"
+      ],
+      [
+       "Левая стопа",
+       "2"
+      ],
+      [
+       "Правая стопа",
+       "3"
+      ],
+      [
+       "Левая рука",
+       "4"
+      ],
+      [
+       "Правая рука",
+       "5"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "otto_servo_speed": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "SERVO_SPEED",
+    "options": [
+     [
+      "very slow",
+      "5"
+     ],
+     [
+      "slow",
+      "3"
+     ],
+     [
+      "normally",
+      "2"
+     ],
+     [
+      "fast",
+      "1"
+     ],
+     [
+      "very fast",
+      "0"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#989898",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "SERVO_SPEED",
+     "options": [
+      [
+       "очень медленно",
+       "5"
+      ],
+      [
+       "медленно",
+       "3"
+      ],
+      [
+       "нормально",
+       "2"
+      ],
+      [
+       "быстро",
+       "1"
+      ],
+      [
+       "очень быстро",
+       "0"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "otto_text_speed": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "SERVO_SPEED",
+    "options": [
+     [
+      "very slow",
+      "15"
+     ],
+     [
+      "slow",
+      "10"
+     ],
+     [
+      "normally",
+      "7"
+     ],
+     [
+      "fast",
+      "5"
+     ],
+     [
+      "very fast",
+      "3"
+     ]
+    ]
+   }
+  ],
+  "colour": "#AAAAAA",
+  "colourSecondary": "#AAAAAA",
+  "colourTertiary": "#989898",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "SERVO_SPEED",
+     "options": [
+      [
+       "очень медленно",
+       "15"
+      ],
+      [
+       "медленно",
+       "10"
+      ],
+      [
+       "нормально",
+       "7"
+      ],
+      [
+       "быстро",
+       "5"
+      ],
+      [
+       "очень быстро",
+       "3"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "otto_move_servo": {
+  "message0": "Dancing robot turn %1 servo in %2 position %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OTTO_SERVO"
+   },
+   {
+    "type": "input_value",
+    "name": "SERVO_DIST"
+   },
+   {
+    "type": "input_value",
+    "name": "SERVO_SPEED"
+   }
+  ],
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Танцующий робот повернуть %1 серво в %2 позицию %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OTTO_SERVO"
+    },
+    {
+     "type": "input_value",
+     "name": "SERVO_DIST"
+    },
+    {
+     "type": "input_value",
+     "name": "SERVO_SPEED"
+    }
+   ]
+  }
+ },
+ "otto_move_servo_foot": {
+  "message0": "Set LL:%1RL:%2LF:%3RF%4 position %5",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OTTO_LL"
+   },
+   {
+    "type": "input_value",
+    "name": "OTTO_RL"
+   },
+   {
+    "type": "input_value",
+    "name": "OTTO_LF"
+   },
+   {
+    "type": "input_value",
+    "name": "OTTO_RF"
+   },
+   {
+    "type": "input_value",
+    "name": "SERVO_SPEED"
+   }
+  ],
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить ЛН:%1ПН:%2ЛС:%3ПС%4 в позицию %5"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OTTO_LL"
+    },
+    {
+     "type": "input_value",
+     "name": "OTTO_RL"
+    },
+    {
+     "type": "input_value",
+     "name": "OTTO_LF"
+    },
+    {
+     "type": "input_value",
+     "name": "OTTO_RF"
+    },
+    {
+     "type": "input_value",
+     "name": "SERVO_SPEED"
+    }
+   ]
+  }
+ },
+ "otto_move_servo_hand": {
+  "message0": "Set LH:%1 RH:%2 position %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OTTO_LH"
+   },
+   {
+    "type": "input_value",
+    "name": "OTTO_RH"
+   },
+   {
+    "type": "input_value",
+    "name": "SERVO_SPEED"
+   }
+  ],
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить ЛР:%1 ПР:%2 в позицию %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OTTO_LH"
+    },
+    {
+     "type": "input_value",
+     "name": "OTTO_RH"
+    },
+    {
+     "type": "input_value",
+     "name": "SERVO_SPEED"
+    }
+   ]
+  }
+ },
+ "otto_matrix_pix": {
+  "message0": "Dancing robot matrix set pixel %1 %2 %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "MATRIX_STROK"
+   },
+   {
+    "type": "input_value",
+    "name": "MATRIX_STOLB"
+   },
+   {
+    "type": "input_value",
+    "name": "ON_OFF"
+   }
+  ],
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить пиксель матрицы %1 %2 %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "MATRIX_STROK"
+    },
+    {
+     "type": "input_value",
+     "name": "MATRIX_STOLB"
+    },
+    {
+     "type": "input_value",
+     "name": "ON_OFF"
+    }
+   ]
+  }
+ },
+ "otto_matrix_all_pix": {
+  "message0": "Display %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "MATRIX"
+   }
+  ],
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Отобразить %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "MATRIX"
+    }
+   ]
+  }
+ },
+ "otto_text": {
+  "message0": "Display text %1 %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OTTO_TEXT"
+   },
+   {
+    "type": "input_value",
+    "name": "TEXT_SPEED"
+   }
+  ],
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Отобразить текст %1 %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OTTO_TEXT"
+    },
+    {
+     "type": "input_value",
+     "name": "TEXT_SPEED"
+    }
+   ]
+  }
+ },
+ "otto_led": {
+  "message0": "Nose R:%1 G:%2 B:%3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ON_OFF_R"
+   },
+   {
+    "type": "input_value",
+    "name": "ON_OFF_G"
+   },
+   {
+    "type": "input_value",
+    "name": "ON_OFF_B"
+   }
+  ],
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Нос R:%1 G:%2 B:%3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ON_OFF_R"
+    },
+    {
+     "type": "input_value",
+     "name": "ON_OFF_G"
+    },
+    {
+     "type": "input_value",
+     "name": "ON_OFF_B"
+    }
+   ]
+  }
+ },
+ "otto_play_sound": {
+  "message0": "Play note %1 for %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NOTE_TYPE"
+   },
+   {
+    "type": "input_value",
+    "name": "NOTE_DURA"
+   }
+  ],
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Сыграть ноту %1 %2 секунды"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NOTE_TYPE"
+    },
+    {
+     "type": "input_value",
+     "name": "NOTE_DURA"
+    }
+   ]
+  }
+ },
+ "otto_distance": {
+  "message0": "Distance",
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Расстояние"
+  },
+  "ru_args": {}
+ },
+ "otto_hearing": {
+  "message0": "Sound",
+  "category": "otto",
+  "extensions": [
+   "colours_otto",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Звук"
+  },
+  "ru_args": {}
+ },
+ "data_variable": {
+  "message0": "%1",
+  "lastDummyAlign0": "CENTRE",
+  "args0": [
+   {
+    "type": "field_variable_getter",
+    "text": "",
+    "name": "VARIABLE",
+    "variableType": ""
+   }
+  ],
+  "category": "data",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "contextMenu_getVariableBlock",
+   "colours_data",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable_getter",
+     "text": "",
+     "name": "VARIABLE",
+     "variableType": ""
+    }
+   ]
+  }
+ },
+ "data_setvariableto": {
+  "message0": "set %1 to %2",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "VARIABLE"
+   },
+   {
+    "type": "input_value",
+    "name": "VALUE"
+   }
+  ],
+  "category": "data",
+  "extensions": [
+   "colours_data",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "задать %1 значение %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "VARIABLE"
+    },
+    {
+     "type": "input_value",
+     "name": "VALUE"
+    }
+   ]
+  }
+ },
+ "data_changevariableby": {
+  "message0": "change %1 by %2",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "VARIABLE"
+   },
+   {
+    "type": "input_value",
+    "name": "VALUE"
+   }
+  ],
+  "category": "data",
+  "extensions": [
+   "colours_data",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить %1 на %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "VARIABLE"
+    },
+    {
+     "type": "input_value",
+     "name": "VALUE"
+    }
+   ]
+  }
+ },
+ "data_showvariable": {
+  "message0": "show variable %1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "VARIABLE"
+   }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "category": "data",
+  "colour": "#FF8C1A",
+  "colourSecondary": "#FF8000",
+  "colourTertiary": "#DB6E00",
+  "ru": {
+   "message0": "показать переменную %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "VARIABLE"
+    }
+   ]
+  }
+ },
+ "data_hidevariable": {
+  "message0": "hide variable %1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "VARIABLE"
+   }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "category": "data",
+  "colour": "#FF8C1A",
+  "colourSecondary": "#FF8000",
+  "colourTertiary": "#DB6E00",
+  "ru": {
+   "message0": "скрыть переменную %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "VARIABLE"
+    }
+   ]
+  }
+ },
+ "data_listcontents": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_variable_getter",
+    "text": "",
+    "name": "LIST",
+    "variableType": "list"
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "contextMenu_getListBlock",
+   "colours_data_lists",
+   "output_string"
+  ],
+  "checkboxInFlyout": true,
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable_getter",
+     "text": "",
+     "name": "LIST",
+     "variableType": "list"
+    }
+   ]
+  }
+ },
+ "data_listindexall": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_numberdropdown",
+    "name": "INDEX",
+    "value": "1",
+    "min": 1,
+    "precision": 1,
+    "options": [
+     [
+      "1",
+      "1"
+     ],
+     [
+      "last",
+      "last"
+     ],
+     [
+      "all",
+      "all"
+     ]
+    ]
+   }
+  ],
+  "category": "data",
+  "extensions": [
+   "colours_textfield",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_numberdropdown",
+     "name": "INDEX",
+     "value": "1",
+     "min": 1,
+     "precision": 1,
+     "options": [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "последний",
+       "last"
+      ],
+      [
+       "все",
+       "all"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "data_listindexrandom": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_numberdropdown",
+    "name": "INDEX",
+    "value": "1",
+    "min": 1,
+    "precision": 1,
+    "options": [
+     [
+      "1",
+      "1"
+     ],
+     [
+      "last",
+      "last"
+     ],
+     [
+      "random",
+      "random"
+     ]
+    ]
+   }
+  ],
+  "category": "data",
+  "extensions": [
+   "colours_textfield",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_numberdropdown",
+     "name": "INDEX",
+     "value": "1",
+     "min": 1,
+     "precision": 1,
+     "options": [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "последний",
+       "last"
+      ],
+      [
+       "случайный",
+       "random"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "data_addtolist": {
+  "message0": "add %1 to %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ITEM"
+   },
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "добавить %1 к %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ITEM"
+    },
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "data_deleteoflist": {
+  "message0": "delete %1 of %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "INDEX"
+   },
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "удалить %1 из %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "INDEX"
+    },
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "data_deletealloflist": {
+  "message0": "delete all of %1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "удалить все из %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "data_insertatlist": {
+  "message0": "insert %1 at %2 of %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ITEM"
+   },
+   {
+    "type": "input_value",
+    "name": "INDEX"
+   },
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "вставить элемент %1 в %3 на позицию с индексом %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ITEM"
+    },
+    {
+     "type": "input_value",
+     "name": "INDEX"
+    },
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "data_replaceitemoflist": {
+  "message0": "replace item %1 of %2 with %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "INDEX"
+   },
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "ITEM"
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "заменить элемент %1 в %2 на %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "INDEX"
+    },
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "ITEM"
+    }
+   ]
+  }
+ },
+ "data_itemoflist": {
+  "message0": "item %1 of %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "INDEX"
+   },
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "output": null,
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists"
+  ],
+  "outputShape": 2,
+  "ru": {
+   "message0": "элемент %1 в %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "INDEX"
+    },
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "data_itemnumoflist": {
+  "message0": "item # of %1 in %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ITEM"
+   },
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "output": null,
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists"
+  ],
+  "outputShape": 2,
+  "ru": {
+   "message0": "элемент # из %1 в %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ITEM"
+    },
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "data_lengthoflist": {
+  "message0": "length of %1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "длина списка %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "data_listcontainsitem": {
+  "message0": "%1 contains %2?",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "ITEM"
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "%1 содержит %2?"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "ITEM"
+    }
+   ]
+  }
+ },
+ "data_showlist": {
+  "message0": "show list %1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "показать список %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "data_hidelist": {
+  "message0": "hide list %1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "LIST",
+    "variableTypes": [
+     "list"
+    ]
+   }
+  ],
+  "category": "data-lists",
+  "extensions": [
+   "colours_data_lists",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "скрыть список %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "LIST",
+     "variableTypes": [
+      "list"
+     ]
+    }
+   ]
+  }
+ },
+ "event_whentouchingobject": {
+  "message0": "when this sprite touches %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TOUCHINGOBJECTMENU"
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда этот спрайт касается %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TOUCHINGOBJECTMENU"
+    }
+   ]
+  }
+ },
+ "event_touchingobjectmenu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "TOUCHINGOBJECTMENU",
+    "options": [
+     [
+      "mouse-pointer",
+      "_mouse_"
+     ],
+     [
+      "edge",
+      "_edge_"
+     ]
+    ]
+   }
+  ],
+  "extensions": [
+   "colours_event",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "TOUCHINGOBJECTMENU",
+     "options": [
+      [
+       "указатель мыши",
+       "_mouse_"
+      ],
+      [
+       "край",
+       "_edge_"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "event_whenflagclicked": {
+  "id": "event_whenflagclicked",
+  "message0": "when %1 clicked",
+  "args0": [
+   {
+    "type": "field_image",
+    "src": "green-flag.svg",
+    "width": 24,
+    "height": 24,
+    "alt": "flag"
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда %1 нажат"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_image",
+     "src": "green-flag.svg",
+     "width": 24,
+     "height": 24,
+     "alt": "flag"
+    }
+   ]
+  }
+ },
+ "event_whenthisspriteclicked": {
+  "message0": "when this sprite clicked",
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда спрайт нажат"
+  },
+  "ru_args": {}
+ },
+ "event_whenstageclicked": {
+  "message0": "when stage clicked",
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда кликнут по сцене"
+  },
+  "ru_args": {}
+ },
+ "event_whenbroadcastreceived": {
+  "id": "event_whenbroadcastreceived",
+  "message0": "when I receive %1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "BROADCAST_OPTION",
+    "variableTypes": [
+     "broadcast_msg"
+    ],
+    "variable": "message1"
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда я получу %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "BROADCAST_OPTION",
+     "variableTypes": [
+      "broadcast_msg"
+     ],
+     "variable": "сообщение1"
+    }
+   ]
+  }
+ },
+ "event_whenbackdropswitchesto": {
+  "message0": "when backdrop switches to %1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "BACKDROP",
+    "options": [
+     [
+      "backdrop1",
+      "BACKDROP1"
+     ]
+    ]
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда фон сменился на %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "BACKDROP",
+     "options": [
+      [
+       "backdrop1",
+       "BACKDROP1"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "event_whengreaterthan": {
+  "message0": "when %1 > %2",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "WHENGREATERTHANMENU",
+    "options": [
+     [
+      "loudness",
+      "LOUDNESS"
+     ],
+     [
+      "timer",
+      "TIMER"
+     ]
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "VALUE"
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда %1 > %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "WHENGREATERTHANMENU",
+     "options": [
+      [
+       "громкость",
+       "LOUDNESS"
+      ],
+      [
+       "таймер",
+       "TIMER"
+      ]
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "VALUE"
+    }
+   ]
+  }
+ },
+ "event_broadcast_menu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "BROADCAST_OPTION",
+    "variableTypes": [
+     "broadcast_msg"
+    ],
+    "variable": "message1"
+   }
+  ],
+  "colour": "#E6AC00",
+  "colourSecondary": "#E6AC00",
+  "colourTertiary": "#CC9900",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "BROADCAST_OPTION",
+     "variableTypes": [
+      "broadcast_msg"
+     ],
+     "variable": "сообщение1"
+    }
+   ]
+  }
+ },
+ "event_broadcast": {
+  "id": "event_broadcast",
+  "message0": "broadcast %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "BROADCAST_INPUT"
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "передать %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "BROADCAST_INPUT"
+    }
+   ]
+  }
+ },
+ "event_broadcastandwait": {
+  "message0": "broadcast %1 and wait",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "BROADCAST_INPUT"
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "передать %1 и ждать до конца"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "BROADCAST_INPUT"
+    }
+   ]
+  }
+ },
+ "event_whenkeypressed": {
+  "id": "event_whenkeypressed",
+  "message0": "when %1 key pressed",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "KEY_OPTION",
+    "options": [
+     [
+      "space",
+      "space"
+     ],
+     [
+      "up arrow",
+      "up arrow"
+     ],
+     [
+      "down arrow",
+      "down arrow"
+     ],
+     [
+      "right arrow",
+      "right arrow"
+     ],
+     [
+      "left arrow",
+      "left arrow"
+     ],
+     [
+      "any",
+      "any"
+     ],
+     [
+      "a",
+      "a"
+     ],
+     [
+      "b",
+      "b"
+     ],
+     [
+      "c",
+      "c"
+     ],
+     [
+      "d",
+      "d"
+     ],
+     [
+      "e",
+      "e"
+     ],
+     [
+      "f",
+      "f"
+     ],
+     [
+      "g",
+      "g"
+     ],
+     [
+      "h",
+      "h"
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      "j",
+      "j"
+     ],
+     [
+      "k",
+      "k"
+     ],
+     [
+      "l",
+      "l"
+     ],
+     [
+      "m",
+      "m"
+     ],
+     [
+      "n",
+      "n"
+     ],
+     [
+      "o",
+      "o"
+     ],
+     [
+      "p",
+      "p"
+     ],
+     [
+      "q",
+      "q"
+     ],
+     [
+      "r",
+      "r"
+     ],
+     [
+      "s",
+      "s"
+     ],
+     [
+      "t",
+      "t"
+     ],
+     [
+      "u",
+      "u"
+     ],
+     [
+      "v",
+      "v"
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      "x",
+      "x"
+     ],
+     [
+      "y",
+      "y"
+     ],
+     [
+      "z",
+      "z"
+     ],
+     [
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "1"
+     ],
+     [
+      "2",
+      "2"
+     ],
+     [
+      "3",
+      "3"
+     ],
+     [
+      "4",
+      "4"
+     ],
+     [
+      "5",
+      "5"
+     ],
+     [
+      "6",
+      "6"
+     ],
+     [
+      "7",
+      "7"
+     ],
+     [
+      "8",
+      "8"
+     ],
+     [
+      "9",
+      "9"
+     ]
+    ]
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_event",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда клавиша %1 нажата"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "KEY_OPTION",
+     "options": [
+      [
+       "пробел",
+       "space"
+      ],
+      [
+       "стрелка вверх",
+       "up arrow"
+      ],
+      [
+       "стрелка вниз",
+       "down arrow"
+      ],
+      [
+       "стрелка вправо",
+       "right arrow"
+      ],
+      [
+       "стрелка влево",
+       "left arrow"
+      ],
+      [
+       "любая",
+       "any"
+      ],
+      [
+       "a",
+       "a"
+      ],
+      [
+       "b",
+       "b"
+      ],
+      [
+       "c",
+       "c"
+      ],
+      [
+       "d",
+       "d"
+      ],
+      [
+       "e",
+       "e"
+      ],
+      [
+       "f",
+       "f"
+      ],
+      [
+       "g",
+       "g"
+      ],
+      [
+       "h",
+       "h"
+      ],
+      [
+       "i",
+       "i"
+      ],
+      [
+       "j",
+       "j"
+      ],
+      [
+       "k",
+       "k"
+      ],
+      [
+       "l",
+       "l"
+      ],
+      [
+       "m",
+       "m"
+      ],
+      [
+       "n",
+       "n"
+      ],
+      [
+       "o",
+       "o"
+      ],
+      [
+       "p",
+       "p"
+      ],
+      [
+       "q",
+       "q"
+      ],
+      [
+       "r",
+       "r"
+      ],
+      [
+       "s",
+       "s"
+      ],
+      [
+       "t",
+       "t"
+      ],
+      [
+       "u",
+       "u"
+      ],
+      [
+       "v",
+       "v"
+      ],
+      [
+       "w",
+       "w"
+      ],
+      [
+       "x",
+       "x"
+      ],
+      [
+       "y",
+       "y"
+      ],
+      [
+       "z",
+       "z"
+      ],
+      [
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "1"
+      ],
+      [
+       "2",
+       "2"
+      ],
+      [
+       "3",
+       "3"
+      ],
+      [
+       "4",
+       "4"
+      ],
+      [
+       "5",
+       "5"
+      ],
+      [
+       "6",
+       "6"
+      ],
+      [
+       "7",
+       "7"
+      ],
+      [
+       "8",
+       "8"
+      ],
+      [
+       "9",
+       "9"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "operator_add": {
+  "message0": "%1 + %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM1"
+   },
+   {
+    "type": "input_value",
+    "name": "NUM2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "%1 + %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM1"
+    },
+    {
+     "type": "input_value",
+     "name": "NUM2"
+    }
+   ]
+  }
+ },
+ "operator_subtract": {
+  "message0": "%1 - %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM1"
+   },
+   {
+    "type": "input_value",
+    "name": "NUM2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "%1 - %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM1"
+    },
+    {
+     "type": "input_value",
+     "name": "NUM2"
+    }
+   ]
+  }
+ },
+ "operator_multiply": {
+  "message0": "%1 * %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM1"
+   },
+   {
+    "type": "input_value",
+    "name": "NUM2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "%1 * %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM1"
+    },
+    {
+     "type": "input_value",
+     "name": "NUM2"
+    }
+   ]
+  }
+ },
+ "operator_divide": {
+  "message0": "%1 / %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM1"
+   },
+   {
+    "type": "input_value",
+    "name": "NUM2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "%1 / %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM1"
+    },
+    {
+     "type": "input_value",
+     "name": "NUM2"
+    }
+   ]
+  }
+ },
+ "operator_random": {
+  "message0": "pick random %1 to %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "FROM"
+   },
+   {
+    "type": "input_value",
+    "name": "TO"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "выдать случайное от %1 до %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "FROM"
+    },
+    {
+     "type": "input_value",
+     "name": "TO"
+    }
+   ]
+  }
+ },
+ "operator_lt": {
+  "message0": "%1 < %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OPERAND1"
+   },
+   {
+    "type": "input_value",
+    "name": "OPERAND2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "%1 < %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OPERAND1"
+    },
+    {
+     "type": "input_value",
+     "name": "OPERAND2"
+    }
+   ]
+  }
+ },
+ "operator_equals": {
+  "message0": "%1 = %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OPERAND1"
+   },
+   {
+    "type": "input_value",
+    "name": "OPERAND2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "%1 = %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OPERAND1"
+    },
+    {
+     "type": "input_value",
+     "name": "OPERAND2"
+    }
+   ]
+  }
+ },
+ "operator_gt": {
+  "message0": "%1 > %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OPERAND1"
+   },
+   {
+    "type": "input_value",
+    "name": "OPERAND2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "%1 > %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OPERAND1"
+    },
+    {
+     "type": "input_value",
+     "name": "OPERAND2"
+    }
+   ]
+  }
+ },
+ "operator_and": {
+  "message0": "%1 and %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OPERAND1",
+    "check": "Boolean"
+   },
+   {
+    "type": "input_value",
+    "name": "OPERAND2",
+    "check": "Boolean"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "%1 и %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OPERAND1",
+     "check": "Boolean"
+    },
+    {
+     "type": "input_value",
+     "name": "OPERAND2",
+     "check": "Boolean"
+    }
+   ]
+  }
+ },
+ "operator_or": {
+  "message0": "%1 or %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OPERAND1",
+    "check": "Boolean"
+   },
+   {
+    "type": "input_value",
+    "name": "OPERAND2",
+    "check": "Boolean"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "%1 или %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OPERAND1",
+     "check": "Boolean"
+    },
+    {
+     "type": "input_value",
+     "name": "OPERAND2",
+     "check": "Boolean"
+    }
+   ]
+  }
+ },
+ "operator_not": {
+  "message0": "not %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "OPERAND",
+    "check": "Boolean"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "не %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "OPERAND",
+     "check": "Boolean"
+    }
+   ]
+  }
+ },
+ "operator_join": {
+  "message0": "join %1 %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "STRING1"
+   },
+   {
+    "type": "input_value",
+    "name": "STRING2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "объединить %1 %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "STRING1"
+    },
+    {
+     "type": "input_value",
+     "name": "STRING2"
+    }
+   ]
+  }
+ },
+ "operator_letter_of": {
+  "message0": "letter %1 of %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LETTER"
+   },
+   {
+    "type": "input_value",
+    "name": "STRING"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "буква %1 в %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LETTER"
+    },
+    {
+     "type": "input_value",
+     "name": "STRING"
+    }
+   ]
+  }
+ },
+ "operator_length": {
+  "message0": "length of %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "STRING"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "длина %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "STRING"
+    }
+   ]
+  }
+ },
+ "operator_contains": {
+  "message0": "%1 contains %2?",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "STRING1"
+   },
+   {
+    "type": "input_value",
+    "name": "STRING2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "%1 содержит %2?"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "STRING1"
+    },
+    {
+     "type": "input_value",
+     "name": "STRING2"
+    }
+   ]
+  }
+ },
+ "operator_mod": {
+  "message0": "%1 mod %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM1"
+   },
+   {
+    "type": "input_value",
+    "name": "NUM2"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "%1 модуль %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM1"
+    },
+    {
+     "type": "input_value",
+     "name": "NUM2"
+    }
+   ]
+  }
+ },
+ "operator_round": {
+  "message0": "round %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "NUM"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "округлить %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "NUM"
+    }
+   ]
+  }
+ },
+ "operator_mathop": {
+  "message0": "%1 of %2",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "OPERATOR",
+    "options": [
+     [
+      "abs",
+      "abs"
+     ],
+     [
+      "floor",
+      "floor"
+     ],
+     [
+      "ceiling",
+      "ceiling"
+     ],
+     [
+      "sqrt",
+      "sqrt"
+     ],
+     [
+      "sin",
+      "sin"
+     ],
+     [
+      "cos",
+      "cos"
+     ],
+     [
+      "tan",
+      "tan"
+     ],
+     [
+      "asin",
+      "asin"
+     ],
+     [
+      "acos",
+      "acos"
+     ],
+     [
+      "atan",
+      "atan"
+     ],
+     [
+      "ln",
+      "ln"
+     ],
+     [
+      "log",
+      "log"
+     ],
+     [
+      "e ^",
+      "e ^"
+     ],
+     [
+      "10 ^",
+      "10 ^"
+     ]
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "NUM"
+   }
+  ],
+  "category": "operators",
+  "extensions": [
+   "colours_operators",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "%1 от %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "OPERATOR",
+     "options": [
+      [
+       "модуль",
+       "abs"
+      ],
+      [
+       "целое меньшее",
+       "floor"
+      ],
+      [
+       "целое большее",
+       "ceiling"
+      ],
+      [
+       "квадратный корень",
+       "sqrt"
+      ],
+      [
+       "sin",
+       "sin"
+      ],
+      [
+       "cos",
+       "cos"
+      ],
+      [
+       "tan",
+       "tan"
+      ],
+      [
+       "asin",
+       "asin"
+      ],
+      [
+       "acos",
+       "acos"
+      ],
+      [
+       "atan",
+       "atan"
+      ],
+      [
+       "ln",
+       "ln"
+      ],
+      [
+       "log",
+       "log"
+      ],
+      [
+       "e ^",
+       "e ^"
+      ],
+      [
+       "10 ^",
+       "10 ^"
+      ]
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "NUM"
+    }
+   ]
+  }
+ },
+ "iot_broker_init": {
+  "message0": "Set broker protocol %1 address %2 and port %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "BPROTCOL"
+   },
+   {
+    "type": "input_value",
+    "name": "BADDR"
+   },
+   {
+    "type": "input_value",
+    "name": "BPORT"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить протокол %1 адрес %2 и порт брокера %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "BPROTCOL"
+    },
+    {
+     "type": "input_value",
+     "name": "BADDR"
+    },
+    {
+     "type": "input_value",
+     "name": "BPORT"
+    }
+   ]
+  }
+ },
+ "iot_mess_to_topic": {
+  "message0": "Topic name: %1; Message: %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   },
+   {
+    "type": "input_value",
+    "name": "MESSAGE"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Имя топика: %1; Сообщение: %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    },
+    {
+     "type": "input_value",
+     "name": "MESSAGE"
+    }
+   ]
+  }
+ },
+ "iot_subscribe_to_topic": {
+  "message0": "Subscribe to %1 topic",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Подписаться на %1 топик"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_receive_message": {
+  "message0": "Get message from %1 topic",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "Последнее сообщение из %1 топика"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_set_logpass": {
+  "message0": "Login: %1; Password: %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "UNAME"
+   },
+   {
+    "type": "input_value",
+    "name": "PASS"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Логин: %1; Пароль: %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "UNAME"
+    },
+    {
+     "type": "input_value",
+     "name": "PASS"
+    }
+   ]
+  }
+ },
+ "iot_set_wifi": {
+  "message0": "Set wifi SSID: %1 PASS: %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SSID"
+   },
+   {
+    "type": "input_value",
+    "name": "PASS"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить Wi-Fi SSID: %1 Пароль: %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SSID"
+    },
+    {
+     "type": "input_value",
+     "name": "PASS"
+    }
+   ]
+  }
+ },
+ "iot_set_client_id": {
+  "message0": "Set client id: %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "ID"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить id клиента: %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "ID"
+    }
+   ]
+  }
+ },
+ "iot_set_delay_for_topic": {
+  "message0": "Set recieve period %1 for %2 topic",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DELAY"
+   },
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Период получения значения %1 для %2 топика"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DELAY"
+    },
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_trigger_on_topic": {
+  "message0": "trigger of %1 topic",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "триггер %1 топика"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_parse_data": {
+  "message0": "Parse data from %1 topic",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "получить значения датчиков из %1 топика"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_topic": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "TNAME",
+    "options": [
+     [
+      "air quality",
+      "air"
+     ],
+     [
+      "distance",
+      "dis"
+     ],
+     [
+      "temperature",
+      "tem"
+     ],
+     [
+      "humidity",
+      "hum"
+     ],
+     [
+      "lux",
+      "lux"
+     ],
+     [
+      "wind",
+      "wind"
+     ],
+     [
+      "sound",
+      "snd"
+     ],
+     [
+      "text",
+      "txt"
+     ],
+     [
+      "text2",
+      "txt2"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "TNAME",
+     "options": [
+      [
+       "air quality",
+       "air"
+      ],
+      [
+       "distance",
+       "dis"
+      ],
+      [
+       "temperature",
+       "tem"
+      ],
+      [
+       "humidity",
+       "hum"
+      ],
+      [
+       "lux",
+       "lux"
+      ],
+      [
+       "wind",
+       "wind"
+      ],
+      [
+       "sound",
+       "snd"
+      ],
+      [
+       "text",
+       "txt"
+      ],
+      [
+       "text2",
+       "txt2"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "iot_topic2": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "TNAME2",
+    "options": [
+     [
+      "led red",
+      "led/r"
+     ],
+     [
+      "led green",
+      "led/g"
+     ],
+     [
+      "led blue",
+      "led/b"
+     ],
+     [
+      "servomotor",
+      "servo"
+     ],
+     [
+      "rele",
+      "rele"
+     ],
+     [
+      "buzzer",
+      "buz"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "TNAME2",
+     "options": [
+      [
+       "led red",
+       "led/r"
+      ],
+      [
+       "led green",
+       "led/g"
+      ],
+      [
+       "led blue",
+       "led/b"
+      ],
+      [
+       "servomotor",
+       "servo"
+      ],
+      [
+       "rele",
+       "rele"
+      ],
+      [
+       "buzzer",
+       "buz"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "iot_event_more": {
+  "message0": "When topic %1 upper treshold",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_iot",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "Когда топик %1 выше порогового значения"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_event_less": {
+  "message0": "When topic %1 under treshold",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "category": "events",
+  "extensions": [
+   "colours_iot",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "Когда топик %1 ниже порогового значения"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_set_under_treshold": {
+  "message0": "Set under bound %1 for topic %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TRESH"
+   },
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить нижнюю границу  %1 для топика %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TRESH"
+    },
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_set_upper_treshold": {
+  "message0": "Set upper bound %1 for topic %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TRESH"
+   },
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить верхнюю границу %1 для топика %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TRESH"
+    },
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_set_both_treshold": {
+  "message0": "Set under %1 and upper %2 bounds for topic %3",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TRESH"
+   },
+   {
+    "type": "input_value",
+    "name": "TRESH2"
+   },
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить нижнюю %1 и верхнюю %2 границы для топика %3"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TRESH"
+    },
+    {
+     "type": "input_value",
+     "name": "TRESH2"
+    },
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "iot_set_prefix": {
+  "message0": "Set prefix for topic %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "PREFIX"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить префикс для топика %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "PREFIX"
+    }
+   ]
+  }
+ },
+ "iot_connection_status": {
+  "message0": "Connection status",
+  "extensions": [
+   "colours_iot",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "Статус подключения"
+  },
+  "ru_args": {}
+ },
+ "iot_connection_log": {
+  "message0": "Connection log",
+  "extensions": [
+   "colours_iot",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "Лог подключения"
+  },
+  "ru_args": {}
+ },
+ "iot_set_delay_for_publish": {
+  "message0": "Set publishing delay %1 for topic %2 ",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DELAY"
+   },
+   {
+    "type": "input_value",
+    "name": "TNAME"
+   }
+  ],
+  "extensions": [
+   "colours_iot",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Установить задержку %1 для отправки значения в топик %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DELAY"
+    },
+    {
+     "type": "input_value",
+     "name": "TNAME"
+    }
+   ]
+  }
+ },
+ "sound_sounds_menu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "SOUND_MENU",
+    "options": [
+     [
+      "1",
+      "0"
+     ],
+     [
+      "2",
+      "1"
+     ],
+     [
+      "3",
+      "2"
+     ],
+     [
+      "4",
+      "3"
+     ],
+     [
+      "5",
+      "4"
+     ],
+     [
+      "6",
+      "5"
+     ],
+     [
+      "7",
+      "6"
+     ],
+     [
+      "8",
+      "7"
+     ],
+     [
+      "9",
+      "8"
+     ],
+     [
+      "10",
+      "9"
+     ],
+     [
+      "call a function",
+      null
+     ]
+    ]
+   }
+  ],
+  "colour": "#C94FC9",
+  "colourSecondary": "#C94FC9",
+  "colourTertiary": "#BD42BD",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "SOUND_MENU",
+     "options": [
+      [
+       "1",
+       "0"
+      ],
+      [
+       "2",
+       "1"
+      ],
+      [
+       "3",
+       "2"
+      ],
+      [
+       "4",
+       "3"
+      ],
+      [
+       "5",
+       "4"
+      ],
+      [
+       "6",
+       "5"
+      ],
+      [
+       "7",
+       "6"
+      ],
+      [
+       "8",
+       "7"
+      ],
+      [
+       "9",
+       "8"
+      ],
+      [
+       "10",
+       "9"
+      ],
+      [
+       "call a function",
+       null
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "sound_play": {
+  "message0": "start sound %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SOUND_MENU"
+   }
+  ],
+  "category": "sounds",
+  "extensions": [
+   "colours_sounds",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "включить звук %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SOUND_MENU"
+    }
+   ]
+  }
+ },
+ "sound_playuntildone": {
+  "message0": "play sound %1 until done",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "SOUND_MENU"
+   }
+  ],
+  "category": "sounds",
+  "extensions": [
+   "colours_sounds",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "играть звук %1 до конца"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "SOUND_MENU"
+    }
+   ]
+  }
+ },
+ "sound_stopallsounds": {
+  "message0": "stop all sounds",
+  "category": "sounds",
+  "extensions": [
+   "colours_sounds",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "остановить все звуки"
+  },
+  "ru_args": {}
+ },
+ "sound_seteffectto": {
+  "message0": "set %1 effect to %2",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "EFFECT",
+    "options": [
+     [
+      "pitch",
+      "PITCH"
+     ],
+     [
+      "pan left/right",
+      "PAN"
+     ]
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "VALUE"
+   }
+  ],
+  "category": "sounds",
+  "extensions": [
+   "colours_sounds",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "установить эффект %1 в %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "EFFECT",
+     "options": [
+      [
+       "питч",
+       "PITCH"
+      ],
+      [
+       "положение слева/справа",
+       "PAN"
+      ]
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "VALUE"
+    }
+   ]
+  }
+ },
+ "sound_changeeffectby": {
+  "message0": "change %1 effect by %2",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "EFFECT",
+    "options": [
+     [
+      "pitch",
+      "PITCH"
+     ],
+     [
+      "pan left/right",
+      "PAN"
+     ]
+    ]
+   },
+   {
+    "type": "input_value",
+    "name": "VALUE"
+   }
+  ],
+  "category": "sounds",
+  "extensions": [
+   "colours_sounds",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить %1 эффект на %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "EFFECT",
+     "options": [
+      [
+       "питч",
+       "PITCH"
+      ],
+      [
+       "положение слева/справа",
+       "PAN"
+      ]
+     ]
+    },
+    {
+     "type": "input_value",
+     "name": "VALUE"
+    }
+   ]
+  }
+ },
+ "sound_cleareffects": {
+  "message0": "clear sound effects",
+  "category": "sounds",
+  "extensions": [
+   "colours_sounds",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "убрать звуковые эффекты"
+  },
+  "ru_args": {}
+ },
+ "sound_changevolumeby": {
+  "message0": "change volume by %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "VOLUME"
+   }
+  ],
+  "category": "sounds",
+  "extensions": [
+   "colours_sounds",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "изменить громкость на %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "VOLUME"
+    }
+   ]
+  }
+ },
+ "sound_setvolumeto": {
+  "message0": "set volume to %1%",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "VOLUME"
+   }
+  ],
+  "category": "sounds",
+  "extensions": [
+   "colours_sounds",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "установить громкость %1%"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "VOLUME"
+    }
+   ]
+  }
+ },
+ "sound_volume": {
+  "message0": "volume",
+  "category": "sounds",
+  "checkboxInFlyout": true,
+  "extensions": [
+   "colours_sounds",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "громкость звука"
+  },
+  "ru_args": {}
+ },
+ "led_nums": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LED_NUMS",
+    "options": [
+     [
+      "0",
+      "0"
+     ],
+     [
+      "1",
+      "1"
+     ],
+     [
+      "2",
+      "2"
+     ],
+     [
+      "3",
+      "3"
+     ],
+     [
+      "4",
+      "4"
+     ],
+     [
+      "5",
+      "5"
+     ],
+     [
+      "6",
+      "6"
+     ],
+     [
+      "7",
+      "7"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LED_NUMS",
+     "options": [
+      [
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "1"
+      ],
+      [
+       "2",
+       "2"
+      ],
+      [
+       "3",
+       "3"
+      ],
+      [
+       "4",
+       "4"
+      ],
+      [
+       "5",
+       "5"
+      ],
+      [
+       "6",
+       "6"
+      ],
+      [
+       "7",
+       "7"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_led_turn_on": {
+  "message0": "turn Lab led %1 on",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LED_NUMS"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Вкл светодиод на Лаборатории %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LED_NUMS"
+    }
+   ]
+  }
+ },
+ "lab_led_turn_off": {
+  "message0": "turn Lab led %1 off",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LED_NUMS"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Выкл светодиод на Лаборатории %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LED_NUMS"
+    }
+   ]
+  }
+ },
+ "led_colors": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LED_COLORS",
+    "options": [
+     [
+      "red",
+      "red"
+     ],
+     [
+      "yellow",
+      "yellow"
+     ],
+     [
+      "green",
+      "green"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LED_COLORS",
+     "options": [
+      [
+       "красный",
+       "red"
+      ],
+      [
+       "жёлтый",
+       "yellow"
+      ],
+      [
+       "зелёный",
+       "green"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_color_led_turn_on": {
+  "message0": "turn Lab %1 led on",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LED_COLORS"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Вкл цветной светодиод на Лаборатории %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LED_COLORS"
+    }
+   ]
+  }
+ },
+ "lab_color_led_turn_off": {
+  "message0": "turn Lab %1 led off",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LED_COLORS"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Выкл цветной светодиод на Лаборатории %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LED_COLORS"
+    }
+   ]
+  }
+ },
+ "lab_sensors": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LAB_SENSORS",
+    "options": [
+     [
+      "light sensor",
+      "light"
+     ],
+     [
+      "sound sensor",
+      "sound"
+     ],
+     [
+      "slider",
+      "slider"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LAB_SENSORS",
+     "options": [
+      [
+       "свет",
+       "light"
+      ],
+      [
+       "звук",
+       "sound"
+      ],
+      [
+       "рычажок",
+       "slider"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_sensor": {
+  "message0": "Lab %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LAB_SENSOR"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Лаборатория %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LAB_SENSOR"
+    }
+   ]
+  }
+ },
+ "button_numbers": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "BUTTON_NUMBERS",
+    "options": [
+     [
+      "1",
+      "1"
+     ],
+     [
+      "2",
+      "2"
+     ],
+     [
+      "3",
+      "3"
+     ],
+     [
+      "4",
+      "4"
+     ],
+     [
+      "5",
+      "5"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "BUTTON_NUMBERS",
+     "options": [
+      [
+       "1",
+       "1"
+      ],
+      [
+       "2",
+       "2"
+      ],
+      [
+       "3",
+       "3"
+      ],
+      [
+       "4",
+       "4"
+      ],
+      [
+       "5",
+       "5"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_button_pressed": {
+  "message0": "Lab button %1 pressed",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "BUTTON_NUMBER"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "Кнопка на Лаборатории %1 нажата?"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "BUTTON_NUMBER"
+    }
+   ]
+  }
+ },
+ "lab_external_sensors": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "EXTERNAL_SENSORS",
+    "options": [
+     [
+      "A0",
+      "A0"
+     ],
+     [
+      "A1",
+      "A1"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "EXTERNAL_SENSORS",
+     "options": [
+      [
+       "A0",
+       "A0"
+      ],
+      [
+       "A1",
+       "A1"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_external_sensor": {
+  "message0": "Lab ext %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LAB_EXTERNAL_SENSOR"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Лаборатория вход %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LAB_EXTERNAL_SENSOR"
+    }
+   ]
+  }
+ },
+ "lab_analog_pins": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LAB_ANALOG_PINS",
+    "options": [
+     [
+      "A0",
+      "A0"
+     ],
+     [
+      "A1",
+      "A1"
+     ],
+     [
+      "A2",
+      "A2"
+     ],
+     [
+      "A3",
+      "A3"
+     ],
+     [
+      "A4",
+      "A4"
+     ],
+     [
+      "A5",
+      "A5"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LAB_ANALOG_PINS",
+     "options": [
+      [
+       "A0",
+       "A0"
+      ],
+      [
+       "A1",
+       "A1"
+      ],
+      [
+       "A2",
+       "A2"
+      ],
+      [
+       "A3",
+       "A3"
+      ],
+      [
+       "A4",
+       "A4"
+      ],
+      [
+       "A5",
+       "A5"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_analog_pin": {
+  "message0": "Lab pin %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LAB_ANALOG_PIN"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "Лаборатория вход %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LAB_ANALOG_PIN"
+    }
+   ]
+  }
+ },
+ "lab_digital_pins_stack1": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LAB_DIGITAL_PINS_STACK1",
+    "options": [
+     [
+      "D8",
+      "D8"
+     ],
+     [
+      "D9",
+      "D9"
+     ],
+     [
+      "D10",
+      "D10"
+     ],
+     [
+      "D11",
+      "D11"
+     ],
+     [
+      "D12",
+      "D12"
+     ],
+     [
+      "D13",
+      "D13"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LAB_DIGITAL_PINS_STACK1",
+     "options": [
+      [
+       "D8",
+       "D8"
+      ],
+      [
+       "D9",
+       "D9"
+      ],
+      [
+       "D10",
+       "D10"
+      ],
+      [
+       "D11",
+       "D11"
+      ],
+      [
+       "D12",
+       "D12"
+      ],
+      [
+       "D13",
+       "D13"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_digital_pin": {
+  "message0": "Lab pin %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LAB_DIGITAL_PIN"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "output_boolean"
+  ],
+  "ru": {
+   "message0": "Лаборатория вход %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LAB_DIGITAL_PIN"
+    }
+   ]
+  }
+ },
+ "lab_digital_pins_stack2": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LAB_DIGITAL_PINS_STACK2",
+    "options": [
+     [
+      "D2",
+      "D2"
+     ],
+     [
+      "D3",
+      "D3"
+     ],
+     [
+      "D4",
+      "D4"
+     ],
+     [
+      "D5",
+      "D5"
+     ],
+     [
+      "D6",
+      "D6"
+     ],
+     [
+      "D7",
+      "D7"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LAB_DIGITAL_PINS_STACK2",
+     "options": [
+      [
+       "D2",
+       "D2"
+      ],
+      [
+       "D3",
+       "D3"
+      ],
+      [
+       "D4",
+       "D4"
+      ],
+      [
+       "D5",
+       "D5"
+      ],
+      [
+       "D6",
+       "D6"
+      ],
+      [
+       "D7",
+       "D7"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_digital_pins_states": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LAB_DIGITAL_PINS_STATES",
+    "options": [
+     [
+      "on",
+      "on"
+     ],
+     [
+      "off",
+      "off"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LAB_DIGITAL_PINS_STATES",
+     "options": [
+      [
+       "включить",
+       "on"
+      ],
+      [
+       "выключить",
+       "off"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_digital_pin_set_on_off": {
+  "message0": "set Lab pin %1 %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LAB_DIGITAL_PIN"
+   },
+   {
+    "type": "input_value",
+    "name": "LAB_DIGITAL_PIN_STATE"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Уст выход Лаборатории %1 %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LAB_DIGITAL_PIN"
+    },
+    {
+     "type": "input_value",
+     "name": "LAB_DIGITAL_PIN_STATE"
+    }
+   ]
+  }
+ },
+ "lab_digital_pins_stack3": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "LAB_DIGITAL_PINS_STACK3",
+    "options": [
+     [
+      "D3",
+      "D3"
+     ],
+     [
+      "D5",
+      "D5"
+     ],
+     [
+      "D6",
+      "D6"
+     ]
+    ]
+   }
+  ],
+  "colour": "#989898",
+  "colourSecondary": "#989898",
+  "colourTertiary": "#000000",
+  "extensions": [
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "LAB_DIGITAL_PINS_STACK3",
+     "options": [
+      [
+       "D3",
+       "D3"
+      ],
+      [
+       "D5",
+       "D5"
+      ],
+      [
+       "D6",
+       "D6"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "lab_digital_pin_set_pwm_value": {
+  "message0": "set Lab pin %1 PWM value %2",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LAB_DIGITAL_PIN"
+   },
+   {
+    "type": "input_value",
+    "name": "PWM_VALUE"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Уст выход Лаборатории %1 в ШИМ значение %2"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LAB_DIGITAL_PIN"
+    },
+    {
+     "type": "input_value",
+     "name": "PWM_VALUE"
+    }
+   ]
+  }
+ },
+ "lab_play_note": {
+  "message0": "Play note on lab %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "LAB_NOTE"
+   }
+  ],
+  "category": "laboratory",
+  "extensions": [
+   "colours_laboratory",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "Играть ноту на Лаборатории %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "LAB_NOTE"
+    }
+   ]
+  }
+ },
+ "control_forever": {
+  "id": "control_forever",
+  "message0": "forever",
+  "message1": "%1",
+  "message2": "%1",
+  "lastDummyAlign2": "RIGHT",
+  "args1": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK"
+   }
+  ],
+  "args2": [
+   {
+    "type": "field_image",
+    "src": "repeat.svg",
+    "width": 24,
+    "height": 24,
+    "alt": "*",
+    "flip_rtl": true
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_end"
+  ],
+  "ru": {
+   "message0": "повторять всегда",
+   "message1": "%1",
+   "message2": "%1"
+  },
+  "ru_args": {
+   "args1": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK"
+    }
+   ],
+   "args2": [
+    {
+     "type": "field_image",
+     "src": "repeat.svg",
+     "width": 24,
+     "height": 24,
+     "alt": "*",
+     "flip_rtl": true
+    }
+   ]
+  }
+ },
+ "control_repeat": {
+  "id": "control_repeat",
+  "message0": "repeat %1",
+  "message1": "%1",
+  "message2": "%1",
+  "lastDummyAlign2": "RIGHT",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "TIMES"
+   }
+  ],
+  "args1": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK"
+   }
+  ],
+  "args2": [
+   {
+    "type": "field_image",
+    "src": "repeat.svg",
+    "width": 24,
+    "height": 24,
+    "alt": "*",
+    "flip_rtl": true
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "повторить %1 раз",
+   "message1": "%1",
+   "message2": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "TIMES"
+    }
+   ],
+   "args1": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK"
+    }
+   ],
+   "args2": [
+    {
+     "type": "field_image",
+     "src": "repeat.svg",
+     "width": 24,
+     "height": 24,
+     "alt": "*",
+     "flip_rtl": true
+    }
+   ]
+  }
+ },
+ "control_if": {
+  "type": "control_if",
+  "message0": "if %1 then",
+  "message1": "%1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CONDITION",
+    "check": "Boolean"
+   }
+  ],
+  "args1": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK"
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "если %1 , то",
+   "message1": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CONDITION",
+     "check": "Boolean"
+    }
+   ],
+   "args1": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK"
+    }
+   ]
+  }
+ },
+ "control_if_else": {
+  "type": "control_if_else",
+  "message0": "if %1 then",
+  "message1": "%1",
+  "message2": "else",
+  "message3": "%1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CONDITION",
+    "check": "Boolean"
+   }
+  ],
+  "args1": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK"
+   }
+  ],
+  "args3": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK2"
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "если %1 , то",
+   "message1": "%1",
+   "message2": "иначе",
+   "message3": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CONDITION",
+     "check": "Boolean"
+    }
+   ],
+   "args1": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK"
+    }
+   ],
+   "args3": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK2"
+    }
+   ]
+  }
+ },
+ "control_stop": {
+  "nojson": true,
+  "ru": {},
+  "ru_args": {}
+ },
+ "control_wait": {
+  "id": "control_wait",
+  "message0": "wait %1 seconds",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "DURATION"
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "ждать %1 секунд"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "DURATION"
+    }
+   ]
+  }
+ },
+ "control_wait_until": {
+  "message0": "wait until %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CONDITION",
+    "check": "Boolean"
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "ждать до %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CONDITION",
+     "check": "Boolean"
+    }
+   ]
+  }
+ },
+ "control_repeat_until": {
+  "message0": "repeat until %1",
+  "message1": "%1",
+  "message2": "%1",
+  "lastDummyAlign2": "RIGHT",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CONDITION",
+    "check": "Boolean"
+   }
+  ],
+  "args1": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK"
+   }
+  ],
+  "args2": [
+   {
+    "type": "field_image",
+    "src": "repeat.svg",
+    "width": 24,
+    "height": 24,
+    "alt": "*",
+    "flip_rtl": true
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "повторять пока не %1",
+   "message1": "%1",
+   "message2": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CONDITION",
+     "check": "Boolean"
+    }
+   ],
+   "args1": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK"
+    }
+   ],
+   "args2": [
+    {
+     "type": "field_image",
+     "src": "repeat.svg",
+     "width": 24,
+     "height": 24,
+     "alt": "*",
+     "flip_rtl": true
+    }
+   ]
+  }
+ },
+ "control_while": {
+  "message0": "while %1",
+  "message1": "%1",
+  "message2": "%1",
+  "lastDummyAlign2": "RIGHT",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CONDITION",
+    "check": "Boolean"
+   }
+  ],
+  "args1": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK"
+   }
+  ],
+  "args2": [
+   {
+    "type": "field_image",
+    "src": "repeat.svg",
+    "width": 24,
+    "height": 24,
+    "alt": "*",
+    "flip_rtl": true
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "пока %1",
+   "message1": "%1",
+   "message2": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CONDITION",
+     "check": "Boolean"
+    }
+   ],
+   "args1": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK"
+    }
+   ],
+   "args2": [
+    {
+     "type": "field_image",
+     "src": "repeat.svg",
+     "width": 24,
+     "height": 24,
+     "alt": "*",
+     "flip_rtl": true
+    }
+   ]
+  }
+ },
+ "control_for_each": {
+  "type": "control_for_each",
+  "message0": "for each %1 in %2",
+  "message1": "%1",
+  "args0": [
+   {
+    "type": "field_variable",
+    "name": "VARIABLE"
+   },
+   {
+    "type": "input_value",
+    "name": "VALUE"
+   }
+  ],
+  "args1": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK"
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "для каждого %1 в %2",
+   "message1": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_variable",
+     "name": "VARIABLE"
+    },
+    {
+     "type": "input_value",
+     "name": "VALUE"
+    }
+   ],
+   "args1": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK"
+    }
+   ]
+  }
+ },
+ "control_start_as_clone": {
+  "id": "control_start_as_clone",
+  "message0": "when I start as a clone",
+  "args0": [],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_hat"
+  ],
+  "ru": {
+   "message0": "когда я начинаю как клон"
+  },
+  "ru_args": {
+   "args0": []
+  }
+ },
+ "control_create_clone_of_menu": {
+  "message0": "%1",
+  "args0": [
+   {
+    "type": "field_dropdown",
+    "name": "CLONE_OPTION",
+    "options": [
+     [
+      "myself",
+      "_myself_"
+     ]
+    ]
+   }
+  ],
+  "extensions": [
+   "colours_control",
+   "output_string"
+  ],
+  "ru": {
+   "message0": "%1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "field_dropdown",
+     "name": "CLONE_OPTION",
+     "options": [
+      [
+       "самого себя",
+       "_myself_"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "control_create_clone_of": {
+  "id": "control_start_as_clone",
+  "message0": "create clone of %1",
+  "args0": [
+   {
+    "type": "input_value",
+    "name": "CLONE_OPTION"
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "создать клон %1"
+  },
+  "ru_args": {
+   "args0": [
+    {
+     "type": "input_value",
+     "name": "CLONE_OPTION"
+    }
+   ]
+  }
+ },
+ "control_delete_this_clone": {
+  "message0": "delete this clone",
+  "args0": [],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_end"
+  ],
+  "ru": {
+   "message0": "удалить клон"
+  },
+  "ru_args": {
+   "args0": []
+  }
+ },
+ "control_get_counter": {
+  "message0": "counter",
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "output_number"
+  ],
+  "ru": {
+   "message0": "счётчик"
+  },
+  "ru_args": {}
+ },
+ "control_incr_counter": {
+  "message0": "increment counter",
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "увеличить счётчик"
+  },
+  "ru_args": {}
+ },
+ "control_clear_counter": {
+  "message0": "clear counter",
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "очистить счётчик"
+  },
+  "ru_args": {}
+ },
+ "control_all_at_once": {
+  "message0": "all at once",
+  "message1": "%1",
+  "args1": [
+   {
+    "type": "input_statement",
+    "name": "SUBSTACK"
+   }
+  ],
+  "category": "control",
+  "extensions": [
+   "colours_control",
+   "shape_statement"
+  ],
+  "ru": {
+   "message0": "все сразу",
+   "message1": "%1"
+  },
+  "ru_args": {
+   "args1": [
+    {
+     "type": "input_statement",
+     "name": "SUBSTACK"
+    }
+   ]
+  }
+ }
+}

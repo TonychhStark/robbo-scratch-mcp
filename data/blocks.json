@@ -1,0 +1,6672 @@
+{
+ "robot_motors_on_for_seconds": {
+  "opcode": "robot_motors_on_for_seconds",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Моторы вкл на [SECONDS] секунд",
+  "en": "Motors on for [SECONDS] seconds",
+  "inputs": [
+   {
+    "name": "SECONDS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_motors_on": {
+  "opcode": "robot_motors_on",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Моторы вкл",
+  "en": "Motors on",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_motors_off": {
+  "opcode": "robot_motors_off",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Моторы выкл",
+  "en": "Motors off",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_set_direction_to": {
+  "opcode": "robot_set_direction_to",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Уст направление робота [ROBOT_DIRECTION]",
+  "en": "Set robot direction to [ROBOT_DIRECTION]",
+  "inputs": [
+   {
+    "name": "ROBOT_DIRECTION",
+    "kind": "value",
+    "shadow": "robot_directions",
+    "menu": {
+     "opcode": "robot_directions",
+     "field": "ROBOT_DIRECTION",
+     "options": [
+      {
+       "value": "direction_forward",
+       "en": "Forward",
+       "ru": "Вперёд"
+      },
+      {
+       "value": "direction_backward",
+       "en": "Backward",
+       "ru": "Назад"
+      },
+      {
+       "value": "direction_left",
+       "en": "turn left",
+       "ru": "Налево"
+      },
+      {
+       "value": "direction_right",
+       "en": "turn right",
+       "ru": "Направо"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "direction_forward"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_motors_on_for_steps": {
+  "opcode": "robot_motors_on_for_steps",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Моторы вкл на [STEPS] шагов",
+  "en": "Motors on for [STEPS] steps",
+  "inputs": [
+   {
+    "name": "STEPS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot",
+  "note": "отсутствует у робота ScratchDuino (есть только у Robbo)"
+ },
+ "robot_reset_trip_meters": {
+  "opcode": "robot_reset_trip_meters",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Обнулить счётчик шагов",
+  "en": "Reset trip meters",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot",
+  "note": "отсутствует у робота ScratchDuino (есть только у Robbo)"
+ },
+ "robot_turnright": {
+  "opcode": "robot_turnright",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Повернуть на ↻ на [DEGREES] градусов",
+  "en": "turn ↻ [DEGREES] degrees",
+  "inputs": [
+   {
+    "name": "DEGREES",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "15"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot",
+  "note": "отсутствует у робота ScratchDuino (есть только у Robbo)"
+ },
+ "robot_turnleft": {
+  "opcode": "robot_turnleft",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Повернуть ↺ на [DEGREES] градусов",
+  "en": "turn ↺ [DEGREES] degrees",
+  "inputs": [
+   {
+    "name": "DEGREES",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "15"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot",
+  "note": "отсутствует у робота ScratchDuino (есть только у Robbo)"
+ },
+ "robot_set_motors_power": {
+  "opcode": "robot_set_motors_power",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Уст мощность моторов [POWER] %",
+  "en": "set motors power [POWER] %",
+  "inputs": [
+   {
+    "name": "POWER",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "30"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_set_motors_power_left_right_separately": {
+  "opcode": "robot_set_motors_power_left_right_separately",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Уст мощность моторов Л [POWER_LEFT] П [POWER_RIGHT] %",
+  "en": "set motors power L [POWER_LEFT] R [POWER_RIGHT] %",
+  "inputs": [
+   {
+    "name": "POWER_LEFT",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "30"
+   },
+   {
+    "name": "POWER_RIGHT",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "30"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_set_motors_left_right_power_and_direction_separately": {
+  "opcode": "robot_set_motors_left_right_power_and_direction_separately",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Л [ROBOT_LEFT_MOTOR_DIRECTION] П [ROBOT_RIGHT_MOTOR_DIRECTION] уст мощность Л [POWER_LEFT] П [POWER_RIGHT] %",
+  "en": "L [ROBOT_LEFT_MOTOR_DIRECTION] R [ROBOT_RIGHT_MOTOR_DIRECTION] set power L [POWER_LEFT] R [POWER_RIGHT] %",
+  "inputs": [
+   {
+    "name": "ROBOT_LEFT_MOTOR_DIRECTION",
+    "kind": "value",
+    "shadow": "robot_one_motor_directions",
+    "menu": {
+     "opcode": "robot_one_motor_directions",
+     "field": "ROBOT_ONE_MOTOR_DIRECTION",
+     "options": [
+      {
+       "value": "direction_forward",
+       "en": "Forward",
+       "ru": "Вперёд"
+      },
+      {
+       "value": "direction_backward",
+       "en": "Backward",
+       "ru": "Назад"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "direction_forward"
+   },
+   {
+    "name": "ROBOT_RIGHT_MOTOR_DIRECTION",
+    "kind": "value",
+    "shadow": "robot_one_motor_directions",
+    "menu": {
+     "opcode": "robot_one_motor_directions",
+     "field": "ROBOT_ONE_MOTOR_DIRECTION",
+     "options": [
+      {
+       "value": "direction_forward",
+       "en": "Forward",
+       "ru": "Вперёд"
+      },
+      {
+       "value": "direction_backward",
+       "en": "Backward",
+       "ru": "Назад"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "direction_forward"
+   },
+   {
+    "name": "POWER_LEFT",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "30"
+   },
+   {
+    "name": "POWER_RIGHT",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "30"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_get_sensor_data": {
+  "opcode": "robot_get_sensor_data",
+  "category": "robot",
+  "shape": "reporter",
+  "ru": "Робот [ROBOT_SENSORS]",
+  "en": "Robot [ROBOT_SENSORS]",
+  "inputs": [
+   {
+    "name": "ROBOT_SENSORS",
+    "kind": "value",
+    "shadow": "robot_sensors",
+    "menu": {
+     "opcode": "robot_sensors",
+     "field": "ROBOT_SENSORS",
+     "options": [
+      {
+       "value": "sensor1",
+       "en": "sensor1",
+       "ru": "Датчик1"
+      },
+      {
+       "value": "sensor2",
+       "en": "sensor2",
+       "ru": "Датчик2"
+      },
+      {
+       "value": "sensor3",
+       "en": "sensor3",
+       "ru": "Датчик3"
+      },
+      {
+       "value": "sensor4",
+       "en": "sensor4",
+       "ru": "Датчик4"
+      },
+      {
+       "value": "sensor5",
+       "en": "sensor5",
+       "ru": "Датчик5"
+      },
+      {
+       "value": "sensor_trip_meter_left",
+       "en": "trip meter L",
+       "ru": "Счётчик шагов Л"
+      },
+      {
+       "value": "sensor_trip_meter_right",
+       "en": "trip meter R",
+       "ru": "Счётчик шагов П"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "sensor1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_get_rgb_sensor_data": {
+  "opcode": "robot_get_rgb_sensor_data",
+  "category": "robot",
+  "shape": "reporter",
+  "ru": "Датчик цвета RGB [ROBOT_SENSORS_FOR_RGB] [RGB_VALUES]",
+  "en": "Robot Color Sensor RGB [ROBOT_SENSORS_FOR_RGB] [RGB_VALUES]",
+  "inputs": [
+   {
+    "name": "ROBOT_SENSORS_FOR_RGB",
+    "kind": "value",
+    "shadow": "robot_sensors_for_rgb",
+    "menu": {
+     "opcode": "robot_sensors_for_rgb",
+     "field": "ROBOT_SENSORS_FOR_RGB",
+     "options": [
+      {
+       "value": "sensor1",
+       "en": "sensor1",
+       "ru": "Датчик1"
+      },
+      {
+       "value": "sensor2",
+       "en": "sensor2",
+       "ru": "Датчик2"
+      },
+      {
+       "value": "sensor3",
+       "en": "sensor3",
+       "ru": "Датчик3"
+      },
+      {
+       "value": "sensor4",
+       "en": "sensor4",
+       "ru": "Датчик4"
+      },
+      {
+       "value": "sensor5",
+       "en": "sensor5",
+       "ru": "Датчик5"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "sensor1"
+   },
+   {
+    "name": "RGB_VALUES",
+    "kind": "value",
+    "shadow": "rgb_values",
+    "menu": {
+     "opcode": "rgb_values",
+     "field": "RGB_VALUES",
+     "options": [
+      {
+       "value": "red",
+       "en": "red",
+       "ru": "Красный"
+      },
+      {
+       "value": "green",
+       "en": "green",
+       "ru": "Зелёный"
+      },
+      {
+       "value": "blue",
+       "en": "blue",
+       "ru": "Синий"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "red"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot",
+  "note": "виден только если в Robbo Scratch включён «Набор расширений» (Extension pack) робота"
+ },
+ "robot_is_current_color": {
+  "opcode": "robot_is_current_color",
+  "category": "robot",
+  "shape": "boolean",
+  "ru": "Датчик цвета [ROBOT_SENSORS_FOR_RGB] [COLORS]",
+  "en": "Robot Color Sensor [ROBOT_SENSORS_FOR_RGB] [COLORS]",
+  "inputs": [
+   {
+    "name": "ROBOT_SENSORS_FOR_RGB",
+    "kind": "value",
+    "shadow": "robot_sensors_for_rgb",
+    "menu": {
+     "opcode": "robot_sensors_for_rgb",
+     "field": "ROBOT_SENSORS_FOR_RGB",
+     "options": [
+      {
+       "value": "sensor1",
+       "en": "sensor1",
+       "ru": "Датчик1"
+      },
+      {
+       "value": "sensor2",
+       "en": "sensor2",
+       "ru": "Датчик2"
+      },
+      {
+       "value": "sensor3",
+       "en": "sensor3",
+       "ru": "Датчик3"
+      },
+      {
+       "value": "sensor4",
+       "en": "sensor4",
+       "ru": "Датчик4"
+      },
+      {
+       "value": "sensor5",
+       "en": "sensor5",
+       "ru": "Датчик5"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "sensor1"
+   },
+   {
+    "name": "COLORS",
+    "kind": "value",
+    "shadow": "robot_colors",
+    "menu": {
+     "opcode": "robot_colors",
+     "field": "COLORS",
+     "options": [
+      {
+       "value": "red",
+       "en": "red",
+       "ru": "красный"
+      },
+      {
+       "value": "magenta",
+       "en": "magenta",
+       "ru": "мажента"
+      },
+      {
+       "value": "yellow",
+       "en": "yellow",
+       "ru": "жёлтый"
+      },
+      {
+       "value": "green",
+       "en": "green",
+       "ru": "зелёный"
+      },
+      {
+       "value": "blue",
+       "en": "blue",
+       "ru": "синий"
+      },
+      {
+       "value": "cyan",
+       "en": "cyan",
+       "ru": "циан"
+      },
+      {
+       "value": "black",
+       "en": "black",
+       "ru": "чёрный"
+      },
+      {
+       "value": "gray",
+       "en": "gray",
+       "ru": "серый"
+      },
+      {
+       "value": "white",
+       "en": "white",
+       "ru": "белый"
+      },
+      {
+       "value": "unknown",
+       "en": "unknown",
+       "ru": "неизвестный"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "red"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot",
+  "note": "виден только если в Robbo Scratch включён «Набор расширений» (Extension pack) робота"
+ },
+ "robot_start_button_pressed": {
+  "opcode": "robot_start_button_pressed",
+  "category": "robot",
+  "shape": "boolean",
+  "ru": "Кнопка start на Роботе нажата?",
+  "en": "Robot start button pressed?",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_turn_led_on": {
+  "opcode": "robot_turn_led_on",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Вкл светодиод на роботе [ROBOT_POSITION]",
+  "en": "turn robot led in [ROBOT_POSITION] on",
+  "inputs": [
+   {
+    "name": "ROBOT_POSITION",
+    "kind": "value",
+    "shadow": "robot_positions",
+    "menu": {
+     "opcode": "robot_positions",
+     "field": "ROBOT_POSITION",
+     "options": [
+      {
+       "value": "position1",
+       "en": "position1",
+       "ru": "Позиция1"
+      },
+      {
+       "value": "position2",
+       "en": "position2",
+       "ru": "Позиция2"
+      },
+      {
+       "value": "position3",
+       "en": "position3",
+       "ru": "Позиция3"
+      },
+      {
+       "value": "position4",
+       "en": "position4",
+       "ru": "Позиция4"
+      },
+      {
+       "value": "position5",
+       "en": "position5",
+       "ru": "Позиция5"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "position1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_turn_led_off": {
+  "opcode": "robot_turn_led_off",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Выкл светодиод на роботе [ROBOT_POSITION]",
+  "en": "turn robot led in [ROBOT_POSITION] off",
+  "inputs": [
+   {
+    "name": "ROBOT_POSITION",
+    "kind": "value",
+    "shadow": "robot_positions",
+    "menu": {
+     "opcode": "robot_positions",
+     "field": "ROBOT_POSITION",
+     "options": [
+      {
+       "value": "position1",
+       "en": "position1",
+       "ru": "Позиция1"
+      },
+      {
+       "value": "position2",
+       "en": "position2",
+       "ru": "Позиция2"
+      },
+      {
+       "value": "position3",
+       "en": "position3",
+       "ru": "Позиция3"
+      },
+      {
+       "value": "position4",
+       "en": "position4",
+       "ru": "Позиция4"
+      },
+      {
+       "value": "position5",
+       "en": "position5",
+       "ru": "Позиция5"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "position1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot"
+ },
+ "robot_claw_closed": {
+  "opcode": "robot_claw_closed",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Клешня закрыта на [CLAW_CLOSED_PERCENT] %",
+  "en": "Claw closed [CLAW_CLOSED_PERCENT] %",
+  "inputs": [
+   {
+    "name": "CLAW_CLOSED_PERCENT",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "15"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot",
+  "note": "виден только если в Robbo Scratch включён «Набор расширений» (Extension pack) робота"
+ },
+ "robot_claw_state": {
+  "opcode": "robot_claw_state",
+  "category": "robot",
+  "shape": "stack",
+  "ru": "Клешня [CLAW_STATES]",
+  "en": "Claw [CLAW_STATES]",
+  "inputs": [
+   {
+    "name": "CLAW_STATES",
+    "kind": "value",
+    "shadow": "claw_states",
+    "menu": {
+     "opcode": "claw_states",
+     "field": "CLAW_STATES",
+     "options": [
+      {
+       "value": "claw_open",
+       "en": "Open",
+       "ru": "Открыта"
+      },
+      {
+       "value": "claw_half_open",
+       "en": "Half-open",
+       "ru": "Полуоткрыта"
+      },
+      {
+       "value": "claw_closed",
+       "en": "Closed",
+       "ru": "Закрыта"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "claw_open"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "robot",
+  "note": "виден только если в Robbo Scratch включён «Набор расширений» (Extension pack) робота"
+ },
+ "lab_led_turn_on": {
+  "opcode": "lab_led_turn_on",
+  "category": "laboratory",
+  "shape": "stack",
+  "ru": "Вкл светодиод на Лаборатории [LED_NUMS]",
+  "en": "turn Lab led [LED_NUMS] on",
+  "inputs": [
+   {
+    "name": "LED_NUMS",
+    "kind": "value",
+    "shadow": "led_nums",
+    "menu": {
+     "opcode": "led_nums",
+     "field": "LED_NUMS",
+     "options": [
+      {
+       "value": "0",
+       "en": "0",
+       "ru": "0"
+      },
+      {
+       "value": "1",
+       "en": "1",
+       "ru": "1"
+      },
+      {
+       "value": "2",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "3",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "4",
+       "en": "4",
+       "ru": "4"
+      },
+      {
+       "value": "5",
+       "en": "5",
+       "ru": "5"
+      },
+      {
+       "value": "6",
+       "en": "6",
+       "ru": "6"
+      },
+      {
+       "value": "7",
+       "en": "7",
+       "ru": "7"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_led_turn_off": {
+  "opcode": "lab_led_turn_off",
+  "category": "laboratory",
+  "shape": "stack",
+  "ru": "Выкл светодиод на Лаборатории [LED_NUMS]",
+  "en": "turn Lab led [LED_NUMS] off",
+  "inputs": [
+   {
+    "name": "LED_NUMS",
+    "kind": "value",
+    "shadow": "led_nums",
+    "menu": {
+     "opcode": "led_nums",
+     "field": "LED_NUMS",
+     "options": [
+      {
+       "value": "0",
+       "en": "0",
+       "ru": "0"
+      },
+      {
+       "value": "1",
+       "en": "1",
+       "ru": "1"
+      },
+      {
+       "value": "2",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "3",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "4",
+       "en": "4",
+       "ru": "4"
+      },
+      {
+       "value": "5",
+       "en": "5",
+       "ru": "5"
+      },
+      {
+       "value": "6",
+       "en": "6",
+       "ru": "6"
+      },
+      {
+       "value": "7",
+       "en": "7",
+       "ru": "7"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_color_led_turn_on": {
+  "opcode": "lab_color_led_turn_on",
+  "category": "laboratory",
+  "shape": "stack",
+  "ru": "Вкл цветной светодиод на Лаборатории [LED_COLORS]",
+  "en": "turn Lab [LED_COLORS] led on",
+  "inputs": [
+   {
+    "name": "LED_COLORS",
+    "kind": "value",
+    "shadow": "led_colors",
+    "menu": {
+     "opcode": "led_colors",
+     "field": "LED_COLORS",
+     "options": [
+      {
+       "value": "red",
+       "en": "red",
+       "ru": "красный"
+      },
+      {
+       "value": "yellow",
+       "en": "yellow",
+       "ru": "жёлтый"
+      },
+      {
+       "value": "green",
+       "en": "green",
+       "ru": "зелёный"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "red"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_color_led_turn_off": {
+  "opcode": "lab_color_led_turn_off",
+  "category": "laboratory",
+  "shape": "stack",
+  "ru": "Выкл цветной светодиод на Лаборатории [LED_COLORS]",
+  "en": "turn Lab [LED_COLORS] led off",
+  "inputs": [
+   {
+    "name": "LED_COLORS",
+    "kind": "value",
+    "shadow": "led_colors",
+    "menu": {
+     "opcode": "led_colors",
+     "field": "LED_COLORS",
+     "options": [
+      {
+       "value": "red",
+       "en": "red",
+       "ru": "красный"
+      },
+      {
+       "value": "yellow",
+       "en": "yellow",
+       "ru": "жёлтый"
+      },
+      {
+       "value": "green",
+       "en": "green",
+       "ru": "зелёный"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "red"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_play_note": {
+  "opcode": "lab_play_note",
+  "category": "laboratory",
+  "shape": "stack",
+  "ru": "Играть ноту на Лаборатории [LAB_NOTE]",
+  "en": "Play note on lab [LAB_NOTE]",
+  "inputs": [
+   {
+    "name": "LAB_NOTE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "48"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_sensor": {
+  "opcode": "lab_sensor",
+  "category": "laboratory",
+  "shape": "reporter",
+  "ru": "Лаборатория [LAB_SENSOR]",
+  "en": "Lab [LAB_SENSOR]",
+  "inputs": [
+   {
+    "name": "LAB_SENSOR",
+    "kind": "value",
+    "shadow": "lab_sensors",
+    "menu": {
+     "opcode": "lab_sensors",
+     "field": "LAB_SENSORS",
+     "options": [
+      {
+       "value": "light",
+       "en": "light sensor",
+       "ru": "свет"
+      },
+      {
+       "value": "sound",
+       "en": "sound sensor",
+       "ru": "звук"
+      },
+      {
+       "value": "slider",
+       "en": "slider",
+       "ru": "рычажок"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "light"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_button_pressed": {
+  "opcode": "lab_button_pressed",
+  "category": "laboratory",
+  "shape": "boolean",
+  "ru": "Кнопка на Лаборатории [BUTTON_NUMBER] нажата?",
+  "en": "Lab button [BUTTON_NUMBER] pressed",
+  "inputs": [
+   {
+    "name": "BUTTON_NUMBER",
+    "kind": "value",
+    "shadow": "button_numbers",
+    "menu": {
+     "opcode": "button_numbers",
+     "field": "BUTTON_NUMBERS",
+     "options": [
+      {
+       "value": "1",
+       "en": "1",
+       "ru": "1"
+      },
+      {
+       "value": "2",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "3",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "4",
+       "en": "4",
+       "ru": "4"
+      },
+      {
+       "value": "5",
+       "en": "5",
+       "ru": "5"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_external_sensor": {
+  "opcode": "lab_external_sensor",
+  "category": "laboratory",
+  "shape": "reporter",
+  "ru": "Лаборатория вход [LAB_EXTERNAL_SENSOR]",
+  "en": "Lab ext [LAB_EXTERNAL_SENSOR]",
+  "inputs": [
+   {
+    "name": "LAB_EXTERNAL_SENSOR",
+    "kind": "value",
+    "shadow": "lab_external_sensors",
+    "menu": {
+     "opcode": "lab_external_sensors",
+     "field": "EXTERNAL_SENSORS",
+     "options": [
+      {
+       "value": "A0",
+       "en": "A0",
+       "ru": "A0"
+      },
+      {
+       "value": "A1",
+       "en": "A1",
+       "ru": "A1"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "A0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory",
+  "note": "виден только если включены внешние датчики Лаборатории"
+ },
+ "lab_analog_pin": {
+  "opcode": "lab_analog_pin",
+  "category": "laboratory",
+  "shape": "reporter",
+  "ru": "Лаборатория вход [LAB_ANALOG_PIN]",
+  "en": "Lab pin [LAB_ANALOG_PIN]",
+  "inputs": [
+   {
+    "name": "LAB_ANALOG_PIN",
+    "kind": "value",
+    "shadow": "lab_analog_pins",
+    "menu": {
+     "opcode": "lab_analog_pins",
+     "field": "LAB_ANALOG_PINS",
+     "options": [
+      {
+       "value": "A0",
+       "en": "A0",
+       "ru": "A0"
+      },
+      {
+       "value": "A1",
+       "en": "A1",
+       "ru": "A1"
+      },
+      {
+       "value": "A2",
+       "en": "A2",
+       "ru": "A2"
+      },
+      {
+       "value": "A3",
+       "en": "A3",
+       "ru": "A3"
+      },
+      {
+       "value": "A4",
+       "en": "A4",
+       "ru": "A4"
+      },
+      {
+       "value": "A5",
+       "en": "A5",
+       "ru": "A5"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "A0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_digital_pin": {
+  "opcode": "lab_digital_pin",
+  "category": "laboratory",
+  "shape": "boolean",
+  "ru": "Лаборатория вход [LAB_DIGITAL_PIN]",
+  "en": "Lab pin [LAB_DIGITAL_PIN]",
+  "inputs": [
+   {
+    "name": "LAB_DIGITAL_PIN",
+    "kind": "value",
+    "shadow": "lab_digital_pins_stack1",
+    "menu": {
+     "opcode": "lab_digital_pins_stack1",
+     "field": "LAB_DIGITAL_PINS_STACK1",
+     "options": [
+      {
+       "value": "D8",
+       "en": "D8",
+       "ru": "D8"
+      },
+      {
+       "value": "D9",
+       "en": "D9",
+       "ru": "D9"
+      },
+      {
+       "value": "D10",
+       "en": "D10",
+       "ru": "D10"
+      },
+      {
+       "value": "D11",
+       "en": "D11",
+       "ru": "D11"
+      },
+      {
+       "value": "D12",
+       "en": "D12",
+       "ru": "D12"
+      },
+      {
+       "value": "D13",
+       "en": "D13",
+       "ru": "D13"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "D8"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_digital_pin_set_on_off": {
+  "opcode": "lab_digital_pin_set_on_off",
+  "category": "laboratory",
+  "shape": "stack",
+  "ru": "Уст выход Лаборатории [LAB_DIGITAL_PIN] [LAB_DIGITAL_PIN_STATE]",
+  "en": "set Lab pin [LAB_DIGITAL_PIN] [LAB_DIGITAL_PIN_STATE]",
+  "inputs": [
+   {
+    "name": "LAB_DIGITAL_PIN",
+    "kind": "value",
+    "shadow": "lab_digital_pins_stack2",
+    "menu": {
+     "opcode": "lab_digital_pins_stack2",
+     "field": "LAB_DIGITAL_PINS_STACK2",
+     "options": [
+      {
+       "value": "D2",
+       "en": "D2",
+       "ru": "D2"
+      },
+      {
+       "value": "D3",
+       "en": "D3",
+       "ru": "D3"
+      },
+      {
+       "value": "D4",
+       "en": "D4",
+       "ru": "D4"
+      },
+      {
+       "value": "D5",
+       "en": "D5",
+       "ru": "D5"
+      },
+      {
+       "value": "D6",
+       "en": "D6",
+       "ru": "D6"
+      },
+      {
+       "value": "D7",
+       "en": "D7",
+       "ru": "D7"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "D2"
+   },
+   {
+    "name": "LAB_DIGITAL_PIN_STATE",
+    "kind": "value",
+    "shadow": "lab_digital_pins_states",
+    "menu": {
+     "opcode": "lab_digital_pins_states",
+     "field": "LAB_DIGITAL_PINS_STATES",
+     "options": [
+      {
+       "value": "on",
+       "en": "on",
+       "ru": "включить"
+      },
+      {
+       "value": "off",
+       "en": "off",
+       "ru": "выключить"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "on"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "lab_digital_pin_set_pwm_value": {
+  "opcode": "lab_digital_pin_set_pwm_value",
+  "category": "laboratory",
+  "shape": "stack",
+  "ru": "Уст выход Лаборатории [LAB_DIGITAL_PIN] в ШИМ значение [PWM_VALUE]",
+  "en": "set Lab pin [LAB_DIGITAL_PIN] PWM value [PWM_VALUE]",
+  "inputs": [
+   {
+    "name": "LAB_DIGITAL_PIN",
+    "kind": "value",
+    "shadow": "lab_digital_pins_stack2",
+    "menu": {
+     "opcode": "lab_digital_pins_stack2",
+     "field": "LAB_DIGITAL_PINS_STACK2",
+     "options": [
+      {
+       "value": "D2",
+       "en": "D2",
+       "ru": "D2"
+      },
+      {
+       "value": "D3",
+       "en": "D3",
+       "ru": "D3"
+      },
+      {
+       "value": "D4",
+       "en": "D4",
+       "ru": "D4"
+      },
+      {
+       "value": "D5",
+       "en": "D5",
+       "ru": "D5"
+      },
+      {
+       "value": "D6",
+       "en": "D6",
+       "ru": "D6"
+      },
+      {
+       "value": "D7",
+       "en": "D7",
+       "ru": "D7"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "D2"
+   },
+   {
+    "name": "PWM_VALUE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "laboratory"
+ },
+ "copter_fly_up": {
+  "opcode": "copter_fly_up",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Взлёт",
+  "en": "Fly up",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_land": {
+  "opcode": "copter_land",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Посадка",
+  "en": "Land",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_stop": {
+  "opcode": "copter_stop",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "СТОП!",
+  "en": "Stop!",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_status": {
+  "opcode": "copter_status",
+  "category": "quadcopter",
+  "shape": "reporter",
+  "ru": "Статус",
+  "en": "Status",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_fly_distance": {
+  "opcode": "copter_fly_distance",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Лететь [METERS] метров",
+  "en": "Fly [METERS] meters",
+  "inputs": [
+   {
+    "name": "METERS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0.4"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_fly_time": {
+  "opcode": "copter_fly_time",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Лететь [SECONDS] секунд",
+  "en": "Fly [SECONDS] seconds",
+  "inputs": [
+   {
+    "name": "SECONDS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_change_x_by": {
+  "opcode": "copter_change_x_by",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Изменить координату по x на [DISTANCE_DELTA] метров",
+  "en": "Change x by [DISTANCE_DELTA] meters",
+  "inputs": [
+   {
+    "name": "DISTANCE_DELTA",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0.1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_change_y_by": {
+  "opcode": "copter_change_y_by",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Изменить координату по у на [DISTANCE_DELTA] метров",
+  "en": "Change y by [DISTANCE_DELTA] meters",
+  "inputs": [
+   {
+    "name": "DISTANCE_DELTA",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0.1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_change_z_by": {
+  "opcode": "copter_change_z_by",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Изменить координату по z на [DISTANCE_DELTA] метров",
+  "en": "Change z by [DISTANCE_DELTA] meters",
+  "inputs": [
+   {
+    "name": "DISTANCE_DELTA",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0.1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_x_coord": {
+  "opcode": "copter_x_coord",
+  "category": "quadcopter",
+  "shape": "reporter",
+  "ru": "Координата по x (метры)",
+  "en": "x position (meters)",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_y_coord": {
+  "opcode": "copter_y_coord",
+  "category": "quadcopter",
+  "shape": "reporter",
+  "ru": "Координата по y (метры)",
+  "en": "y position (meters)",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_z_coord": {
+  "opcode": "copter_z_coord",
+  "category": "quadcopter",
+  "shape": "reporter",
+  "ru": "Высота (метры)",
+  "en": "z position (meters)",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_yaw": {
+  "opcode": "copter_yaw",
+  "category": "quadcopter",
+  "shape": "reporter",
+  "ru": "Угол поворота (градусы)",
+  "en": "Yaw (degrees)",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_fly_to_coords": {
+  "opcode": "copter_fly_to_coords",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Лететь к x: [X_COORD] y: [Y_COORD] z: [Z_COORD] (метры)",
+  "en": "Fly to x: [X_COORD] y: [Y_COORD] z: [Z_COORD] (meters)",
+  "inputs": [
+   {
+    "name": "X_COORD",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   },
+   {
+    "name": "Y_COORD",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   },
+   {
+    "name": "Z_COORD",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_rotate": {
+  "opcode": "copter_rotate",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Повернуть на [DEGREES] градусов",
+  "en": "Rotate [DEGREES] degrees",
+  "inputs": [
+   {
+    "name": "DEGREES",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "45"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_set_direction": {
+  "opcode": "copter_set_direction",
+  "category": "quadcopter",
+  "shape": "stack",
+  "ru": "Установить направление [DIRECTION]",
+  "en": "Set direction to [DIRECTION]",
+  "inputs": [
+   {
+    "name": "DIRECTION",
+    "kind": "value",
+    "shadow": "copter_directions",
+    "menu": {
+     "opcode": "copter_directions",
+     "field": "COPTER_DIRECTIONS",
+     "options": [
+      {
+       "value": "direction_forward",
+       "en": "Forward",
+       "ru": "Вперёд"
+      },
+      {
+       "value": "direction_backward",
+       "en": "Backward",
+       "ru": "Назад"
+      },
+      {
+       "value": "direction_left",
+       "en": "Left",
+       "ru": "Налево"
+      },
+      {
+       "value": "direction_right",
+       "en": "Right",
+       "ru": "Направо"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "direction_forward"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "copter_direction": {
+  "opcode": "copter_direction",
+  "category": "quadcopter",
+  "shape": "reporter",
+  "ru": "Направление",
+  "en": "direction",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "quadcopter"
+ },
+ "otto_move_servo": {
+  "opcode": "otto_move_servo",
+  "category": "otto",
+  "shape": "stack",
+  "ru": "Танцующий робот повернуть [OTTO_SERVO] серво в [SERVO_DIST] позицию [SERVO_SPEED]",
+  "en": "Dancing robot turn [OTTO_SERVO] servo in [SERVO_DIST] position [SERVO_SPEED]",
+  "inputs": [
+   {
+    "name": "OTTO_SERVO",
+    "kind": "value",
+    "shadow": "otto_servo_nums",
+    "menu": {
+     "opcode": "otto_servo_nums",
+     "field": "OTTO_SERVO",
+     "options": [
+      {
+       "value": "0",
+       "en": "Left leg",
+       "ru": "Левая нога"
+      },
+      {
+       "value": "1",
+       "en": "Right leg",
+       "ru": "Правая нога"
+      },
+      {
+       "value": "2",
+       "en": "Left foot",
+       "ru": "Левая стопа"
+      },
+      {
+       "value": "3",
+       "en": "Right foot",
+       "ru": "Правая стопа"
+      },
+      {
+       "value": "4",
+       "en": "Left hand",
+       "ru": "Левая рука"
+      },
+      {
+       "value": "5",
+       "en": "Right hand",
+       "ru": "Правая рука"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "0"
+   },
+   {
+    "name": "SERVO_DIST",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "90"
+   },
+   {
+    "name": "SERVO_SPEED",
+    "kind": "value",
+    "shadow": "otto_servo_speed",
+    "menu": {
+     "opcode": "otto_servo_speed",
+     "field": "SERVO_SPEED",
+     "options": [
+      {
+       "value": "5",
+       "en": "very slow",
+       "ru": "очень медленно"
+      },
+      {
+       "value": "3",
+       "en": "slow",
+       "ru": "медленно"
+      },
+      {
+       "value": "2",
+       "en": "normally",
+       "ru": "нормально"
+      },
+      {
+       "value": "1",
+       "en": "fast",
+       "ru": "быстро"
+      },
+      {
+       "value": "0",
+       "en": "very fast",
+       "ru": "очень быстро"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "5"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_move_servo_foot": {
+  "opcode": "otto_move_servo_foot",
+  "category": "otto",
+  "shape": "stack",
+  "ru": "Установить ЛН:[OTTO_LL]ПН:[OTTO_RL]ЛС:[OTTO_LF]ПС[OTTO_RF] в позицию [SERVO_SPEED]",
+  "en": "Set LL:[OTTO_LL]RL:[OTTO_RL]LF:[OTTO_LF]RF[OTTO_RF] position [SERVO_SPEED]",
+  "inputs": [
+   {
+    "name": "OTTO_LL",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "90"
+   },
+   {
+    "name": "OTTO_RL",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "90"
+   },
+   {
+    "name": "OTTO_LF",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "90"
+   },
+   {
+    "name": "OTTO_RF",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "90"
+   },
+   {
+    "name": "SERVO_SPEED",
+    "kind": "value",
+    "shadow": "otto_servo_speed",
+    "menu": {
+     "opcode": "otto_servo_speed",
+     "field": "SERVO_SPEED",
+     "options": [
+      {
+       "value": "5",
+       "en": "very slow",
+       "ru": "очень медленно"
+      },
+      {
+       "value": "3",
+       "en": "slow",
+       "ru": "медленно"
+      },
+      {
+       "value": "2",
+       "en": "normally",
+       "ru": "нормально"
+      },
+      {
+       "value": "1",
+       "en": "fast",
+       "ru": "быстро"
+      },
+      {
+       "value": "0",
+       "en": "very fast",
+       "ru": "очень быстро"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "5"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_move_servo_hand": {
+  "opcode": "otto_move_servo_hand",
+  "category": "otto",
+  "shape": "stack",
+  "ru": "Установить ЛР:[OTTO_LH] ПР:[OTTO_RH] в позицию [SERVO_SPEED]",
+  "en": "Set LH:[OTTO_LH] RH:[OTTO_RH] position [SERVO_SPEED]",
+  "inputs": [
+   {
+    "name": "OTTO_LH",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "90"
+   },
+   {
+    "name": "OTTO_RH",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "90"
+   },
+   {
+    "name": "SERVO_SPEED",
+    "kind": "value",
+    "shadow": "otto_servo_speed",
+    "menu": {
+     "opcode": "otto_servo_speed",
+     "field": "SERVO_SPEED",
+     "options": [
+      {
+       "value": "5",
+       "en": "very slow",
+       "ru": "очень медленно"
+      },
+      {
+       "value": "3",
+       "en": "slow",
+       "ru": "медленно"
+      },
+      {
+       "value": "2",
+       "en": "normally",
+       "ru": "нормально"
+      },
+      {
+       "value": "1",
+       "en": "fast",
+       "ru": "быстро"
+      },
+      {
+       "value": "0",
+       "en": "very fast",
+       "ru": "очень быстро"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "5"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_play_sound": {
+  "opcode": "otto_play_sound",
+  "category": "otto",
+  "shape": "stack",
+  "ru": "Сыграть ноту [NOTE_TYPE] [NOTE_DURA] секунды",
+  "en": "Play note [NOTE_TYPE] for [NOTE_DURA]",
+  "inputs": [
+   {
+    "name": "NOTE_TYPE",
+    "kind": "value",
+    "shadow": "note2"
+   },
+   {
+    "name": "NOTE_DURA",
+    "kind": "value",
+    "shadow": "otto_dura",
+    "menu": {
+     "opcode": "otto_dura",
+     "field": "LED_NUMS",
+     "options": [
+      {
+       "value": "1",
+       "en": "1/8",
+       "ru": "1/8"
+      },
+      {
+       "value": "2",
+       "en": "1/4",
+       "ru": "1/4"
+      },
+      {
+       "value": "3",
+       "en": "3/8",
+       "ru": "3/8"
+      },
+      {
+       "value": "4",
+       "en": "1/2",
+       "ru": "1/2"
+      },
+      {
+       "value": "5",
+       "en": "5/8",
+       "ru": "5/8"
+      },
+      {
+       "value": "6",
+       "en": "3/4",
+       "ru": "3/4"
+      },
+      {
+       "value": "7",
+       "en": "7/8",
+       "ru": "7/8"
+      },
+      {
+       "value": "8",
+       "en": "1",
+       "ru": "1"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_matrix_pix": {
+  "opcode": "otto_matrix_pix",
+  "category": "otto",
+  "shape": "stack",
+  "ru": "Установить пиксель матрицы [MATRIX_STROK] [MATRIX_STOLB] [ON_OFF]",
+  "en": "Dancing robot matrix set pixel [MATRIX_STROK] [MATRIX_STOLB] [ON_OFF]",
+  "inputs": [
+   {
+    "name": "MATRIX_STROK",
+    "kind": "value",
+    "shadow": "led_nums",
+    "menu": {
+     "opcode": "led_nums",
+     "field": "LED_NUMS",
+     "options": [
+      {
+       "value": "0",
+       "en": "0",
+       "ru": "0"
+      },
+      {
+       "value": "1",
+       "en": "1",
+       "ru": "1"
+      },
+      {
+       "value": "2",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "3",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "4",
+       "en": "4",
+       "ru": "4"
+      },
+      {
+       "value": "5",
+       "en": "5",
+       "ru": "5"
+      },
+      {
+       "value": "6",
+       "en": "6",
+       "ru": "6"
+      },
+      {
+       "value": "7",
+       "en": "7",
+       "ru": "7"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "0"
+   },
+   {
+    "name": "MATRIX_STOLB",
+    "kind": "value",
+    "shadow": "led_nums",
+    "menu": {
+     "opcode": "led_nums",
+     "field": "LED_NUMS",
+     "options": [
+      {
+       "value": "0",
+       "en": "0",
+       "ru": "0"
+      },
+      {
+       "value": "1",
+       "en": "1",
+       "ru": "1"
+      },
+      {
+       "value": "2",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "3",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "4",
+       "en": "4",
+       "ru": "4"
+      },
+      {
+       "value": "5",
+       "en": "5",
+       "ru": "5"
+      },
+      {
+       "value": "6",
+       "en": "6",
+       "ru": "6"
+      },
+      {
+       "value": "7",
+       "en": "7",
+       "ru": "7"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "0"
+   },
+   {
+    "name": "ON_OFF",
+    "kind": "value",
+    "shadow": "otto_on_off",
+    "menu": {
+     "opcode": "otto_on_off",
+     "field": "ON_OFF",
+     "options": [
+      {
+       "value": "1",
+       "en": "on",
+       "ru": "включить"
+      },
+      {
+       "value": "0",
+       "en": "off",
+       "ru": "выключить"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_matrix_all_pix": {
+  "opcode": "otto_matrix_all_pix",
+  "category": "otto",
+  "shape": "stack",
+  "ru": "Отобразить [MATRIX]",
+  "en": "Display [MATRIX]",
+  "inputs": [
+   {
+    "name": "MATRIX",
+    "kind": "value",
+    "shadow": "matrix"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_text": {
+  "opcode": "otto_text",
+  "category": "otto",
+  "shape": "stack",
+  "ru": "Отобразить текст [OTTO_TEXT] [TEXT_SPEED]",
+  "en": "Display text [OTTO_TEXT] [TEXT_SPEED]",
+  "inputs": [
+   {
+    "name": "OTTO_TEXT",
+    "kind": "value",
+    "shadow": "text",
+    "default": "Привет!"
+   },
+   {
+    "name": "TEXT_SPEED",
+    "kind": "value",
+    "shadow": "otto_text_speed",
+    "menu": {
+     "opcode": "otto_text_speed",
+     "field": "SERVO_SPEED",
+     "options": [
+      {
+       "value": "15",
+       "en": "very slow",
+       "ru": "очень медленно"
+      },
+      {
+       "value": "10",
+       "en": "slow",
+       "ru": "медленно"
+      },
+      {
+       "value": "7",
+       "en": "normally",
+       "ru": "нормально"
+      },
+      {
+       "value": "5",
+       "en": "fast",
+       "ru": "быстро"
+      },
+      {
+       "value": "3",
+       "en": "very fast",
+       "ru": "очень быстро"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "15"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_led": {
+  "opcode": "otto_led",
+  "category": "otto",
+  "shape": "stack",
+  "ru": "Нос R:[ON_OFF_R] G:[ON_OFF_G] B:[ON_OFF_B]",
+  "en": "Nose R:[ON_OFF_R] G:[ON_OFF_G] B:[ON_OFF_B]",
+  "inputs": [
+   {
+    "name": "ON_OFF_R",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "255"
+   },
+   {
+    "name": "ON_OFF_G",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "255"
+   },
+   {
+    "name": "ON_OFF_B",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "255"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_hearing": {
+  "opcode": "otto_hearing",
+  "category": "otto",
+  "shape": "reporter",
+  "ru": "Звук",
+  "en": "Sound",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "otto_distance": {
+  "opcode": "otto_distance",
+  "category": "otto",
+  "shape": "reporter",
+  "ru": "Расстояние",
+  "en": "Distance",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "otto"
+ },
+ "newcat_set_dig": {
+  "opcode": "newcat_set_dig",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Установить цифровой пин [PIN] на выход [HIGH_LOW]",
+  "en": "Set digital pin [PIN] output as [HIGH_LOW]",
+  "inputs": [
+   {
+    "name": "PIN",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "6"
+   },
+   {
+    "name": "HIGH_LOW",
+    "kind": "value",
+    "shadow": "high_low",
+    "menu": {
+     "opcode": "high_low",
+     "field": "HIGH_LOW",
+     "options": [
+      {
+       "value": "1",
+       "en": "HIGH",
+       "ru": "HIGH"
+      },
+      {
+       "value": "0",
+       "en": "LOW",
+       "ru": "LOW"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_set_ana": {
+  "opcode": "newcat_set_ana",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Установить аналог пин [PWM_PINS] на выход [NUM]",
+  "en": "Set analog pin [PWM_PINS] output as [NUM]",
+  "inputs": [
+   {
+    "name": "PWM_PINS",
+    "kind": "value",
+    "shadow": "pwm_pins",
+    "menu": {
+     "opcode": "pwm_pins",
+     "field": "PWM_PINS",
+     "options": [
+      {
+       "value": "3",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "5",
+       "en": "5",
+       "ru": "5"
+      },
+      {
+       "value": "6",
+       "en": "6",
+       "ru": "6"
+      },
+      {
+       "value": "9",
+       "en": "9",
+       "ru": "9"
+      },
+      {
+       "value": "10",
+       "en": "10",
+       "ru": "10"
+      },
+      {
+       "value": "11",
+       "en": "11",
+       "ru": "11"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "3"
+   },
+   {
+    "name": "NUM",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_set_pult": {
+  "opcode": "newcat_set_pult",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Установить пин [NUM] для пульта",
+  "en": "Set pin [NUM] for pult",
+  "inputs": [
+   {
+    "name": "NUM",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_set_hum": {
+  "opcode": "newcat_set_hum",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Установть влажность [NUM] пин, тепмература [NUM2] пин",
+  "en": "Set humidity [NUM] pin, temperature [NUM2] pin",
+  "inputs": [
+   {
+    "name": "NUM",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   },
+   {
+    "name": "NUM2",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_play_sound": {
+  "opcode": "newcat_play_sound",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Играть ноту на [PIN] пине, нота [NOTE_TYPE] длительность [NOTE_DURA]",
+  "en": "Play tone pin [PIN] note [NOTE_TYPE] dur [NOTE_DURA]",
+  "inputs": [
+   {
+    "name": "PIN",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   },
+   {
+    "name": "NOTE_TYPE",
+    "kind": "value",
+    "shadow": "note2"
+   },
+   {
+    "name": "NOTE_DURA",
+    "kind": "value",
+    "shadow": "otto_dura",
+    "menu": {
+     "opcode": "otto_dura",
+     "field": "LED_NUMS",
+     "options": [
+      {
+       "value": "1",
+       "en": "1/8",
+       "ru": "1/8"
+      },
+      {
+       "value": "2",
+       "en": "1/4",
+       "ru": "1/4"
+      },
+      {
+       "value": "3",
+       "en": "3/8",
+       "ru": "3/8"
+      },
+      {
+       "value": "4",
+       "en": "1/2",
+       "ru": "1/2"
+      },
+      {
+       "value": "5",
+       "en": "5/8",
+       "ru": "5/8"
+      },
+      {
+       "value": "6",
+       "en": "3/4",
+       "ru": "3/4"
+      },
+      {
+       "value": "7",
+       "en": "7/8",
+       "ru": "7/8"
+      },
+      {
+       "value": "8",
+       "en": "1",
+       "ru": "1"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_servo": {
+  "opcode": "newcat_servo",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Установить сервомотор на [PIN] пине на угол [ANGLE]",
+  "en": "Move servo on pin [PIN] on angle [ANGLE]",
+  "inputs": [
+   {
+    "name": "PIN",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   },
+   {
+    "name": "ANGLE",
+    "kind": "value",
+    "shadow": "math_angle",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_go_dig": {
+  "opcode": "newcat_go_dig",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Сделать пин [PIN] цифровым",
+  "en": "Make pin [PIN] digital",
+  "inputs": [
+   {
+    "name": "PIN",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_go_anal": {
+  "opcode": "newcat_go_anal",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Сделать пин [PIN_ANAL] аналоговым",
+  "en": "Make pin [PIN_ANAL] analog",
+  "inputs": [
+   {
+    "name": "PIN_ANAL",
+    "kind": "value",
+    "shadow": "pin_anal",
+    "menu": {
+     "opcode": "pin_anal",
+     "field": "PIN_ANAL",
+     "options": [
+      {
+       "value": "14",
+       "en": "a0",
+       "ru": "a0"
+      },
+      {
+       "value": "15",
+       "en": "a1",
+       "ru": "a1"
+      },
+      {
+       "value": "16",
+       "en": "a2",
+       "ru": "a2"
+      },
+      {
+       "value": "17",
+       "en": "a3",
+       "ru": "a3"
+      },
+      {
+       "value": "18",
+       "en": "a4",
+       "ru": "a4"
+      },
+      {
+       "value": "19",
+       "en": "a5",
+       "ru": "a5"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "14"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_go_sonic": {
+  "opcode": "newcat_go_sonic",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Установить пины [SOSONIC] echo [PIN2] trig для ультрасоника",
+  "en": "Make pins [SOSONIC] echo [PIN2] trig for sonic",
+  "inputs": [
+   {
+    "name": "SOSONIC",
+    "kind": "value",
+    "shadow": "sosonic",
+    "menu": {
+     "opcode": "sosonic",
+     "field": "SOSONIC",
+     "options": [
+      {
+       "value": "2",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "3",
+       "en": "3",
+       "ru": "3"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "2"
+   },
+   {
+    "name": "PIN2",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_read_dig": {
+  "opcode": "newcat_read_dig",
+  "category": "newcat",
+  "shape": "boolean",
+  "ru": "Считать цифровой пин [PIN]",
+  "en": "Read digital pin [PIN]",
+  "inputs": [
+   {
+    "name": "PIN",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_read_ana": {
+  "opcode": "newcat_read_ana",
+  "category": "newcat",
+  "shape": "reporter",
+  "ru": "Считать значение с [PIN] пина",
+  "en": "Read analog pin [PIN]",
+  "inputs": [
+   {
+    "name": "PIN",
+    "kind": "value",
+    "shadow": "pin_anal",
+    "menu": {
+     "opcode": "pin_anal",
+     "field": "PIN_ANAL",
+     "options": [
+      {
+       "value": "14",
+       "en": "a0",
+       "ru": "a0"
+      },
+      {
+       "value": "15",
+       "en": "a1",
+       "ru": "a1"
+      },
+      {
+       "value": "16",
+       "en": "a2",
+       "ru": "a2"
+      },
+      {
+       "value": "17",
+       "en": "a3",
+       "ru": "a3"
+      },
+      {
+       "value": "18",
+       "en": "a4",
+       "ru": "a4"
+      },
+      {
+       "value": "19",
+       "en": "a5",
+       "ru": "a5"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "14"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_set_kursor": {
+  "opcode": "newcat_set_kursor",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Установить курсор в [NUM] [STOLB]",
+  "en": "Set cursor in [NUM] [STOLB]",
+  "inputs": [
+   {
+    "name": "NUM",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   },
+   {
+    "name": "STOLB",
+    "kind": "value",
+    "shadow": "stolb",
+    "menu": {
+     "opcode": "stolb",
+     "field": "STOLB",
+     "options": [
+      {
+       "value": "0",
+       "en": "0",
+       "ru": "0"
+      },
+      {
+       "value": "1",
+       "en": "1",
+       "ru": "1"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_set_text": {
+  "opcode": "newcat_set_text",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Установить текст [MESSAGE]",
+  "en": "Set text [MESSAGE]",
+  "inputs": [
+   {
+    "name": "MESSAGE",
+    "kind": "value",
+    "shadow": "text",
+    "default": "Привет!"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "newcat_init_lcd": {
+  "opcode": "newcat_init_lcd",
+  "category": "newcat",
+  "shape": "stack",
+  "ru": "Инициализировать или очистить дисплей",
+  "en": "Init or clear LCD display",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "arduino"
+ },
+ "iot_trigger_on_topic": {
+  "opcode": "iot_trigger_on_topic",
+  "category": "iotblocks",
+  "shape": "boolean",
+  "ru": "триггер [TNAME] топика",
+  "en": "trigger of [TNAME] topic",
+  "inputs": [
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "iot_parse_data": {
+  "opcode": "iot_parse_data",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "получить значения датчиков из [TNAME] топика",
+  "en": "Parse data from [TNAME] topic",
+  "inputs": [
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_broker_init": {
+  "opcode": "iot_broker_init",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Установить протокол [BPROTCOL] адрес [BADDR] и порт брокера [BPORT]",
+  "en": "Set broker protocol [BPROTCOL] address [BADDR] and port [BPORT]",
+  "inputs": [
+   {
+    "name": "BPROTCOL",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   },
+   {
+    "name": "BADDR",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   },
+   {
+    "name": "BPORT",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_prefix": {
+  "opcode": "iot_set_prefix",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Установить префикс для топика [PREFIX]",
+  "en": "Set prefix for topic [PREFIX]",
+  "inputs": [
+   {
+    "name": "PREFIX",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_mess_to_topic": {
+  "opcode": "iot_mess_to_topic",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Имя топика: [TNAME]; Сообщение: [MESSAGE]",
+  "en": "Topic name: [TNAME]; Message: [MESSAGE]",
+  "inputs": [
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   },
+   {
+    "name": "MESSAGE",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_subscribe_to_topic": {
+  "opcode": "iot_subscribe_to_topic",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Подписаться на [TNAME] топик",
+  "en": "Subscribe to [TNAME] topic",
+  "inputs": [
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_receive_message": {
+  "opcode": "iot_receive_message",
+  "category": "iotblocks",
+  "shape": "reporter",
+  "ru": "Последнее сообщение из [TNAME] топика",
+  "en": "Get message from [TNAME] topic",
+  "inputs": [
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_logpass": {
+  "opcode": "iot_set_logpass",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Логин: [UNAME]; Пароль: [PASS]",
+  "en": "Login: [UNAME]; Password: [PASS]",
+  "inputs": [
+   {
+    "name": "UNAME",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   },
+   {
+    "name": "PASS",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_wifi": {
+  "opcode": "iot_set_wifi",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Установить Wi-Fi SSID: [SSID] Пароль: [PASS]",
+  "en": "Set wifi SSID: [SSID] PASS: [PASS]",
+  "inputs": [
+   {
+    "name": "SSID",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   },
+   {
+    "name": "PASS",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_client_id": {
+  "opcode": "iot_set_client_id",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Установить id клиента: [ID]",
+  "en": "Set client id: [ID]",
+  "inputs": [
+   {
+    "name": "ID",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_delay_for_topic": {
+  "opcode": "iot_set_delay_for_topic",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Период получения значения [DELAY] для [TNAME] топика",
+  "en": "Set recieve period [DELAY] for [TNAME] topic",
+  "inputs": [
+   {
+    "name": "DELAY",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_event_more": {
+  "opcode": "iot_event_more",
+  "category": "iotblocks",
+  "shape": "hat",
+  "ru": "Когда топик [TNAME] выше порогового значения",
+  "en": "When topic [TNAME] upper treshold",
+  "inputs": [
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "iot_topic",
+    "menu": {
+     "opcode": "iot_topic",
+     "field": "TNAME",
+     "options": [
+      {
+       "value": "air",
+       "en": "air quality",
+       "ru": "air quality"
+      },
+      {
+       "value": "dis",
+       "en": "distance",
+       "ru": "distance"
+      },
+      {
+       "value": "tem",
+       "en": "temperature",
+       "ru": "temperature"
+      },
+      {
+       "value": "hum",
+       "en": "humidity",
+       "ru": "humidity"
+      },
+      {
+       "value": "lux",
+       "en": "lux",
+       "ru": "lux"
+      },
+      {
+       "value": "wind",
+       "en": "wind",
+       "ru": "wind"
+      },
+      {
+       "value": "snd",
+       "en": "sound",
+       "ru": "sound"
+      },
+      {
+       "value": "txt",
+       "en": "text",
+       "ru": "text"
+      },
+      {
+       "value": "txt2",
+       "en": "text2",
+       "ru": "text2"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "air"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_event_less": {
+  "opcode": "iot_event_less",
+  "category": "iotblocks",
+  "shape": "hat",
+  "ru": "Когда топик [TNAME] ниже порогового значения",
+  "en": "When topic [TNAME] under treshold",
+  "inputs": [
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "iot_topic",
+    "menu": {
+     "opcode": "iot_topic",
+     "field": "TNAME",
+     "options": [
+      {
+       "value": "air",
+       "en": "air quality",
+       "ru": "air quality"
+      },
+      {
+       "value": "dis",
+       "en": "distance",
+       "ru": "distance"
+      },
+      {
+       "value": "tem",
+       "en": "temperature",
+       "ru": "temperature"
+      },
+      {
+       "value": "hum",
+       "en": "humidity",
+       "ru": "humidity"
+      },
+      {
+       "value": "lux",
+       "en": "lux",
+       "ru": "lux"
+      },
+      {
+       "value": "wind",
+       "en": "wind",
+       "ru": "wind"
+      },
+      {
+       "value": "snd",
+       "en": "sound",
+       "ru": "sound"
+      },
+      {
+       "value": "txt",
+       "en": "text",
+       "ru": "text"
+      },
+      {
+       "value": "txt2",
+       "en": "text2",
+       "ru": "text2"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "air"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_under_treshold": {
+  "opcode": "iot_set_under_treshold",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Установить нижнюю границу [TRESH] для топика [TNAME]",
+  "en": "Set under bound [TRESH] for topic [TNAME]",
+  "inputs": [
+   {
+    "name": "TRESH",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "iot_topic",
+    "menu": {
+     "opcode": "iot_topic",
+     "field": "TNAME",
+     "options": [
+      {
+       "value": "air",
+       "en": "air quality",
+       "ru": "air quality"
+      },
+      {
+       "value": "dis",
+       "en": "distance",
+       "ru": "distance"
+      },
+      {
+       "value": "tem",
+       "en": "temperature",
+       "ru": "temperature"
+      },
+      {
+       "value": "hum",
+       "en": "humidity",
+       "ru": "humidity"
+      },
+      {
+       "value": "lux",
+       "en": "lux",
+       "ru": "lux"
+      },
+      {
+       "value": "wind",
+       "en": "wind",
+       "ru": "wind"
+      },
+      {
+       "value": "snd",
+       "en": "sound",
+       "ru": "sound"
+      },
+      {
+       "value": "txt",
+       "en": "text",
+       "ru": "text"
+      },
+      {
+       "value": "txt2",
+       "en": "text2",
+       "ru": "text2"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "air"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_upper_treshold": {
+  "opcode": "iot_set_upper_treshold",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Установить верхнюю границу [TRESH] для топика [TNAME]",
+  "en": "Set upper bound [TRESH] for topic [TNAME]",
+  "inputs": [
+   {
+    "name": "TRESH",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "iot_topic",
+    "menu": {
+     "opcode": "iot_topic",
+     "field": "TNAME",
+     "options": [
+      {
+       "value": "air",
+       "en": "air quality",
+       "ru": "air quality"
+      },
+      {
+       "value": "dis",
+       "en": "distance",
+       "ru": "distance"
+      },
+      {
+       "value": "tem",
+       "en": "temperature",
+       "ru": "temperature"
+      },
+      {
+       "value": "hum",
+       "en": "humidity",
+       "ru": "humidity"
+      },
+      {
+       "value": "lux",
+       "en": "lux",
+       "ru": "lux"
+      },
+      {
+       "value": "wind",
+       "en": "wind",
+       "ru": "wind"
+      },
+      {
+       "value": "snd",
+       "en": "sound",
+       "ru": "sound"
+      },
+      {
+       "value": "txt",
+       "en": "text",
+       "ru": "text"
+      },
+      {
+       "value": "txt2",
+       "en": "text2",
+       "ru": "text2"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "air"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_both_treshold": {
+  "opcode": "iot_set_both_treshold",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Установить нижнюю [TRESH] и верхнюю [TRESH2] границы для топика [TNAME]",
+  "en": "Set under [TRESH] and upper [TRESH2] bounds for topic [TNAME]",
+  "inputs": [
+   {
+    "name": "TRESH",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "TRESH2",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "iot_topic",
+    "menu": {
+     "opcode": "iot_topic",
+     "field": "TNAME",
+     "options": [
+      {
+       "value": "air",
+       "en": "air quality",
+       "ru": "air quality"
+      },
+      {
+       "value": "dis",
+       "en": "distance",
+       "ru": "distance"
+      },
+      {
+       "value": "tem",
+       "en": "temperature",
+       "ru": "temperature"
+      },
+      {
+       "value": "hum",
+       "en": "humidity",
+       "ru": "humidity"
+      },
+      {
+       "value": "lux",
+       "en": "lux",
+       "ru": "lux"
+      },
+      {
+       "value": "wind",
+       "en": "wind",
+       "ru": "wind"
+      },
+      {
+       "value": "snd",
+       "en": "sound",
+       "ru": "sound"
+      },
+      {
+       "value": "txt",
+       "en": "text",
+       "ru": "text"
+      },
+      {
+       "value": "txt2",
+       "en": "text2",
+       "ru": "text2"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "air"
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_connection_status": {
+  "opcode": "iot_connection_status",
+  "category": "iotblocks",
+  "shape": "reporter",
+  "ru": "Статус подключения",
+  "en": "Connection status",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_connection_log": {
+  "opcode": "iot_connection_log",
+  "category": "iotblocks",
+  "shape": "reporter",
+  "ru": "Лог подключения",
+  "en": "Connection log",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "iot_set_delay_for_publish": {
+  "opcode": "iot_set_delay_for_publish",
+  "category": "iotblocks",
+  "shape": "stack",
+  "ru": "Установить задержку [DELAY] для отправки значения в топик [TNAME]",
+  "en": "Set publishing delay [DELAY] for topic [TNAME]",
+  "inputs": [
+   {
+    "name": "DELAY",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "TNAME",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true,
+  "device": "iot"
+ },
+ "motion_movesteps": {
+  "opcode": "motion_movesteps",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "идти [STEPS] шагов",
+  "en": "move [STEPS] steps",
+  "inputs": [
+   {
+    "name": "STEPS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "10"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_turnright": {
+  "opcode": "motion_turnright",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "повернуть ↻ на [DEGREES] градусов",
+  "en": "turn ↻ [DEGREES] degrees",
+  "inputs": [
+   {
+    "name": "DEGREES",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "15"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_turnleft": {
+  "opcode": "motion_turnleft",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "повернуть ↺ на [DEGREES] градусов",
+  "en": "turn ↺ [DEGREES] degrees",
+  "inputs": [
+   {
+    "name": "DEGREES",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "15"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_goto": {
+  "opcode": "motion_goto",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "перейти на [TO]",
+  "en": "go to [TO]",
+  "inputs": [
+   {
+    "name": "TO",
+    "kind": "value",
+    "shadow": "motion_goto_menu",
+    "menu": {
+     "opcode": "motion_goto_menu",
+     "field": "TO",
+     "options": [
+      {
+       "value": "_mouse_",
+       "en": "mouse-pointer",
+       "ru": "указатель мыши"
+      },
+      {
+       "value": "_random_",
+       "en": "random position",
+       "ru": "случайное положение"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "_mouse_"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_gotoxy": {
+  "opcode": "motion_gotoxy",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "перейти в x: [X] y: [Y]",
+  "en": "go to x: [X] y: [Y]",
+  "inputs": [
+   {
+    "name": "X",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   },
+   {
+    "name": "Y",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_glideto": {
+  "opcode": "motion_glideto",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "плыть [SECS] секунд к [TO]",
+  "en": "glide [SECS] secs to [TO]",
+  "inputs": [
+   {
+    "name": "SECS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   },
+   {
+    "name": "TO",
+    "kind": "value",
+    "shadow": "motion_glideto_menu",
+    "menu": {
+     "opcode": "motion_glideto_menu",
+     "field": "TO",
+     "options": [
+      {
+       "value": "_mouse_",
+       "en": "mouse-pointer",
+       "ru": "указатель мыши"
+      },
+      {
+       "value": "_random_",
+       "en": "random position",
+       "ru": "случайное положение"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "_mouse_"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_glidesecstoxy": {
+  "opcode": "motion_glidesecstoxy",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "плыть [SECS] секунд в точку x: [X] y: [Y]",
+  "en": "glide [SECS] secs to x: [X] y: [Y]",
+  "inputs": [
+   {
+    "name": "SECS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   },
+   {
+    "name": "X",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   },
+   {
+    "name": "Y",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_pointindirection": {
+  "opcode": "motion_pointindirection",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "повернуться в направлении [DIRECTION]",
+  "en": "point in direction [DIRECTION]",
+  "inputs": [
+   {
+    "name": "DIRECTION",
+    "kind": "value",
+    "shadow": "math_angle",
+    "default": "90"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_pointtowards": {
+  "opcode": "motion_pointtowards",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "повернуться к [TOWARDS]",
+  "en": "point towards [TOWARDS]",
+  "inputs": [
+   {
+    "name": "TOWARDS",
+    "kind": "value",
+    "shadow": "motion_pointtowards_menu",
+    "menu": {
+     "opcode": "motion_pointtowards_menu",
+     "field": "TOWARDS",
+     "options": [
+      {
+       "value": "_mouse_",
+       "en": "mouse-pointer",
+       "ru": "указатель мыши"
+      },
+      {
+       "value": "_random_",
+       "en": "random direction",
+       "ru": "случайно направление"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "_mouse_"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_changexby": {
+  "opcode": "motion_changexby",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "изменить x на [DX]",
+  "en": "change x by [DX]",
+  "inputs": [
+   {
+    "name": "DX",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "10"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_setx": {
+  "opcode": "motion_setx",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "установить x в [X]",
+  "en": "set x to [X]",
+  "inputs": [
+   {
+    "name": "X",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_changeyby": {
+  "opcode": "motion_changeyby",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "изменить y на [DY]",
+  "en": "change y by [DY]",
+  "inputs": [
+   {
+    "name": "DY",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "10"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_sety": {
+  "opcode": "motion_sety",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "установить y в [Y]",
+  "en": "set y to [Y]",
+  "inputs": [
+   {
+    "name": "Y",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_ifonedgebounce": {
+  "opcode": "motion_ifonedgebounce",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "если касается края, оттолкнуться",
+  "en": "if on edge, bounce",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_setrotationstyle": {
+  "opcode": "motion_setrotationstyle",
+  "category": "motion",
+  "shape": "stack",
+  "ru": "установить способ вращения [STYLE]",
+  "en": "set rotation style [STYLE]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "STYLE",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "left-right",
+      "en": "left-right",
+      "ru": "влево-вправо"
+     },
+     {
+      "value": "don't rotate",
+      "en": "don't rotate",
+      "ru": "не вращать"
+     },
+     {
+      "value": "all around",
+      "en": "all around",
+      "ru": "кругом"
+     }
+    ],
+    "default": "left-right"
+   }
+  ],
+  "inPalette": true
+ },
+ "motion_xposition": {
+  "opcode": "motion_xposition",
+  "category": "motion",
+  "shape": "reporter",
+  "ru": "положение x",
+  "en": "x position",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_yposition": {
+  "opcode": "motion_yposition",
+  "category": "motion",
+  "shape": "reporter",
+  "ru": "положение y",
+  "en": "y position",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "motion_direction": {
+  "opcode": "motion_direction",
+  "category": "motion",
+  "shape": "reporter",
+  "ru": "направление",
+  "en": "direction",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_sayforsecs": {
+  "opcode": "looks_sayforsecs",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "говорить [MESSAGE] [SECS] секунд",
+  "en": "say [MESSAGE] for [SECS] seconds",
+  "inputs": [
+   {
+    "name": "MESSAGE",
+    "kind": "value",
+    "shadow": "text",
+    "default": "Привет!"
+   },
+   {
+    "name": "SECS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "2"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_say": {
+  "opcode": "looks_say",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "сказать [MESSAGE]",
+  "en": "say [MESSAGE]",
+  "inputs": [
+   {
+    "name": "MESSAGE",
+    "kind": "value",
+    "shadow": "text",
+    "default": "Привет!"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_thinkforsecs": {
+  "opcode": "looks_thinkforsecs",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "думать [MESSAGE] [SECS] секунд",
+  "en": "think [MESSAGE] for [SECS] seconds",
+  "inputs": [
+   {
+    "name": "MESSAGE",
+    "kind": "value",
+    "shadow": "text",
+    "default": "Хмм..."
+   },
+   {
+    "name": "SECS",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "2"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_think": {
+  "opcode": "looks_think",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "думать [MESSAGE]",
+  "en": "think [MESSAGE]",
+  "inputs": [
+   {
+    "name": "MESSAGE",
+    "kind": "value",
+    "shadow": "text",
+    "default": "Хмм..."
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_switchbackdropto": {
+  "opcode": "looks_switchbackdropto",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "переключить фон на [BACKDROP]",
+  "en": "switch backdrop to [BACKDROP]",
+  "inputs": [
+   {
+    "name": "BACKDROP",
+    "kind": "value",
+    "shadow": "looks_backdrops",
+    "menu": {
+     "opcode": "looks_backdrops",
+     "field": "BACKDROP",
+     "options": [
+      {
+       "value": "BACKDROP1",
+       "en": "backdrop1",
+       "ru": "backdrop1"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "фон1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_switchbackdroptoandwait": {
+  "opcode": "looks_switchbackdroptoandwait",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "переключить фон на [BACKDROP] и ждать",
+  "en": "switch backdrop to [BACKDROP] and wait",
+  "inputs": [
+   {
+    "name": "BACKDROP",
+    "kind": "value",
+    "shadow": "looks_backdrops",
+    "menu": {
+     "opcode": "looks_backdrops",
+     "field": "BACKDROP",
+     "options": [
+      {
+       "value": "BACKDROP1",
+       "en": "backdrop1",
+       "ru": "backdrop1"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "фон1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_nextbackdrop": {
+  "opcode": "looks_nextbackdrop",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "следующий фон",
+  "en": "next backdrop",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_switchcostumeto": {
+  "opcode": "looks_switchcostumeto",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "изменить костюм на [COSTUME]",
+  "en": "switch costume to [COSTUME]",
+  "inputs": [
+   {
+    "name": "COSTUME",
+    "kind": "value",
+    "shadow": "looks_costume",
+    "menu": {
+     "opcode": "looks_costume",
+     "field": "COSTUME",
+     "options": [
+      {
+       "value": "COSTUME1",
+       "en": "costume1",
+       "ru": "costume1"
+      },
+      {
+       "value": "COSTUME2",
+       "en": "costume2",
+       "ru": "costume2"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "костюм1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_nextcostume": {
+  "opcode": "looks_nextcostume",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "следующий костюм",
+  "en": "next costume",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_changesizeby": {
+  "opcode": "looks_changesizeby",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "изменить размер на [CHANGE] %",
+  "en": "change size by [CHANGE]",
+  "inputs": [
+   {
+    "name": "CHANGE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "10"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_setsizeto": {
+  "opcode": "looks_setsizeto",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "установить размер [SIZE] %",
+  "en": "set size to [SIZE] %",
+  "inputs": [
+   {
+    "name": "SIZE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "100"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_changeeffectby": {
+  "opcode": "looks_changeeffectby",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "изменить эффект [EFFECT] на [CHANGE]",
+  "en": "change [EFFECT] effect by [CHANGE]",
+  "inputs": [
+   {
+    "name": "CHANGE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "25"
+   }
+  ],
+  "fields": [
+   {
+    "name": "EFFECT",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "COLOR",
+      "en": "color",
+      "ru": "цвет"
+     },
+     {
+      "value": "FISHEYE",
+      "en": "fisheye",
+      "ru": "рыбий глаз"
+     },
+     {
+      "value": "WHIRL",
+      "en": "whirl",
+      "ru": "завихрение"
+     },
+     {
+      "value": "PIXELATE",
+      "en": "pixelate",
+      "ru": "укрупнение пикселей"
+     },
+     {
+      "value": "MOSAIC",
+      "en": "mosaic",
+      "ru": "мозаика"
+     },
+     {
+      "value": "BRIGHTNESS",
+      "en": "brightness",
+      "ru": "яркость"
+     },
+     {
+      "value": "GHOST",
+      "en": "ghost",
+      "ru": "прозрачность"
+     }
+    ],
+    "default": "COLOR"
+   }
+  ],
+  "inPalette": true
+ },
+ "looks_seteffectto": {
+  "opcode": "looks_seteffectto",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "установить эффект [EFFECT] [VALUE]",
+  "en": "set [EFFECT] effect to [VALUE]",
+  "inputs": [
+   {
+    "name": "VALUE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "0"
+   }
+  ],
+  "fields": [
+   {
+    "name": "EFFECT",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "COLOR",
+      "en": "color",
+      "ru": "цвет"
+     },
+     {
+      "value": "FISHEYE",
+      "en": "fisheye",
+      "ru": "рыбий глаз"
+     },
+     {
+      "value": "WHIRL",
+      "en": "whirl",
+      "ru": "завихрение"
+     },
+     {
+      "value": "PIXELATE",
+      "en": "pixelate",
+      "ru": "укрупнение пикселей"
+     },
+     {
+      "value": "MOSAIC",
+      "en": "mosaic",
+      "ru": "мозаика"
+     },
+     {
+      "value": "BRIGHTNESS",
+      "en": "brightness",
+      "ru": "яркость"
+     },
+     {
+      "value": "GHOST",
+      "en": "ghost",
+      "ru": "прозрачность"
+     }
+    ],
+    "default": "COLOR"
+   }
+  ],
+  "inPalette": true
+ },
+ "looks_cleargraphiceffects": {
+  "opcode": "looks_cleargraphiceffects",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "убрать графические эффекты",
+  "en": "clear graphic effects",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_show": {
+  "opcode": "looks_show",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "показаться",
+  "en": "show",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_hide": {
+  "opcode": "looks_hide",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "спрятаться",
+  "en": "hide",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "looks_gotofrontback": {
+  "opcode": "looks_gotofrontback",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "перейти на [FRONT_BACK] слой",
+  "en": "go to [FRONT_BACK] layer",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "FRONT_BACK",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "front",
+      "en": "front",
+      "ru": "передний"
+     },
+     {
+      "value": "back",
+      "en": "back",
+      "ru": "задний"
+     }
+    ],
+    "default": "front"
+   }
+  ],
+  "inPalette": true
+ },
+ "looks_goforwardbackwardlayers": {
+  "opcode": "looks_goforwardbackwardlayers",
+  "category": "looks",
+  "shape": "stack",
+  "ru": "перейти [FORWARD_BACKWARD] на [NUM] слоя",
+  "en": "go [FORWARD_BACKWARD] [NUM] layers",
+  "inputs": [
+   {
+    "name": "NUM",
+    "kind": "value",
+    "shadow": "math_integer",
+    "default": "1"
+   }
+  ],
+  "fields": [
+   {
+    "name": "FORWARD_BACKWARD",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "forward",
+      "en": "forward",
+      "ru": "вперёд"
+     },
+     {
+      "value": "backward",
+      "en": "backward",
+      "ru": "назад"
+     }
+    ],
+    "default": "forward"
+   }
+  ],
+  "inPalette": true
+ },
+ "looks_backdropnumbername": {
+  "opcode": "looks_backdropnumbername",
+  "category": "looks",
+  "shape": "reporter",
+  "ru": "фон [NUMBER_NAME]",
+  "en": "backdrop [NUMBER_NAME]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "NUMBER_NAME",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "number",
+      "en": "number",
+      "ru": "номер"
+     },
+     {
+      "value": "name",
+      "en": "name",
+      "ru": "имя"
+     }
+    ],
+    "default": "number"
+   }
+  ],
+  "inPalette": true
+ },
+ "looks_costumenumbername": {
+  "opcode": "looks_costumenumbername",
+  "category": "looks",
+  "shape": "reporter",
+  "ru": "костюм [NUMBER_NAME]",
+  "en": "costume [NUMBER_NAME]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "NUMBER_NAME",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "number",
+      "en": "number",
+      "ru": "номер"
+     },
+     {
+      "value": "name",
+      "en": "name",
+      "ru": "имя"
+     }
+    ],
+    "default": "number"
+   }
+  ],
+  "inPalette": true
+ },
+ "looks_size": {
+  "opcode": "looks_size",
+  "category": "looks",
+  "shape": "reporter",
+  "ru": "размер",
+  "en": "size",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sound_playuntildone": {
+  "opcode": "sound_playuntildone",
+  "category": "sound",
+  "shape": "stack",
+  "ru": "играть звук [SOUND_MENU] до конца",
+  "en": "play sound [SOUND_MENU] until done",
+  "inputs": [
+   {
+    "name": "SOUND_MENU",
+    "kind": "value",
+    "shadow": "sound_sounds_menu",
+    "menu": {
+     "opcode": "sound_sounds_menu",
+     "field": "SOUND_MENU",
+     "options": [
+      {
+       "value": "0",
+       "en": "1",
+       "ru": "1"
+      },
+      {
+       "value": "1",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "2",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "3",
+       "en": "4",
+       "ru": "4"
+      },
+      {
+       "value": "4",
+       "en": "5",
+       "ru": "5"
+      },
+      {
+       "value": "5",
+       "en": "6",
+       "ru": "6"
+      },
+      {
+       "value": "6",
+       "en": "7",
+       "ru": "7"
+      },
+      {
+       "value": "7",
+       "en": "8",
+       "ru": "8"
+      },
+      {
+       "value": "8",
+       "en": "9",
+       "ru": "9"
+      },
+      {
+       "value": "9",
+       "en": "10",
+       "ru": "10"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "звук1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sound_play": {
+  "opcode": "sound_play",
+  "category": "sound",
+  "shape": "stack",
+  "ru": "включить звук [SOUND_MENU]",
+  "en": "start sound [SOUND_MENU]",
+  "inputs": [
+   {
+    "name": "SOUND_MENU",
+    "kind": "value",
+    "shadow": "sound_sounds_menu",
+    "menu": {
+     "opcode": "sound_sounds_menu",
+     "field": "SOUND_MENU",
+     "options": [
+      {
+       "value": "0",
+       "en": "1",
+       "ru": "1"
+      },
+      {
+       "value": "1",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "2",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "3",
+       "en": "4",
+       "ru": "4"
+      },
+      {
+       "value": "4",
+       "en": "5",
+       "ru": "5"
+      },
+      {
+       "value": "5",
+       "en": "6",
+       "ru": "6"
+      },
+      {
+       "value": "6",
+       "en": "7",
+       "ru": "7"
+      },
+      {
+       "value": "7",
+       "en": "8",
+       "ru": "8"
+      },
+      {
+       "value": "8",
+       "en": "9",
+       "ru": "9"
+      },
+      {
+       "value": "9",
+       "en": "10",
+       "ru": "10"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "звук1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sound_stopallsounds": {
+  "opcode": "sound_stopallsounds",
+  "category": "sound",
+  "shape": "stack",
+  "ru": "остановить все звуки",
+  "en": "stop all sounds",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sound_changeeffectby": {
+  "opcode": "sound_changeeffectby",
+  "category": "sound",
+  "shape": "stack",
+  "ru": "изменить [EFFECT] эффект на [VALUE]",
+  "en": "change [EFFECT] effect by [VALUE]",
+  "inputs": [
+   {
+    "name": "VALUE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "10"
+   }
+  ],
+  "fields": [
+   {
+    "name": "EFFECT",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "PITCH",
+      "en": "pitch",
+      "ru": "питч"
+     },
+     {
+      "value": "PAN",
+      "en": "pan left/right",
+      "ru": "положение слева/справа"
+     }
+    ],
+    "default": "PITCH"
+   }
+  ],
+  "inPalette": true
+ },
+ "sound_seteffectto": {
+  "opcode": "sound_seteffectto",
+  "category": "sound",
+  "shape": "stack",
+  "ru": "установить эффект [EFFECT] в [VALUE]",
+  "en": "set [EFFECT] effect to [VALUE]",
+  "inputs": [
+   {
+    "name": "VALUE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "100"
+   }
+  ],
+  "fields": [
+   {
+    "name": "EFFECT",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "PITCH",
+      "en": "pitch",
+      "ru": "питч"
+     },
+     {
+      "value": "PAN",
+      "en": "pan left/right",
+      "ru": "положение слева/справа"
+     }
+    ],
+    "default": "PITCH"
+   }
+  ],
+  "inPalette": true
+ },
+ "sound_cleareffects": {
+  "opcode": "sound_cleareffects",
+  "category": "sound",
+  "shape": "stack",
+  "ru": "убрать звуковые эффекты",
+  "en": "clear sound effects",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sound_changevolumeby": {
+  "opcode": "sound_changevolumeby",
+  "category": "sound",
+  "shape": "stack",
+  "ru": "изменить громкость на [VOLUME]",
+  "en": "change volume by [VOLUME]",
+  "inputs": [
+   {
+    "name": "VOLUME",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "-10"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sound_setvolumeto": {
+  "opcode": "sound_setvolumeto",
+  "category": "sound",
+  "shape": "stack",
+  "ru": "установить громкость [VOLUME]%",
+  "en": "set volume to [VOLUME]%",
+  "inputs": [
+   {
+    "name": "VOLUME",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "100"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sound_volume": {
+  "opcode": "sound_volume",
+  "category": "sound",
+  "shape": "reporter",
+  "ru": "громкость звука",
+  "en": "volume",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "event_whenflagclicked": {
+  "opcode": "event_whenflagclicked",
+  "category": "events",
+  "shape": "hat",
+  "ru": "когда ⚑ нажат",
+  "en": "when ⚑ clicked",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "event_whenkeypressed": {
+  "opcode": "event_whenkeypressed",
+  "category": "events",
+  "shape": "hat",
+  "ru": "когда клавиша [KEY_OPTION] нажата",
+  "en": "when [KEY_OPTION] key pressed",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "KEY_OPTION",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "space",
+      "en": "space",
+      "ru": "пробел"
+     },
+     {
+      "value": "up arrow",
+      "en": "up arrow",
+      "ru": "стрелка вверх"
+     },
+     {
+      "value": "down arrow",
+      "en": "down arrow",
+      "ru": "стрелка вниз"
+     },
+     {
+      "value": "right arrow",
+      "en": "right arrow",
+      "ru": "стрелка вправо"
+     },
+     {
+      "value": "left arrow",
+      "en": "left arrow",
+      "ru": "стрелка влево"
+     },
+     {
+      "value": "any",
+      "en": "any",
+      "ru": "любая"
+     },
+     {
+      "value": "a",
+      "en": "a",
+      "ru": "a"
+     },
+     {
+      "value": "b",
+      "en": "b",
+      "ru": "b"
+     },
+     {
+      "value": "c",
+      "en": "c",
+      "ru": "c"
+     },
+     {
+      "value": "d",
+      "en": "d",
+      "ru": "d"
+     },
+     {
+      "value": "e",
+      "en": "e",
+      "ru": "e"
+     },
+     {
+      "value": "f",
+      "en": "f",
+      "ru": "f"
+     },
+     {
+      "value": "g",
+      "en": "g",
+      "ru": "g"
+     },
+     {
+      "value": "h",
+      "en": "h",
+      "ru": "h"
+     },
+     {
+      "value": "i",
+      "en": "i",
+      "ru": "i"
+     },
+     {
+      "value": "j",
+      "en": "j",
+      "ru": "j"
+     },
+     {
+      "value": "k",
+      "en": "k",
+      "ru": "k"
+     },
+     {
+      "value": "l",
+      "en": "l",
+      "ru": "l"
+     },
+     {
+      "value": "m",
+      "en": "m",
+      "ru": "m"
+     },
+     {
+      "value": "n",
+      "en": "n",
+      "ru": "n"
+     },
+     {
+      "value": "o",
+      "en": "o",
+      "ru": "o"
+     },
+     {
+      "value": "p",
+      "en": "p",
+      "ru": "p"
+     },
+     {
+      "value": "q",
+      "en": "q",
+      "ru": "q"
+     },
+     {
+      "value": "r",
+      "en": "r",
+      "ru": "r"
+     },
+     {
+      "value": "s",
+      "en": "s",
+      "ru": "s"
+     },
+     {
+      "value": "t",
+      "en": "t",
+      "ru": "t"
+     },
+     {
+      "value": "u",
+      "en": "u",
+      "ru": "u"
+     },
+     {
+      "value": "v",
+      "en": "v",
+      "ru": "v"
+     },
+     {
+      "value": "w",
+      "en": "w",
+      "ru": "w"
+     },
+     {
+      "value": "x",
+      "en": "x",
+      "ru": "x"
+     },
+     {
+      "value": "y",
+      "en": "y",
+      "ru": "y"
+     },
+     {
+      "value": "z",
+      "en": "z",
+      "ru": "z"
+     },
+     {
+      "value": "0",
+      "en": "0",
+      "ru": "0"
+     },
+     {
+      "value": "1",
+      "en": "1",
+      "ru": "1"
+     },
+     {
+      "value": "2",
+      "en": "2",
+      "ru": "2"
+     },
+     {
+      "value": "3",
+      "en": "3",
+      "ru": "3"
+     },
+     {
+      "value": "4",
+      "en": "4",
+      "ru": "4"
+     },
+     {
+      "value": "5",
+      "en": "5",
+      "ru": "5"
+     },
+     {
+      "value": "6",
+      "en": "6",
+      "ru": "6"
+     },
+     {
+      "value": "7",
+      "en": "7",
+      "ru": "7"
+     },
+     {
+      "value": "8",
+      "en": "8",
+      "ru": "8"
+     },
+     {
+      "value": "9",
+      "en": "9",
+      "ru": "9"
+     }
+    ],
+    "default": "space"
+   }
+  ],
+  "inPalette": true
+ },
+ "event_whenstageclicked": {
+  "opcode": "event_whenstageclicked",
+  "category": "events",
+  "shape": "hat",
+  "ru": "когда кликнут по сцене",
+  "en": "when stage clicked",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "event_whenthisspriteclicked": {
+  "opcode": "event_whenthisspriteclicked",
+  "category": "events",
+  "shape": "hat",
+  "ru": "когда спрайт нажат",
+  "en": "when this sprite clicked",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "event_whenbackdropswitchesto": {
+  "opcode": "event_whenbackdropswitchesto",
+  "category": "events",
+  "shape": "hat",
+  "ru": "когда фон сменился на [BACKDROP]",
+  "en": "when backdrop switches to [BACKDROP]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "BACKDROP",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "BACKDROP1",
+      "en": "backdrop1",
+      "ru": "backdrop1"
+     }
+    ],
+    "default": "BACKDROP1"
+   }
+  ],
+  "inPalette": true
+ },
+ "event_whengreaterthan": {
+  "opcode": "event_whengreaterthan",
+  "category": "events",
+  "shape": "hat",
+  "ru": "когда [WHENGREATERTHANMENU] > [VALUE]",
+  "en": "when [WHENGREATERTHANMENU] > [VALUE]",
+  "inputs": [
+   {
+    "name": "VALUE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "10"
+   }
+  ],
+  "fields": [
+   {
+    "name": "WHENGREATERTHANMENU",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "LOUDNESS",
+      "en": "loudness",
+      "ru": "громкость"
+     },
+     {
+      "value": "TIMER",
+      "en": "timer",
+      "ru": "таймер"
+     }
+    ],
+    "default": "LOUDNESS"
+   }
+  ],
+  "inPalette": true
+ },
+ "event_whenbroadcastreceived": {
+  "opcode": "event_whenbroadcastreceived",
+  "category": "events",
+  "shape": "hat",
+  "ru": "когда я получу [BROADCAST_OPTION]",
+  "en": "when I receive [BROADCAST_OPTION]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "BROADCAST_OPTION",
+    "kind": "broadcast"
+   }
+  ],
+  "inPalette": true
+ },
+ "event_broadcast": {
+  "opcode": "event_broadcast",
+  "category": "events",
+  "shape": "stack",
+  "ru": "передать [BROADCAST_INPUT]",
+  "en": "broadcast [BROADCAST_INPUT]",
+  "inputs": [
+   {
+    "name": "BROADCAST_INPUT",
+    "kind": "value",
+    "shadow": "event_broadcast_menu",
+    "menu": {
+     "opcode": "event_broadcast_menu",
+     "field": "BROADCAST_OPTION",
+     "variableType": "broadcast_msg"
+    },
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "event_broadcastandwait": {
+  "opcode": "event_broadcastandwait",
+  "category": "events",
+  "shape": "stack",
+  "ru": "передать [BROADCAST_INPUT] и ждать до конца",
+  "en": "broadcast [BROADCAST_INPUT] and wait",
+  "inputs": [
+   {
+    "name": "BROADCAST_INPUT",
+    "kind": "value",
+    "shadow": "event_broadcast_menu",
+    "menu": {
+     "opcode": "event_broadcast_menu",
+     "field": "BROADCAST_OPTION",
+     "variableType": "broadcast_msg"
+    },
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_wait": {
+  "opcode": "control_wait",
+  "category": "control",
+  "shape": "stack",
+  "ru": "ждать [DURATION] секунд",
+  "en": "wait [DURATION] seconds",
+  "inputs": [
+   {
+    "name": "DURATION",
+    "kind": "value",
+    "shadow": "math_positive_number",
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_repeat": {
+  "opcode": "control_repeat",
+  "category": "control",
+  "shape": "c",
+  "ru": "повторить [TIMES] раз {SUBSTACK}",
+  "en": "repeat [TIMES] {SUBSTACK}",
+  "inputs": [
+   {
+    "name": "TIMES",
+    "kind": "value",
+    "shadow": "math_whole_number",
+    "default": "10"
+   },
+   {
+    "name": "SUBSTACK",
+    "kind": "statement"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_forever": {
+  "opcode": "control_forever",
+  "category": "control",
+  "shape": "c_end",
+  "ru": "повторять всегда {SUBSTACK}",
+  "en": "forever {SUBSTACK}",
+  "inputs": [
+   {
+    "name": "SUBSTACK",
+    "kind": "statement"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_if": {
+  "opcode": "control_if",
+  "category": "control",
+  "shape": "c",
+  "ru": "если [CONDITION] , то {SUBSTACK}",
+  "en": "if [CONDITION] then {SUBSTACK}",
+  "inputs": [
+   {
+    "name": "CONDITION",
+    "kind": "boolean"
+   },
+   {
+    "name": "SUBSTACK",
+    "kind": "statement"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_if_else": {
+  "opcode": "control_if_else",
+  "category": "control",
+  "shape": "c",
+  "ru": "если [CONDITION] , то {SUBSTACK} иначе {SUBSTACK2}",
+  "en": "if [CONDITION] then {SUBSTACK} else {SUBSTACK2}",
+  "inputs": [
+   {
+    "name": "CONDITION",
+    "kind": "boolean"
+   },
+   {
+    "name": "SUBSTACK",
+    "kind": "statement"
+   },
+   {
+    "name": "SUBSTACK2",
+    "kind": "statement"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_wait_until": {
+  "opcode": "control_wait_until",
+  "category": "control",
+  "shape": "stack",
+  "ru": "ждать до [CONDITION]",
+  "en": "wait until [CONDITION]",
+  "inputs": [
+   {
+    "name": "CONDITION",
+    "kind": "boolean"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_repeat_until": {
+  "opcode": "control_repeat_until",
+  "category": "control",
+  "shape": "c",
+  "ru": "повторять пока не [CONDITION] {SUBSTACK}",
+  "en": "repeat until [CONDITION] {SUBSTACK}",
+  "inputs": [
+   {
+    "name": "CONDITION",
+    "kind": "boolean"
+   },
+   {
+    "name": "SUBSTACK",
+    "kind": "statement"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_create_clone_of": {
+  "opcode": "control_create_clone_of",
+  "category": "control",
+  "shape": "stack",
+  "ru": "создать клон [CLONE_OPTION]",
+  "en": "create clone of [CLONE_OPTION]",
+  "inputs": [
+   {
+    "name": "CLONE_OPTION",
+    "kind": "value",
+    "shadow": "control_create_clone_of_menu",
+    "menu": {
+     "opcode": "control_create_clone_of_menu",
+     "field": "CLONE_OPTION",
+     "options": [
+      {
+       "value": "_myself_",
+       "en": "myself",
+       "ru": "самого себя"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "_myself_"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_start_as_clone": {
+  "opcode": "control_start_as_clone",
+  "category": "control",
+  "shape": "hat",
+  "ru": "когда я начинаю как клон",
+  "en": "when I start as a clone",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_delete_this_clone": {
+  "opcode": "control_delete_this_clone",
+  "category": "control",
+  "shape": "cap",
+  "ru": "удалить клон",
+  "en": "delete this clone",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "control_stop": {
+  "opcode": "control_stop",
+  "category": "control",
+  "shape": "cap",
+  "ru": "стоп [STOP_OPTION]",
+  "en": "stop [STOP_OPTION]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "STOP_OPTION",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "all",
+      "ru": "все",
+      "en": "all"
+     },
+     {
+      "value": "this script",
+      "ru": "этот скрипт",
+      "en": "this script"
+     },
+     {
+      "value": "other scripts in sprite",
+      "ru": "другие скрипты спрайта",
+      "en": "other scripts in sprite"
+     }
+    ],
+    "default": "all"
+   }
+  ],
+  "inPalette": true
+ },
+ "sensing_touchingobject": {
+  "opcode": "sensing_touchingobject",
+  "category": "sensing",
+  "shape": "boolean",
+  "ru": "касается [TOUCHINGOBJECTMENU]?",
+  "en": "touching [TOUCHINGOBJECTMENU]?",
+  "inputs": [
+   {
+    "name": "TOUCHINGOBJECTMENU",
+    "kind": "value",
+    "shadow": "sensing_touchingobjectmenu",
+    "menu": {
+     "opcode": "sensing_touchingobjectmenu",
+     "field": "TOUCHINGOBJECTMENU",
+     "options": [
+      {
+       "value": "_mouse_",
+       "en": "mouse-pointer",
+       "ru": "указатель мыши"
+      },
+      {
+       "value": "_edge_",
+       "en": "edge",
+       "ru": "край"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "_mouse_"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_touchingcolor": {
+  "opcode": "sensing_touchingcolor",
+  "category": "sensing",
+  "shape": "boolean",
+  "ru": "касается цвета [COLOR]?",
+  "en": "touching color [COLOR]?",
+  "inputs": [
+   {
+    "name": "COLOR",
+    "kind": "value",
+    "shadow": "colour_picker",
+    "default": "#ff0000"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_coloristouchingcolor": {
+  "opcode": "sensing_coloristouchingcolor",
+  "category": "sensing",
+  "shape": "boolean",
+  "ru": "цвет [COLOR] касается цвета [COLOR2]?",
+  "en": "color [COLOR] is touching [COLOR2]?",
+  "inputs": [
+   {
+    "name": "COLOR",
+    "kind": "value",
+    "shadow": "colour_picker",
+    "default": "#ff0000"
+   },
+   {
+    "name": "COLOR2",
+    "kind": "value",
+    "shadow": "colour_picker",
+    "default": "#ff0000"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_distanceto": {
+  "opcode": "sensing_distanceto",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "расстояние до [DISTANCETOMENU]",
+  "en": "distance to [DISTANCETOMENU]",
+  "inputs": [
+   {
+    "name": "DISTANCETOMENU",
+    "kind": "value",
+    "shadow": "sensing_distancetomenu",
+    "menu": {
+     "opcode": "sensing_distancetomenu",
+     "field": "DISTANCETOMENU",
+     "options": [
+      {
+       "value": "_mouse_",
+       "en": "mouse-pointer",
+       "ru": "указатель мыши"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "_mouse_"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_askandwait": {
+  "opcode": "sensing_askandwait",
+  "category": "sensing",
+  "shape": "stack",
+  "ru": "спросить [QUESTION] и ждать",
+  "en": "ask [QUESTION] and wait",
+  "inputs": [
+   {
+    "name": "QUESTION",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_answer": {
+  "opcode": "sensing_answer",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "ответ",
+  "en": "answer",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_keypressed": {
+  "opcode": "sensing_keypressed",
+  "category": "sensing",
+  "shape": "boolean",
+  "ru": "клавиша [KEY_OPTION] нажата?",
+  "en": "key [KEY_OPTION] pressed?",
+  "inputs": [
+   {
+    "name": "KEY_OPTION",
+    "kind": "value",
+    "shadow": "sensing_keyoptions",
+    "menu": {
+     "opcode": "sensing_keyoptions",
+     "field": "KEY_OPTION",
+     "options": [
+      {
+       "value": "space",
+       "en": "space",
+       "ru": "пробел"
+      },
+      {
+       "value": "up arrow",
+       "en": "up arrow",
+       "ru": "стрелка вверх"
+      },
+      {
+       "value": "down arrow",
+       "en": "down arrow",
+       "ru": "стрелка вниз"
+      },
+      {
+       "value": "right arrow",
+       "en": "right arrow",
+       "ru": "стрелка вправо"
+      },
+      {
+       "value": "left arrow",
+       "en": "left arrow",
+       "ru": "стрелка влево"
+      },
+      {
+       "value": "any",
+       "en": "any",
+       "ru": "любая"
+      },
+      {
+       "value": "a",
+       "en": "a",
+       "ru": "a"
+      },
+      {
+       "value": "b",
+       "en": "b",
+       "ru": "b"
+      },
+      {
+       "value": "c",
+       "en": "c",
+       "ru": "c"
+      },
+      {
+       "value": "d",
+       "en": "d",
+       "ru": "d"
+      },
+      {
+       "value": "e",
+       "en": "e",
+       "ru": "e"
+      },
+      {
+       "value": "f",
+       "en": "f",
+       "ru": "f"
+      },
+      {
+       "value": "g",
+       "en": "g",
+       "ru": "g"
+      },
+      {
+       "value": "h",
+       "en": "h",
+       "ru": "h"
+      },
+      {
+       "value": "i",
+       "en": "i",
+       "ru": "i"
+      },
+      {
+       "value": "j",
+       "en": "j",
+       "ru": "j"
+      },
+      {
+       "value": "k",
+       "en": "k",
+       "ru": "k"
+      },
+      {
+       "value": "l",
+       "en": "l",
+       "ru": "l"
+      },
+      {
+       "value": "m",
+       "en": "m",
+       "ru": "m"
+      },
+      {
+       "value": "n",
+       "en": "n",
+       "ru": "n"
+      },
+      {
+       "value": "o",
+       "en": "o",
+       "ru": "o"
+      },
+      {
+       "value": "p",
+       "en": "p",
+       "ru": "p"
+      },
+      {
+       "value": "q",
+       "en": "q",
+       "ru": "q"
+      },
+      {
+       "value": "r",
+       "en": "r",
+       "ru": "r"
+      },
+      {
+       "value": "s",
+       "en": "s",
+       "ru": "s"
+      },
+      {
+       "value": "t",
+       "en": "t",
+       "ru": "t"
+      },
+      {
+       "value": "u",
+       "en": "u",
+       "ru": "u"
+      },
+      {
+       "value": "v",
+       "en": "v",
+       "ru": "v"
+      },
+      {
+       "value": "w",
+       "en": "w",
+       "ru": "w"
+      },
+      {
+       "value": "x",
+       "en": "x",
+       "ru": "x"
+      },
+      {
+       "value": "y",
+       "en": "y",
+       "ru": "y"
+      },
+      {
+       "value": "z",
+       "en": "z",
+       "ru": "z"
+      },
+      {
+       "value": "0",
+       "en": "0",
+       "ru": "0"
+      },
+      {
+       "value": "1",
+       "en": "1",
+       "ru": "1"
+      },
+      {
+       "value": "2",
+       "en": "2",
+       "ru": "2"
+      },
+      {
+       "value": "3",
+       "en": "3",
+       "ru": "3"
+      },
+      {
+       "value": "4",
+       "en": "4",
+       "ru": "4"
+      },
+      {
+       "value": "5",
+       "en": "5",
+       "ru": "5"
+      },
+      {
+       "value": "6",
+       "en": "6",
+       "ru": "6"
+      },
+      {
+       "value": "7",
+       "en": "7",
+       "ru": "7"
+      },
+      {
+       "value": "8",
+       "en": "8",
+       "ru": "8"
+      },
+      {
+       "value": "9",
+       "en": "9",
+       "ru": "9"
+      }
+     ],
+     "dynamic": false
+    },
+    "default": "space"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_mousedown": {
+  "opcode": "sensing_mousedown",
+  "category": "sensing",
+  "shape": "boolean",
+  "ru": "мышь нажата?",
+  "en": "mouse down?",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_mousex": {
+  "opcode": "sensing_mousex",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "x мыши",
+  "en": "mouse x",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_mousey": {
+  "opcode": "sensing_mousey",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "y мыши",
+  "en": "mouse y",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_setdragmode": {
+  "opcode": "sensing_setdragmode",
+  "category": "sensing",
+  "shape": "stack",
+  "ru": "перетаскивать [DRAG_MODE]",
+  "en": "set drag mode [DRAG_MODE]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "DRAG_MODE",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "draggable",
+      "en": "draggable",
+      "ru": "можно"
+     },
+     {
+      "value": "not draggable",
+      "en": "not draggable",
+      "ru": "нельзя"
+     }
+    ],
+    "default": "draggable"
+   }
+  ],
+  "inPalette": true
+ },
+ "sensing_loudness": {
+  "opcode": "sensing_loudness",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "громкость",
+  "en": "loudness",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_timer": {
+  "opcode": "sensing_timer",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "таймер",
+  "en": "timer",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_resettimer": {
+  "opcode": "sensing_resettimer",
+  "category": "sensing",
+  "shape": "stack",
+  "ru": "сбросить таймер",
+  "en": "reset timer",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_of": {
+  "opcode": "sensing_of",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "[PROPERTY] от [OBJECT]",
+  "en": "[PROPERTY] of [OBJECT]",
+  "inputs": [
+   {
+    "name": "OBJECT",
+    "kind": "value",
+    "shadow": "sensing_of_object_menu",
+    "menu": {
+     "opcode": "sensing_of_object_menu",
+     "field": "OBJECT",
+     "options": [
+      {
+       "value": "Sprite1",
+       "en": "Sprite1",
+       "ru": "Sprite1"
+      },
+      {
+       "value": "_stage_",
+       "en": "Stage",
+       "ru": "Stage"
+      }
+     ],
+     "dynamic": true
+    },
+    "default": "Sprite1"
+   }
+  ],
+  "fields": [
+   {
+    "name": "PROPERTY",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "x position",
+      "en": "x position",
+      "ru": "положение x"
+     },
+     {
+      "value": "y position",
+      "en": "y position",
+      "ru": "положение y"
+     },
+     {
+      "value": "direction",
+      "en": "direction",
+      "ru": "направление"
+     },
+     {
+      "value": "costume #",
+      "en": "costume #",
+      "ru": "костюм #"
+     },
+     {
+      "value": "costume name",
+      "en": "costume name",
+      "ru": "имя костюма"
+     },
+     {
+      "value": "size",
+      "en": "size",
+      "ru": "размер"
+     },
+     {
+      "value": "volume",
+      "en": "volume",
+      "ru": "громкость"
+     },
+     {
+      "value": "backdrop #",
+      "en": "backdrop #",
+      "ru": "фон #"
+     },
+     {
+      "value": "backdrop name",
+      "en": "backdrop name",
+      "ru": "имя фона"
+     }
+    ],
+    "default": "x position"
+   }
+  ],
+  "inPalette": true
+ },
+ "sensing_current": {
+  "opcode": "sensing_current",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "текущий [CURRENTMENU]",
+  "en": "current [CURRENTMENU]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "CURRENTMENU",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "YEAR",
+      "en": "year",
+      "ru": "год"
+     },
+     {
+      "value": "MONTH",
+      "en": "month",
+      "ru": "месяц"
+     },
+     {
+      "value": "DATE",
+      "en": "date",
+      "ru": "дата"
+     },
+     {
+      "value": "DAYOFWEEK",
+      "en": "day of week",
+      "ru": "день недели"
+     },
+     {
+      "value": "HOUR",
+      "en": "hour",
+      "ru": "час"
+     },
+     {
+      "value": "MINUTE",
+      "en": "minute",
+      "ru": "минута"
+     },
+     {
+      "value": "SECOND",
+      "en": "second",
+      "ru": "секунда"
+     }
+    ],
+    "default": "YEAR"
+   }
+  ],
+  "inPalette": true
+ },
+ "sensing_dayssince2000": {
+  "opcode": "sensing_dayssince2000",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "дней с 2000 г",
+  "en": "days since 2000",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "sensing_username": {
+  "opcode": "sensing_username",
+  "category": "sensing",
+  "shape": "reporter",
+  "ru": "имя участника",
+  "en": "username",
+  "inputs": [],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_add": {
+  "opcode": "operator_add",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "[NUM1] + [NUM2]",
+  "en": "[NUM1] + [NUM2]",
+  "inputs": [
+   {
+    "name": "NUM1",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "NUM2",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_subtract": {
+  "opcode": "operator_subtract",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "[NUM1] - [NUM2]",
+  "en": "[NUM1] - [NUM2]",
+  "inputs": [
+   {
+    "name": "NUM1",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "NUM2",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_multiply": {
+  "opcode": "operator_multiply",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "[NUM1] * [NUM2]",
+  "en": "[NUM1] * [NUM2]",
+  "inputs": [
+   {
+    "name": "NUM1",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "NUM2",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_divide": {
+  "opcode": "operator_divide",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "[NUM1] / [NUM2]",
+  "en": "[NUM1] / [NUM2]",
+  "inputs": [
+   {
+    "name": "NUM1",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "NUM2",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_random": {
+  "opcode": "operator_random",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "выдать случайное от [FROM] до [TO]",
+  "en": "pick random [FROM] to [TO]",
+  "inputs": [
+   {
+    "name": "FROM",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   },
+   {
+    "name": "TO",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "10"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_gt": {
+  "opcode": "operator_gt",
+  "category": "operators",
+  "shape": "boolean",
+  "ru": "[OPERAND1] > [OPERAND2]",
+  "en": "[OPERAND1] > [OPERAND2]",
+  "inputs": [
+   {
+    "name": "OPERAND1",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   },
+   {
+    "name": "OPERAND2",
+    "kind": "value",
+    "shadow": "text",
+    "default": "50"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_lt": {
+  "opcode": "operator_lt",
+  "category": "operators",
+  "shape": "boolean",
+  "ru": "[OPERAND1] < [OPERAND2]",
+  "en": "[OPERAND1] < [OPERAND2]",
+  "inputs": [
+   {
+    "name": "OPERAND1",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   },
+   {
+    "name": "OPERAND2",
+    "kind": "value",
+    "shadow": "text",
+    "default": "50"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_equals": {
+  "opcode": "operator_equals",
+  "category": "operators",
+  "shape": "boolean",
+  "ru": "[OPERAND1] = [OPERAND2]",
+  "en": "[OPERAND1] = [OPERAND2]",
+  "inputs": [
+   {
+    "name": "OPERAND1",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   },
+   {
+    "name": "OPERAND2",
+    "kind": "value",
+    "shadow": "text",
+    "default": "50"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_and": {
+  "opcode": "operator_and",
+  "category": "operators",
+  "shape": "boolean",
+  "ru": "[OPERAND1] и [OPERAND2]",
+  "en": "[OPERAND1] and [OPERAND2]",
+  "inputs": [
+   {
+    "name": "OPERAND1",
+    "kind": "boolean"
+   },
+   {
+    "name": "OPERAND2",
+    "kind": "boolean"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_or": {
+  "opcode": "operator_or",
+  "category": "operators",
+  "shape": "boolean",
+  "ru": "[OPERAND1] или [OPERAND2]",
+  "en": "[OPERAND1] or [OPERAND2]",
+  "inputs": [
+   {
+    "name": "OPERAND1",
+    "kind": "boolean"
+   },
+   {
+    "name": "OPERAND2",
+    "kind": "boolean"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_not": {
+  "opcode": "operator_not",
+  "category": "operators",
+  "shape": "boolean",
+  "ru": "не [OPERAND]",
+  "en": "not [OPERAND]",
+  "inputs": [
+   {
+    "name": "OPERAND",
+    "kind": "boolean"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_join": {
+  "opcode": "operator_join",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "объединить [STRING1] [STRING2]",
+  "en": "join [STRING1] [STRING2]",
+  "inputs": [
+   {
+    "name": "STRING1",
+    "kind": "value",
+    "shadow": "text",
+    "default": "яблоко"
+   },
+   {
+    "name": "STRING2",
+    "kind": "value",
+    "shadow": "text",
+    "default": "банан"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_letter_of": {
+  "opcode": "operator_letter_of",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "буква [LETTER] в [STRING]",
+  "en": "letter [LETTER] of [STRING]",
+  "inputs": [
+   {
+    "name": "LETTER",
+    "kind": "value",
+    "shadow": "math_whole_number",
+    "default": "1"
+   },
+   {
+    "name": "STRING",
+    "kind": "value",
+    "shadow": "text",
+    "default": "яблоко"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_length": {
+  "opcode": "operator_length",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "длина [STRING]",
+  "en": "length of [STRING]",
+  "inputs": [
+   {
+    "name": "STRING",
+    "kind": "value",
+    "shadow": "text",
+    "default": "яблоко"
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_contains": {
+  "opcode": "operator_contains",
+  "category": "operators",
+  "shape": "boolean",
+  "ru": "[STRING1] содержит [STRING2]?",
+  "en": "[STRING1] contains [STRING2]?",
+  "inputs": [
+   {
+    "name": "STRING1",
+    "kind": "value",
+    "shadow": "text",
+    "default": "яблоко"
+   },
+   {
+    "name": "STRING2",
+    "kind": "value",
+    "shadow": "text",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_mod": {
+  "opcode": "operator_mod",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "[NUM1] модуль [NUM2]",
+  "en": "[NUM1] mod [NUM2]",
+  "inputs": [
+   {
+    "name": "NUM1",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   },
+   {
+    "name": "NUM2",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_round": {
+  "opcode": "operator_round",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "округлить [NUM]",
+  "en": "round [NUM]",
+  "inputs": [
+   {
+    "name": "NUM",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   }
+  ],
+  "fields": [],
+  "inPalette": true
+ },
+ "operator_mathop": {
+  "opcode": "operator_mathop",
+  "category": "operators",
+  "shape": "reporter",
+  "ru": "[OPERATOR] от [NUM]",
+  "en": "[OPERATOR] of [NUM]",
+  "inputs": [
+   {
+    "name": "NUM",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": ""
+   }
+  ],
+  "fields": [
+   {
+    "name": "OPERATOR",
+    "kind": "dropdown",
+    "options": [
+     {
+      "value": "abs",
+      "en": "abs",
+      "ru": "модуль"
+     },
+     {
+      "value": "floor",
+      "en": "floor",
+      "ru": "целое меньшее"
+     },
+     {
+      "value": "ceiling",
+      "en": "ceiling",
+      "ru": "целое большее"
+     },
+     {
+      "value": "sqrt",
+      "en": "sqrt",
+      "ru": "квадратный корень"
+     },
+     {
+      "value": "sin",
+      "en": "sin",
+      "ru": "sin"
+     },
+     {
+      "value": "cos",
+      "en": "cos",
+      "ru": "cos"
+     },
+     {
+      "value": "tan",
+      "en": "tan",
+      "ru": "tan"
+     },
+     {
+      "value": "asin",
+      "en": "asin",
+      "ru": "asin"
+     },
+     {
+      "value": "acos",
+      "en": "acos",
+      "ru": "acos"
+     },
+     {
+      "value": "atan",
+      "en": "atan",
+      "ru": "atan"
+     },
+     {
+      "value": "ln",
+      "en": "ln",
+      "ru": "ln"
+     },
+     {
+      "value": "log",
+      "en": "log",
+      "ru": "log"
+     },
+     {
+      "value": "e ^",
+      "en": "e ^",
+      "ru": "e ^"
+     },
+     {
+      "value": "10 ^",
+      "en": "10 ^",
+      "ru": "10 ^"
+     }
+    ],
+    "default": "abs"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_variable": {
+  "opcode": "data_variable",
+  "category": "data",
+  "shape": "reporter",
+  "ru": "[VARIABLE]",
+  "en": "[VARIABLE]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "VARIABLE",
+    "kind": "variable"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_setvariableto": {
+  "opcode": "data_setvariableto",
+  "category": "data",
+  "shape": "stack",
+  "ru": "задать [VARIABLE] значение [VALUE]",
+  "en": "set [VARIABLE] to [VALUE]",
+  "inputs": [
+   {
+    "name": "VALUE",
+    "kind": "value",
+    "shadow": "text",
+    "default": "0"
+   }
+  ],
+  "fields": [
+   {
+    "name": "VARIABLE",
+    "kind": "variable"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_changevariableby": {
+  "opcode": "data_changevariableby",
+  "category": "data",
+  "shape": "stack",
+  "ru": "изменить [VARIABLE] на [VALUE]",
+  "en": "change [VARIABLE] by [VALUE]",
+  "inputs": [
+   {
+    "name": "VALUE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   }
+  ],
+  "fields": [
+   {
+    "name": "VARIABLE",
+    "kind": "variable"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_showvariable": {
+  "opcode": "data_showvariable",
+  "category": "data",
+  "shape": "stack",
+  "ru": "показать переменную [VARIABLE]",
+  "en": "show variable [VARIABLE]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "VARIABLE",
+    "kind": "variable"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_hidevariable": {
+  "opcode": "data_hidevariable",
+  "category": "data",
+  "shape": "stack",
+  "ru": "скрыть переменную [VARIABLE]",
+  "en": "hide variable [VARIABLE]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "VARIABLE",
+    "kind": "variable"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_listcontents": {
+  "opcode": "data_listcontents",
+  "category": "data",
+  "shape": "reporter",
+  "ru": "[LIST]",
+  "en": "[LIST]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "variable"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_listindexall": {
+  "opcode": "data_listindexall",
+  "category": "data",
+  "shape": "reporter",
+  "ru": "[INDEX]",
+  "en": "[INDEX]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "INDEX",
+    "kind": "field_numberdropdown"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_listindexrandom": {
+  "opcode": "data_listindexrandom",
+  "category": "data",
+  "shape": "reporter",
+  "ru": "[INDEX]",
+  "en": "[INDEX]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "INDEX",
+    "kind": "field_numberdropdown"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_addtolist": {
+  "opcode": "data_addtolist",
+  "category": "data",
+  "shape": "stack",
+  "ru": "добавить [ITEM] к [LIST]",
+  "en": "add [ITEM] to [LIST]",
+  "inputs": [
+   {
+    "name": "ITEM",
+    "kind": "value",
+    "shadow": "text",
+    "default": "вещь"
+   }
+  ],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_deleteoflist": {
+  "opcode": "data_deleteoflist",
+  "category": "data",
+  "shape": "stack",
+  "ru": "удалить [INDEX] из [LIST]",
+  "en": "delete [INDEX] of [LIST]",
+  "inputs": [
+   {
+    "name": "INDEX",
+    "kind": "value",
+    "shadow": "math_integer",
+    "default": "1"
+   }
+  ],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_deletealloflist": {
+  "opcode": "data_deletealloflist",
+  "category": "data",
+  "shape": "stack",
+  "ru": "удалить все из [LIST]",
+  "en": "delete all of [LIST]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_insertatlist": {
+  "opcode": "data_insertatlist",
+  "category": "data",
+  "shape": "stack",
+  "ru": "вставить элемент [ITEM] в [LIST] на позицию с индексом [INDEX]",
+  "en": "insert [ITEM] at [INDEX] of [LIST]",
+  "inputs": [
+   {
+    "name": "ITEM",
+    "kind": "value",
+    "shadow": "text",
+    "default": "вещь"
+   },
+   {
+    "name": "INDEX",
+    "kind": "value",
+    "shadow": "math_integer",
+    "default": "1"
+   }
+  ],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_replaceitemoflist": {
+  "opcode": "data_replaceitemoflist",
+  "category": "data",
+  "shape": "stack",
+  "ru": "заменить элемент [INDEX] в [LIST] на [ITEM]",
+  "en": "replace item [INDEX] of [LIST] with [ITEM]",
+  "inputs": [
+   {
+    "name": "INDEX",
+    "kind": "value",
+    "shadow": "math_integer",
+    "default": "1"
+   },
+   {
+    "name": "ITEM",
+    "kind": "value",
+    "shadow": "text",
+    "default": "вещь"
+   }
+  ],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_itemoflist": {
+  "opcode": "data_itemoflist",
+  "category": "data",
+  "shape": "reporter",
+  "ru": "элемент [INDEX] в [LIST]",
+  "en": "item [INDEX] of [LIST]",
+  "inputs": [
+   {
+    "name": "INDEX",
+    "kind": "value",
+    "shadow": "math_integer",
+    "default": "1"
+   }
+  ],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_itemnumoflist": {
+  "opcode": "data_itemnumoflist",
+  "category": "data",
+  "shape": "reporter",
+  "ru": "элемент # из [ITEM] в [LIST]",
+  "en": "item # of [ITEM] in [LIST]",
+  "inputs": [
+   {
+    "name": "ITEM",
+    "kind": "value",
+    "shadow": "text",
+    "default": "вещь"
+   }
+  ],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_lengthoflist": {
+  "opcode": "data_lengthoflist",
+  "category": "data",
+  "shape": "reporter",
+  "ru": "длина списка [LIST]",
+  "en": "length of [LIST]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_listcontainsitem": {
+  "opcode": "data_listcontainsitem",
+  "category": "data",
+  "shape": "boolean",
+  "ru": "[LIST] содержит [ITEM]?",
+  "en": "[LIST] contains [ITEM]?",
+  "inputs": [
+   {
+    "name": "ITEM",
+    "kind": "value",
+    "shadow": "text",
+    "default": "вещь"
+   }
+  ],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_showlist": {
+  "opcode": "data_showlist",
+  "category": "data",
+  "shape": "stack",
+  "ru": "показать список [LIST]",
+  "en": "show list [LIST]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "data_hidelist": {
+  "opcode": "data_hidelist",
+  "category": "data",
+  "shape": "stack",
+  "ru": "скрыть список [LIST]",
+  "en": "hide list [LIST]",
+  "inputs": [],
+  "fields": [
+   {
+    "name": "LIST",
+    "kind": "list"
+   }
+  ],
+  "inPalette": true
+ },
+ "pen_clear": {
+  "opcode": "pen_clear",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "стереть всё",
+  "en": "erase all",
+  "inputs": [],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ },
+ "pen_stamp": {
+  "opcode": "pen_stamp",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "печать",
+  "en": "stamp",
+  "inputs": [],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ },
+ "pen_penDown": {
+  "opcode": "pen_penDown",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "опустить перо",
+  "en": "pen down",
+  "inputs": [],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ },
+ "pen_penUp": {
+  "opcode": "pen_penUp",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "поднять перо",
+  "en": "pen up",
+  "inputs": [],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ },
+ "pen_setPenColorToColor": {
+  "opcode": "pen_setPenColorToColor",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "установить для пера цвет %1",
+  "en": "set pen color to %1",
+  "inputs": [
+   {
+    "name": "COLOR",
+    "kind": "value",
+    "shadow": "colour_picker",
+    "default": "#ff0000"
+   }
+  ],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ },
+ "pen_changePenColorParamBy": {
+  "opcode": "pen_changePenColorParamBy",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "изменить %1 пера на %2",
+  "en": "change pen %1 by %2",
+  "inputs": [
+   {
+    "name": "COLOR_PARAM",
+    "kind": "value",
+    "shadow": "pen_menu_colorParam",
+    "menu": {
+     "opcode": "pen_menu_colorParam",
+     "field": "colorParam",
+     "options": [
+      {
+       "value": "color",
+       "ru": "цвет",
+       "en": "color"
+      },
+      {
+       "value": "saturation",
+       "ru": "насыщенность",
+       "en": "saturation"
+      },
+      {
+       "value": "brightness",
+       "ru": "яркость",
+       "en": "brightness"
+      },
+      {
+       "value": "transparency",
+       "ru": "прозрачность",
+       "en": "transparency"
+      }
+     ]
+    },
+    "default": "color"
+   },
+   {
+    "name": "VALUE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "10"
+   }
+  ],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ },
+ "pen_setPenColorParamTo": {
+  "opcode": "pen_setPenColorParamTo",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "установить перо %1 в %2",
+  "en": "set pen %1 to %2",
+  "inputs": [
+   {
+    "name": "COLOR_PARAM",
+    "kind": "value",
+    "shadow": "pen_menu_colorParam",
+    "menu": {
+     "opcode": "pen_menu_colorParam",
+     "field": "colorParam",
+     "options": [
+      {
+       "value": "color",
+       "ru": "цвет",
+       "en": "color"
+      },
+      {
+       "value": "saturation",
+       "ru": "насыщенность",
+       "en": "saturation"
+      },
+      {
+       "value": "brightness",
+       "ru": "яркость",
+       "en": "brightness"
+      },
+      {
+       "value": "transparency",
+       "ru": "прозрачность",
+       "en": "transparency"
+      }
+     ]
+    },
+    "default": "color"
+   },
+   {
+    "name": "VALUE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "50"
+   }
+  ],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ },
+ "pen_changePenSizeBy": {
+  "opcode": "pen_changePenSizeBy",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "изменить размер пера на %1",
+  "en": "change pen size by %1",
+  "inputs": [
+   {
+    "name": "SIZE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ },
+ "pen_setPenSizeTo": {
+  "opcode": "pen_setPenSizeTo",
+  "category": "pen",
+  "shape": "stack",
+  "ru": "установить размер пера %1",
+  "en": "set pen size to %1",
+  "inputs": [
+   {
+    "name": "SIZE",
+    "kind": "value",
+    "shadow": "math_number",
+    "default": "1"
+   }
+  ],
+  "fields": [],
+  "extension": "pen",
+  "inPalette": true
+ }
+}

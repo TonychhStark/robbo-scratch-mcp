@@ -1,0 +1,23 @@
+---
+description: Создание и редактирование проектов Robbo Scratch 3 (.sb3) — робот Robbo, Лаборатория, квадрокоптер, Otto, Arduino
+alwaysApply: true
+---
+
+# Robbo Scratch 3: как делать .sb3
+
+Когда пользователь просит программу для Robbo Scratch (робот, Лаборатория, коптер, Otto, Arduino, игра на Scratch):
+
+1. **Никогда не пиши project.json или .sb3 вручную.** Используй MCP-сервер `robbo-scratch`:
+   - `robbo_format_guide` — формат robbo-json (прочитай один раз за сессию);
+   - `robbo_list_blocks` (category/query) и `robbo_block_info` — только эти opcode существуют;
+   - `robbo_validate` → исправь все ошибки;
+   - `robbo_build_sb3` → сохрани в `projects/<понятное_имя>.sb3`;
+   - `robbo_read_sb3` — чтобы прочитать/объяснить/доработать готовый .sb3.
+2. Если MCP недоступен — то же самое через терминал:
+   `node cli.js blocks robot`, `node cli.js info <opcode>`, `node cli.js check projects/x.robbo.json`,
+   `node cli.js build projects/x.robbo.json projects/x.sb3`, `node cli.js read file.sb3`.
+   Формат — в `docs/FORMAT.md`, все блоки — в `docs/BLOCKS.md`.
+3. Блоки устройств и «Движение» — только в спрайте, не на сцене.
+4. После сборки покажи пользователю текстовый вид программы (его возвращает инструмент) и коротко объясни, что она делает и что подключить (какой датчик, порт и т.п.).
+5. Значения из выпадающих списков бери строго из `robbo_block_info`. Если нужного блока нет — скажи об этом, не выдумывай.
+6. Блоки с пометкой ⚠ (Набор расширений, ScratchDuino) предупреди пользователя об условиях.

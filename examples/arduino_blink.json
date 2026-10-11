@@ -1,0 +1,15 @@
+{
+  "sprites": [{
+    "name": "Arduino",
+    "scripts": [[
+      {"op": "event_whenflagclicked"},
+      {"op": "newcat_go_dig", "PIN": 13},
+      {"op": "control_forever", "SUBSTACK": [
+        {"op": "newcat_set_dig", "PIN": 13, "HIGH_LOW": "HIGH"},
+        {"op": "control_wait", "DURATION": 0.5},
+        {"op": "newcat_set_dig", "PIN": 13, "HIGH_LOW": "LOW"},
+        {"op": "control_wait", "DURATION": 0.5}
+      ]}
+    ]]
+  }]
+}

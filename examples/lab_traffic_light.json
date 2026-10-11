@@ -1,0 +1,23 @@
+{
+  "sprites": [{
+    "name": "Светофор",
+    "procedures": [
+      {"name": "свет", "params": [{"name": "цвет", "type": "number"}, {"name": "секунд", "type": "number"}],
+       "body": [
+         {"op": "lab_color_led_turn_on", "LED_COLORS": {"arg": "цвет"}},
+         {"op": "control_wait", "DURATION": {"arg": "секунд"}},
+         {"op": "lab_color_led_turn_off", "LED_COLORS": {"arg": "цвет"}}
+       ]}
+    ],
+    "scripts": [[
+      {"op": "event_whenflagclicked"},
+      {"op": "control_forever", "SUBSTACK": [
+        {"op": "call", "proc": "свет", "args": {"цвет": "red", "секунд": 3}},
+        {"op": "call", "proc": "свет", "args": {"цвет": "yellow", "секунд": 1}},
+        {"op": "call", "proc": "свет", "args": {"цвет": "green", "секунд": 3}},
+        {"op": "control_if", "CONDITION": {"op": "operator_lt", "OPERAND1": {"op": "lab_sensor", "LAB_SENSOR": "свет"}, "OPERAND2": 20},
+         "SUBSTACK": [{"op": "lab_play_note", "LAB_NOTE": 60}]}
+      ]}
+    ]]
+  }]
+}

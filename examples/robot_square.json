@@ -1,0 +1,35 @@
+{
+  "variables": {"круг": 0},
+  "sprites": [{
+    "name": "Робот",
+    "procedures": [
+      {"name": "сторона", "params": [{"name": "секунд", "type": "number"}],
+       "body": [
+         {"op": "robot_set_direction_to", "ROBOT_DIRECTION": "Вперёд"},
+         {"op": "robot_motors_on_for_seconds", "SECONDS": {"arg": "секунд"}},
+         {"op": "robot_turnright", "DEGREES": 90}
+       ]}
+    ],
+    "scripts": [
+      [
+        {"op": "event_whenflagclicked"},
+        {"op": "robot_set_motors_power", "POWER": 40},
+        {"op": "data_setvariableto", "VARIABLE": "круг", "VALUE": 0},
+        {"op": "control_repeat", "TIMES": 4, "SUBSTACK": [
+          {"op": "call", "proc": "сторона", "args": {"секунд": 1.5}},
+          {"op": "data_changevariableby", "VARIABLE": "круг", "VALUE": 1}
+        ]},
+        {"op": "looks_sayforsecs", "MESSAGE": {"op": "operator_join", "STRING1": "Кругов: ", "STRING2": {"var": "круг"}}, "SECS": 2}
+      ],
+      [
+        {"op": "event_whenkeypressed", "KEY_OPTION": "пробел"},
+        {"op": "control_forever", "SUBSTACK": [
+          {"op": "control_if_else",
+           "CONDITION": {"op": "operator_lt", "OPERAND1": {"op": "robot_get_sensor_data", "ROBOT_SENSORS": "Датчик1"}, "OPERAND2": 50},
+           "SUBSTACK": [{"op": "robot_motors_off"}],
+           "SUBSTACK2": [{"op": "robot_motors_on"}]}
+        ]}
+      ]
+    ]
+  }]
+}

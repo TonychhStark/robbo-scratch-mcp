@@ -1,0 +1,17 @@
+{
+  "sprites": [{
+    "name": "Коптер",
+    "scripts": [[
+      {"op": "event_whenflagclicked"},
+      {"op": "copter_fly_up"},
+      {"op": "control_repeat", "TIMES": 4, "SUBSTACK": [
+        {"op": "copter_fly_distance", "METERS": 1},
+        {"op": "copter_rotate", "DEGREES": 90}
+      ]},
+      {"op": "copter_land"}
+    ], [
+      {"op": "event_whenkeypressed", "KEY_OPTION": "space"},
+      {"op": "copter_stop"}
+    ]]
+  }]
+}

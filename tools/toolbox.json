@@ -1,0 +1,3417 @@
+{
+ "iot_trigger_on_topic": {
+  "type": "iot_trigger_on_topic",
+  "shadow": false,
+  "inputs": {
+   "TNAME": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": null
+ },
+ "iot_parse_data": {
+  "type": "iot_parse_data",
+  "shadow": false,
+  "inputs": {
+   "TNAME": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": null
+ },
+ "iot_broker_init": {
+  "type": "iot_broker_init",
+  "shadow": false,
+  "inputs": {
+   "BPROTCOL": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_protocol}"
+     }
+    }
+   },
+   "BADDR": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_baddr}"
+     }
+    }
+   },
+   "BPORT": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "${default_bport}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_prefix": {
+  "type": "iot_set_prefix",
+  "shadow": false,
+  "inputs": {
+   "PREFIX": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_pref}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_mess_to_topic": {
+  "type": "iot_mess_to_topic",
+  "shadow": false,
+  "inputs": {
+   "TNAME": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${actuator_topicname}"
+     }
+    }
+   },
+   "MESSAGE": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_message}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_subscribe_to_topic": {
+  "type": "iot_subscribe_to_topic",
+  "shadow": false,
+  "inputs": {
+   "TNAME": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_receive_message": {
+  "type": "iot_receive_message",
+  "shadow": false,
+  "inputs": {
+   "TNAME": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_logpass": {
+  "type": "iot_set_logpass",
+  "shadow": false,
+  "inputs": {
+   "UNAME": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_uname}"
+     }
+    }
+   },
+   "PASS": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_pass}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_wifi": {
+  "type": "iot_set_wifi",
+  "shadow": false,
+  "inputs": {
+   "SSID": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_uname}"
+     }
+    }
+   },
+   "PASS": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_pass}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_client_id": {
+  "type": "iot_set_client_id",
+  "shadow": false,
+  "inputs": {
+   "ID": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_client_id}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_delay_for_topic": {
+  "type": "iot_set_delay_for_topic",
+  "shadow": false,
+  "inputs": {
+   "DELAY": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "${default_delay}"
+     }
+    }
+   },
+   "TNAME": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_event_more": {
+  "type": "iot_event_more",
+  "shadow": false,
+  "inputs": {
+   "TNAME": {
+    "shadow": {
+     "type": "iot_topic",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_event_less": {
+  "type": "iot_event_less",
+  "shadow": false,
+  "inputs": {
+   "TNAME": {
+    "shadow": {
+     "type": "iot_topic",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_under_treshold": {
+  "type": "iot_set_under_treshold",
+  "shadow": false,
+  "inputs": {
+   "TRESH": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "${default_delay}"
+     }
+    }
+   },
+   "TNAME": {
+    "shadow": {
+     "type": "iot_topic",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_upper_treshold": {
+  "type": "iot_set_upper_treshold",
+  "shadow": false,
+  "inputs": {
+   "TRESH": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "${default_delay}"
+     }
+    }
+   },
+   "TNAME": {
+    "shadow": {
+     "type": "iot_topic",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_both_treshold": {
+  "type": "iot_set_both_treshold",
+  "shadow": false,
+  "inputs": {
+   "TRESH": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "${default_delay}"
+     }
+    }
+   },
+   "TRESH2": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "${default_delay}"
+     }
+    }
+   },
+   "TNAME": {
+    "shadow": {
+     "type": "iot_topic",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_connection_status": {
+  "type": "iot_connection_status",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_connection_log": {
+  "type": "iot_connection_log",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "iot_set_delay_for_publish": {
+  "type": "iot_set_delay_for_publish",
+  "shadow": false,
+  "inputs": {
+   "DELAY": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "${default_delay}"
+     }
+    }
+   },
+   "TNAME": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${default_topicname}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "iotblocks"
+ },
+ "newcat_set_dig": {
+  "type": "newcat_set_dig",
+  "shadow": false,
+  "inputs": {
+   "PIN": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "6"
+     }
+    }
+   },
+   "HIGH_LOW": {
+    "shadow": {
+     "type": "high_low",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_set_ana": {
+  "type": "newcat_set_ana",
+  "shadow": false,
+  "inputs": {
+   "PWM_PINS": {
+    "shadow": {
+     "type": "pwm_pins",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "NUM": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_set_pult": {
+  "type": "newcat_set_pult",
+  "shadow": false,
+  "inputs": {
+   "NUM": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_set_hum": {
+  "type": "newcat_set_hum",
+  "shadow": false,
+  "inputs": {
+   "NUM": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "NUM2": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_play_sound": {
+  "type": "newcat_play_sound",
+  "shadow": false,
+  "inputs": {
+   "PIN": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "NOTE_TYPE": {
+    "shadow": {
+     "type": "note2",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "NOTE_DURA": {
+    "shadow": {
+     "type": "otto_dura",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_servo": {
+  "type": "newcat_servo",
+  "shadow": false,
+  "inputs": {
+   "PIN": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "ANGLE": {
+    "shadow": {
+     "type": "math_angle",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_go_dig": {
+  "type": "newcat_go_dig",
+  "shadow": false,
+  "inputs": {
+   "PIN": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_go_anal": {
+  "type": "newcat_go_anal",
+  "shadow": false,
+  "inputs": {
+   "PIN_ANAL": {
+    "shadow": {
+     "type": "pin_anal",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_go_sonic": {
+  "type": "newcat_go_sonic",
+  "shadow": false,
+  "inputs": {
+   "SOSONIC": {
+    "shadow": {
+     "type": "sosonic",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "PIN2": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_read_dig": {
+  "type": "newcat_read_dig",
+  "shadow": false,
+  "inputs": {
+   "PIN": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_read_ana": {
+  "type": "newcat_read_ana",
+  "shadow": false,
+  "inputs": {
+   "PIN": {
+    "shadow": {
+     "type": "pin_anal",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_set_kursor": {
+  "type": "newcat_set_kursor",
+  "shadow": false,
+  "inputs": {
+   "NUM": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "STOLB": {
+    "shadow": {
+     "type": "stolb",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_set_text": {
+  "type": "newcat_set_text",
+  "shadow": false,
+  "inputs": {
+   "MESSAGE": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${hello}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "newcat"
+ },
+ "newcat_init_lcd": {
+  "type": "newcat_init_lcd",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "newcat"
+ },
+ "otto_move_servo": {
+  "type": "otto_move_servo",
+  "shadow": false,
+  "inputs": {
+   "OTTO_SERVO": {
+    "shadow": {
+     "type": "otto_servo_nums",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "SERVO_DIST": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "90"
+     }
+    }
+   },
+   "SERVO_SPEED": {
+    "shadow": {
+     "type": "otto_servo_speed",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_move_servo_foot": {
+  "type": "otto_move_servo_foot",
+  "shadow": false,
+  "inputs": {
+   "OTTO_LL": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "90"
+     }
+    }
+   },
+   "OTTO_RL": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "90"
+     }
+    }
+   },
+   "OTTO_LF": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "90"
+     }
+    }
+   },
+   "OTTO_RF": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "90"
+     }
+    }
+   },
+   "SERVO_SPEED": {
+    "shadow": {
+     "type": "otto_servo_speed",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_move_servo_hand": {
+  "type": "otto_move_servo_hand",
+  "shadow": false,
+  "inputs": {
+   "OTTO_LH": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "90"
+     }
+    }
+   },
+   "OTTO_RH": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "90"
+     }
+    }
+   },
+   "SERVO_SPEED": {
+    "shadow": {
+     "type": "otto_servo_speed",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_play_sound": {
+  "type": "otto_play_sound",
+  "shadow": false,
+  "inputs": {
+   "NOTE_TYPE": {
+    "shadow": {
+     "type": "note2",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "60"
+     }
+    }
+   },
+   "NOTE_DURA": {
+    "shadow": {
+     "type": "otto_dura",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_matrix_pix": {
+  "type": "otto_matrix_pix",
+  "shadow": false,
+  "inputs": {
+   "MATRIX_STROK": {
+    "shadow": {
+     "type": "led_nums",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "MATRIX_STOLB": {
+    "shadow": {
+     "type": "led_nums",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "ON_OFF": {
+    "shadow": {
+     "type": "otto_on_off",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_matrix_all_pix": {
+  "type": "otto_matrix_all_pix",
+  "shadow": false,
+  "inputs": {
+   "MATRIX": {
+    "shadow": {
+     "type": "matrix",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "MATRIX": "0000000000000000000000000000000000000000000000000000000000000000"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_text": {
+  "type": "otto_text",
+  "shadow": false,
+  "inputs": {
+   "OTTO_TEXT": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${hello}"
+     }
+    }
+   },
+   "TEXT_SPEED": {
+    "shadow": {
+     "type": "otto_text_speed",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_led": {
+  "type": "otto_led",
+  "shadow": false,
+  "inputs": {
+   "ON_OFF_R": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "255"
+     }
+    }
+   },
+   "ON_OFF_G": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "255"
+     }
+    }
+   },
+   "ON_OFF_B": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "255"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_hearing": {
+  "type": "otto_hearing",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "otto"
+ },
+ "otto_distance": {
+  "type": "otto_distance",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "otto"
+ },
+ "copter_fly_for_time_with_speed": {
+  "type": "copter_fly_for_time_with_speed",
+  "shadow": false,
+  "inputs": {
+   "SECONDS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   },
+   "X_SPEED": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "Y_SPEED": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "copter_fly_for_seconds_to_coords": {
+  "type": "copter_fly_for_seconds_to_coords",
+  "shadow": false,
+  "inputs": {
+   "SECONDS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   },
+   "X_COORD": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "Y_COORD": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "Z_COORD": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "otto"
+ },
+ "copter_fly_up": {
+  "type": "copter_fly_up",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_land": {
+  "type": "copter_land",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_stop": {
+  "type": "copter_stop",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_status": {
+  "type": "copter_status",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_fly_distance": {
+  "type": "copter_fly_distance",
+  "shadow": false,
+  "inputs": {
+   "METERS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0.4"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_fly_time": {
+  "type": "copter_fly_time",
+  "shadow": false,
+  "inputs": {
+   "SECONDS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_change_x_by": {
+  "type": "copter_change_x_by",
+  "shadow": false,
+  "inputs": {
+   "DISTANCE_DELTA": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0.1"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_change_y_by": {
+  "type": "copter_change_y_by",
+  "shadow": false,
+  "inputs": {
+   "DISTANCE_DELTA": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0.1"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_change_z_by": {
+  "type": "copter_change_z_by",
+  "shadow": false,
+  "inputs": {
+   "DISTANCE_DELTA": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0.1"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_x_coord": {
+  "type": "copter_x_coord",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_y_coord": {
+  "type": "copter_y_coord",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_z_coord": {
+  "type": "copter_z_coord",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_yaw": {
+  "type": "copter_yaw",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_fly_to_coords": {
+  "type": "copter_fly_to_coords",
+  "shadow": false,
+  "inputs": {
+   "X_COORD": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "Y_COORD": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "Z_COORD": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_rotate": {
+  "type": "copter_rotate",
+  "shadow": false,
+  "inputs": {
+   "DEGREES": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "45"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_set_direction": {
+  "type": "copter_set_direction",
+  "shadow": false,
+  "inputs": {
+   "DIRECTION": {
+    "shadow": {
+     "type": "copter_directions",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "copter_direction": {
+  "type": "copter_direction",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "quadcopter"
+ },
+ "lab_led_turn_on": {
+  "type": "lab_led_turn_on",
+  "shadow": false,
+  "inputs": {
+   "LED_NUMS": {
+    "shadow": {
+     "type": "led_nums",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_led_turn_off": {
+  "type": "lab_led_turn_off",
+  "shadow": false,
+  "inputs": {
+   "LED_NUMS": {
+    "shadow": {
+     "type": "led_nums",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_color_led_turn_on": {
+  "type": "lab_color_led_turn_on",
+  "shadow": false,
+  "inputs": {
+   "LED_COLORS": {
+    "shadow": {
+     "type": "led_colors",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_color_led_turn_off": {
+  "type": "lab_color_led_turn_off",
+  "shadow": false,
+  "inputs": {
+   "LED_COLORS": {
+    "shadow": {
+     "type": "led_colors",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_play_note": {
+  "type": "lab_play_note",
+  "shadow": false,
+  "inputs": {
+   "LAB_NOTE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "48"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_sensor": {
+  "type": "lab_sensor",
+  "shadow": false,
+  "inputs": {
+   "LAB_SENSOR": {
+    "shadow": {
+     "type": "lab_sensors",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_button_pressed": {
+  "type": "lab_button_pressed",
+  "shadow": false,
+  "inputs": {
+   "BUTTON_NUMBER": {
+    "shadow": {
+     "type": "button_numbers",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_external_sensor": {
+  "type": "lab_external_sensor",
+  "shadow": false,
+  "inputs": {
+   "LAB_EXTERNAL_SENSOR": {
+    "shadow": {
+     "type": "lab_external_sensors",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_analog_pin": {
+  "type": "lab_analog_pin",
+  "shadow": false,
+  "inputs": {
+   "LAB_ANALOG_PIN": {
+    "shadow": {
+     "type": "lab_analog_pins",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_digital_pin": {
+  "type": "lab_digital_pin",
+  "shadow": false,
+  "inputs": {
+   "LAB_DIGITAL_PIN": {
+    "shadow": {
+     "type": "lab_digital_pins_stack1",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_digital_pin_set_on_off": {
+  "type": "lab_digital_pin_set_on_off",
+  "shadow": false,
+  "inputs": {
+   "LAB_DIGITAL_PIN": {
+    "shadow": {
+     "type": "lab_digital_pins_stack2",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "LAB_DIGITAL_PIN_STATE": {
+    "shadow": {
+     "type": "lab_digital_pins_states",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "lab_digital_pin_set_pwm_value": {
+  "type": "lab_digital_pin_set_pwm_value",
+  "shadow": false,
+  "inputs": {
+   "LAB_DIGITAL_PIN": {
+    "shadow": {
+     "type": "lab_digital_pins_stack2",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "PWM_VALUE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "laboratory"
+ },
+ "robot_motors_on_for_seconds": {
+  "type": "robot_motors_on_for_seconds",
+  "shadow": false,
+  "inputs": {
+   "SECONDS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_motors_on": {
+  "type": "robot_motors_on",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_motors_off": {
+  "type": "robot_motors_off",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_set_direction_to": {
+  "type": "robot_set_direction_to",
+  "shadow": false,
+  "inputs": {
+   "ROBOT_DIRECTION": {
+    "shadow": {
+     "type": "robot_directions",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_motors_on_for_steps": {
+  "type": "robot_motors_on_for_steps",
+  "shadow": false,
+  "inputs": {
+   "STEPS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_reset_trip_meters": {
+  "type": "robot_reset_trip_meters",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_turnright": {
+  "type": "robot_turnright",
+  "shadow": false,
+  "inputs": {
+   "DEGREES": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "15"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_turnleft": {
+  "type": "robot_turnleft",
+  "shadow": false,
+  "inputs": {
+   "DEGREES": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "15"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_set_motors_power": {
+  "type": "robot_set_motors_power",
+  "shadow": false,
+  "inputs": {
+   "POWER": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "30"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_set_motors_power_left_right_separately": {
+  "type": "robot_set_motors_power_left_right_separately",
+  "shadow": false,
+  "inputs": {
+   "POWER_LEFT": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "30"
+     }
+    }
+   },
+   "POWER_RIGHT": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "30"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_set_motors_left_right_power_and_direction_separately": {
+  "type": "robot_set_motors_left_right_power_and_direction_separately",
+  "shadow": false,
+  "inputs": {
+   "ROBOT_LEFT_MOTOR_DIRECTION": {
+    "shadow": {
+     "type": "robot_one_motor_directions",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "ROBOT_RIGHT_MOTOR_DIRECTION": {
+    "shadow": {
+     "type": "robot_one_motor_directions",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "POWER_LEFT": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "30"
+     }
+    }
+   },
+   "POWER_RIGHT": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "30"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_get_sensor_data": {
+  "type": "robot_get_sensor_data",
+  "shadow": false,
+  "inputs": {
+   "ROBOT_SENSORS": {
+    "shadow": {
+     "type": "robot_sensors",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_get_rgb_sensor_data": {
+  "type": "robot_get_rgb_sensor_data",
+  "shadow": false,
+  "inputs": {
+   "ROBOT_SENSORS_FOR_RGB": {
+    "shadow": {
+     "type": "robot_sensors_for_rgb",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "RGB_VALUES": {
+    "shadow": {
+     "type": "rgb_values",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_is_current_color": {
+  "type": "robot_is_current_color",
+  "shadow": false,
+  "inputs": {
+   "ROBOT_SENSORS_FOR_RGB": {
+    "shadow": {
+     "type": "robot_sensors_for_rgb",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "COLORS": {
+    "shadow": {
+     "type": "robot_colors",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_start_button_pressed": {
+  "type": "robot_start_button_pressed",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_turn_led_on": {
+  "type": "robot_turn_led_on",
+  "shadow": false,
+  "inputs": {
+   "ROBOT_POSITION": {
+    "shadow": {
+     "type": "robot_positions",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_turn_led_off": {
+  "type": "robot_turn_led_off",
+  "shadow": false,
+  "inputs": {
+   "ROBOT_POSITION": {
+    "shadow": {
+     "type": "robot_positions",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_claw_closed": {
+  "type": "robot_claw_closed",
+  "shadow": false,
+  "inputs": {
+   "CLAW_CLOSED_PERCENT": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "15"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "robot_claw_state": {
+  "type": "robot_claw_state",
+  "shadow": false,
+  "inputs": {
+   "CLAW_STATES": {
+    "shadow": {
+     "type": "claw_states",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "robot"
+ },
+ "motion_movesteps": {
+  "type": "motion_movesteps",
+  "shadow": false,
+  "inputs": {
+   "STEPS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_turnright": {
+  "type": "motion_turnright",
+  "shadow": false,
+  "inputs": {
+   "DEGREES": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "15"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_turnleft": {
+  "type": "motion_turnleft",
+  "shadow": false,
+  "inputs": {
+   "DEGREES": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "15"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_goto": {
+  "type": "motion_goto",
+  "shadow": false,
+  "inputs": {
+   "TO": {
+    "shadow": {
+     "type": "motion_goto_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_gotoxy": {
+  "type": "motion_gotoxy",
+  "shadow": false,
+  "inputs": {
+   "X": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "Y": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_glideto": {
+  "type": "motion_glideto",
+  "shadow": false,
+  "inputs": {
+   "SECS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   },
+   "TO": {
+    "shadow": {
+     "type": "motion_glideto_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_glidesecstoxy": {
+  "type": "motion_glidesecstoxy",
+  "shadow": false,
+  "inputs": {
+   "SECS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   },
+   "X": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   },
+   "Y": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_pointindirection": {
+  "type": "motion_pointindirection",
+  "shadow": false,
+  "inputs": {
+   "DIRECTION": {
+    "shadow": {
+     "type": "math_angle",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "90"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_pointtowards": {
+  "type": "motion_pointtowards",
+  "shadow": false,
+  "inputs": {
+   "TOWARDS": {
+    "shadow": {
+     "type": "motion_pointtowards_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_changexby": {
+  "type": "motion_changexby",
+  "shadow": false,
+  "inputs": {
+   "DX": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_setx": {
+  "type": "motion_setx",
+  "shadow": false,
+  "inputs": {
+   "X": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_changeyby": {
+  "type": "motion_changeyby",
+  "shadow": false,
+  "inputs": {
+   "DY": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_sety": {
+  "type": "motion_sety",
+  "shadow": false,
+  "inputs": {
+   "Y": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_ifonedgebounce": {
+  "type": "motion_ifonedgebounce",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_setrotationstyle": {
+  "type": "motion_setrotationstyle",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_xposition": {
+  "type": "motion_xposition",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_yposition": {
+  "type": "motion_yposition",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "motion"
+ },
+ "motion_direction": {
+  "type": "motion_direction",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "motion"
+ },
+ "looks_sayforsecs": {
+  "type": "looks_sayforsecs",
+  "shadow": false,
+  "inputs": {
+   "MESSAGE": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${hello}"
+     }
+    }
+   },
+   "SECS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "2"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_say": {
+  "type": "looks_say",
+  "shadow": false,
+  "inputs": {
+   "MESSAGE": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${hello}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_thinkforsecs": {
+  "type": "looks_thinkforsecs",
+  "shadow": false,
+  "inputs": {
+   "MESSAGE": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${hmm}"
+     }
+    }
+   },
+   "SECS": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "2"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_think": {
+  "type": "looks_think",
+  "shadow": false,
+  "inputs": {
+   "MESSAGE": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${hmm}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_switchbackdropto": {
+  "type": "looks_switchbackdropto",
+  "shadow": false,
+  "inputs": {
+   "BACKDROP": {
+    "shadow": {
+     "type": "looks_backdrops",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "BACKDROP": "${backdropName}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_switchbackdroptoandwait": {
+  "type": "looks_switchbackdroptoandwait",
+  "shadow": false,
+  "inputs": {
+   "BACKDROP": {
+    "shadow": {
+     "type": "looks_backdrops",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "BACKDROP": "${backdropName}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_nextbackdrop": {
+  "type": "looks_nextbackdrop",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_switchcostumeto": {
+  "type": "looks_switchcostumeto",
+  "shadow": false,
+  "inputs": {
+   "COSTUME": {
+    "shadow": {
+     "type": "looks_costume",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "COSTUME": "${costumeName}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_nextcostume": {
+  "type": "looks_nextcostume",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_changesizeby": {
+  "type": "looks_changesizeby",
+  "shadow": false,
+  "inputs": {
+   "CHANGE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_setsizeto": {
+  "type": "looks_setsizeto",
+  "shadow": false,
+  "inputs": {
+   "SIZE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "100"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_changeeffectby": {
+  "type": "looks_changeeffectby",
+  "shadow": false,
+  "inputs": {
+   "CHANGE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "25"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_seteffectto": {
+  "type": "looks_seteffectto",
+  "shadow": false,
+  "inputs": {
+   "VALUE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "0"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_cleargraphiceffects": {
+  "type": "looks_cleargraphiceffects",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_show": {
+  "type": "looks_show",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_hide": {
+  "type": "looks_hide",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_gotofrontback": {
+  "type": "looks_gotofrontback",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_goforwardbackwardlayers": {
+  "type": "looks_goforwardbackwardlayers",
+  "shadow": false,
+  "inputs": {
+   "NUM": {
+    "shadow": {
+     "type": "math_integer",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_backdropnumbername": {
+  "type": "looks_backdropnumbername",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_costumenumbername": {
+  "type": "looks_costumenumbername",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "looks_size": {
+  "type": "looks_size",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "looks"
+ },
+ "sound_playuntildone": {
+  "type": "sound_playuntildone",
+  "shadow": false,
+  "inputs": {
+   "SOUND_MENU": {
+    "shadow": {
+     "type": "sound_sounds_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "SOUND_MENU": "${soundName}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "sound"
+ },
+ "sound_play": {
+  "type": "sound_play",
+  "shadow": false,
+  "inputs": {
+   "SOUND_MENU": {
+    "shadow": {
+     "type": "sound_sounds_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "SOUND_MENU": "${soundName}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "sound"
+ },
+ "sound_stopallsounds": {
+  "type": "sound_stopallsounds",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sound"
+ },
+ "sound_changeeffectby": {
+  "type": "sound_changeeffectby",
+  "shadow": false,
+  "inputs": {
+   "VALUE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "sound"
+ },
+ "sound_seteffectto": {
+  "type": "sound_seteffectto",
+  "shadow": false,
+  "inputs": {
+   "VALUE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "100"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "sound"
+ },
+ "sound_cleareffects": {
+  "type": "sound_cleareffects",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sound"
+ },
+ "sound_changevolumeby": {
+  "type": "sound_changevolumeby",
+  "shadow": false,
+  "inputs": {
+   "VOLUME": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "-10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "sound"
+ },
+ "sound_setvolumeto": {
+  "type": "sound_setvolumeto",
+  "shadow": false,
+  "inputs": {
+   "VOLUME": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "100"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "sound"
+ },
+ "sound_volume": {
+  "type": "sound_volume",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sound"
+ },
+ "event_whenflagclicked": {
+  "type": "event_whenflagclicked",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "events"
+ },
+ "event_whenkeypressed": {
+  "type": "event_whenkeypressed",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "events"
+ },
+ "event_whenstageclicked": {
+  "type": "event_whenstageclicked",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "events"
+ },
+ "event_whenthisspriteclicked": {
+  "type": "event_whenthisspriteclicked",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "events"
+ },
+ "event_whenbackdropswitchesto": {
+  "type": "event_whenbackdropswitchesto",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "events"
+ },
+ "event_whengreaterthan": {
+  "type": "event_whengreaterthan",
+  "shadow": false,
+  "inputs": {
+   "VALUE": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "events"
+ },
+ "event_whenbroadcastreceived": {
+  "type": "event_whenbroadcastreceived",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "events"
+ },
+ "event_broadcast": {
+  "type": "event_broadcast",
+  "shadow": false,
+  "inputs": {
+   "BROADCAST_INPUT": {
+    "shadow": {
+     "type": "event_broadcast_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "events"
+ },
+ "event_broadcastandwait": {
+  "type": "event_broadcastandwait",
+  "shadow": false,
+  "inputs": {
+   "BROADCAST_INPUT": {
+    "shadow": {
+     "type": "event_broadcast_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "events"
+ },
+ "control_wait": {
+  "type": "control_wait",
+  "shadow": false,
+  "inputs": {
+   "DURATION": {
+    "shadow": {
+     "type": "math_positive_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "control"
+ },
+ "control_repeat": {
+  "type": "control_repeat",
+  "shadow": false,
+  "inputs": {
+   "TIMES": {
+    "shadow": {
+     "type": "math_whole_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "control"
+ },
+ "control_forever": {
+  "type": "control_forever",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "control"
+ },
+ "control_if": {
+  "type": "control_if",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "control"
+ },
+ "control_if_else": {
+  "type": "control_if_else",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "control"
+ },
+ "control_wait_until": {
+  "type": "control_wait_until",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "control"
+ },
+ "control_repeat_until": {
+  "type": "control_repeat_until",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "control"
+ },
+ "control_stop": {
+  "type": "control_stop",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "control"
+ },
+ "control_create_clone_of": {
+  "type": "control_create_clone_of",
+  "shadow": false,
+  "inputs": {
+   "CLONE_OPTION": {
+    "shadow": {
+     "type": "control_create_clone_of_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "control"
+ },
+ "control_start_as_clone": {
+  "type": "control_start_as_clone",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "control"
+ },
+ "control_delete_this_clone": {
+  "type": "control_delete_this_clone",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "control"
+ },
+ "sensing_touchingobject": {
+  "type": "sensing_touchingobject",
+  "shadow": false,
+  "inputs": {
+   "TOUCHINGOBJECTMENU": {
+    "shadow": {
+     "type": "sensing_touchingobjectmenu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_touchingcolor": {
+  "type": "sensing_touchingcolor",
+  "shadow": false,
+  "inputs": {
+   "COLOR": {
+    "shadow": {
+     "type": "colour_picker",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_coloristouchingcolor": {
+  "type": "sensing_coloristouchingcolor",
+  "shadow": false,
+  "inputs": {
+   "COLOR": {
+    "shadow": {
+     "type": "colour_picker",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   },
+   "COLOR2": {
+    "shadow": {
+     "type": "colour_picker",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_distanceto": {
+  "type": "sensing_distanceto",
+  "shadow": false,
+  "inputs": {
+   "DISTANCETOMENU": {
+    "shadow": {
+     "type": "sensing_distancetomenu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_askandwait": {
+  "type": "sensing_askandwait",
+  "shadow": false,
+  "inputs": {
+   "QUESTION": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${name}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_answer": {
+  "type": "sensing_answer",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_keypressed": {
+  "type": "sensing_keypressed",
+  "shadow": false,
+  "inputs": {
+   "KEY_OPTION": {
+    "shadow": {
+     "type": "sensing_keyoptions",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_mousedown": {
+  "type": "sensing_mousedown",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_mousex": {
+  "type": "sensing_mousex",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_mousey": {
+  "type": "sensing_mousey",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_setdragmode": {
+  "type": "sensing_setdragmode",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_loudness": {
+  "type": "sensing_loudness",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_timer": {
+  "type": "sensing_timer",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_resettimer": {
+  "type": "sensing_resettimer",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_of": {
+  "type": "sensing_of",
+  "shadow": false,
+  "inputs": {
+   "OBJECT": {
+    "shadow": {
+     "type": "sensing_of_object_menu",
+     "shadow": true,
+     "inputs": {},
+     "fields": {}
+    }
+   }
+  },
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_current": {
+  "type": "sensing_current",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_dayssince2000": {
+  "type": "sensing_dayssince2000",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "sensing_username": {
+  "type": "sensing_username",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "sensing"
+ },
+ "operator_add": {
+  "type": "operator_add",
+  "shadow": false,
+  "inputs": {
+   "NUM1": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   },
+   "NUM2": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_subtract": {
+  "type": "operator_subtract",
+  "shadow": false,
+  "inputs": {
+   "NUM1": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   },
+   "NUM2": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_multiply": {
+  "type": "operator_multiply",
+  "shadow": false,
+  "inputs": {
+   "NUM1": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   },
+   "NUM2": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_divide": {
+  "type": "operator_divide",
+  "shadow": false,
+  "inputs": {
+   "NUM1": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   },
+   "NUM2": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_random": {
+  "type": "operator_random",
+  "shadow": false,
+  "inputs": {
+   "FROM": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   },
+   "TO": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "10"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_gt": {
+  "type": "operator_gt",
+  "shadow": false,
+  "inputs": {
+   "OPERAND1": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": ""
+     }
+    }
+   },
+   "OPERAND2": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "50"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_lt": {
+  "type": "operator_lt",
+  "shadow": false,
+  "inputs": {
+   "OPERAND1": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": ""
+     }
+    }
+   },
+   "OPERAND2": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "50"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_equals": {
+  "type": "operator_equals",
+  "shadow": false,
+  "inputs": {
+   "OPERAND1": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": ""
+     }
+    }
+   },
+   "OPERAND2": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "50"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_and": {
+  "type": "operator_and",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_or": {
+  "type": "operator_or",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_not": {
+  "type": "operator_not",
+  "shadow": false,
+  "inputs": {},
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_join": {
+  "type": "operator_join",
+  "shadow": false,
+  "inputs": {
+   "STRING1": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${apple}"
+     }
+    }
+   },
+   "STRING2": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${banana}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_letter_of": {
+  "type": "operator_letter_of",
+  "shadow": false,
+  "inputs": {
+   "LETTER": {
+    "shadow": {
+     "type": "math_whole_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": "1"
+     }
+    }
+   },
+   "STRING": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${apple}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_length": {
+  "type": "operator_length",
+  "shadow": false,
+  "inputs": {
+   "STRING": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${apple}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_contains": {
+  "type": "operator_contains",
+  "shadow": false,
+  "inputs": {
+   "STRING1": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${apple}"
+     }
+    }
+   },
+   "STRING2": {
+    "shadow": {
+     "type": "text",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "TEXT": "${letter}"
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_mod": {
+  "type": "operator_mod",
+  "shadow": false,
+  "inputs": {
+   "NUM1": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   },
+   "NUM2": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_round": {
+  "type": "operator_round",
+  "shadow": false,
+  "inputs": {
+   "NUM": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ },
+ "operator_mathop": {
+  "type": "operator_mathop",
+  "shadow": false,
+  "inputs": {
+   "NUM": {
+    "shadow": {
+     "type": "math_number",
+     "shadow": true,
+     "inputs": {},
+     "fields": {
+      "NUM": ""
+     }
+    }
+   }
+  },
+  "fields": {},
+  "category": "operators"
+ }
+}

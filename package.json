@@ -1,0 +1,14 @@
+{
+  "name": "robbo-sb3",
+  "version": "1.0.0",
+  "description": "Генератор .sb3 для Robbo Scratch 3: MCP-сервер и CLI для Cursor и других ИИ-агентов",
+  "main": "lib/api.js",
+  "bin": { "robbo-sb3": "cli.js", "robbo-sb3-mcp": "mcp/server.js" },
+  "scripts": {
+    "test": "node tests/run.js",
+    "mcp": "node mcp/server.js",
+    "update": "node tools/update-from-robbo.js"
+  },
+  "engines": { "node": ">=14" },
+  "license": "MIT"
+}

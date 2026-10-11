@@ -1,0 +1,14 @@
+{
+  "sprites": [{
+    "name": "Otto",
+    "scripts": [[
+      {"op": "event_whenflagclicked"},
+      {"op": "otto_led", "ON_OFF_R": 0, "ON_OFF_G": 255, "ON_OFF_B": 0},
+      {"op": "control_repeat", "TIMES": 3, "SUBSTACK": [
+        {"op": "otto_move_servo_hand", "OTTO_LH": 160, "OTTO_RH": 20, "SERVO_SPEED": "быстро"},
+        {"op": "otto_move_servo_hand", "OTTO_LH": 20, "OTTO_RH": 160, "SERVO_SPEED": "быстро"}
+      ]},
+      {"op": "otto_text", "OTTO_TEXT": "HI"}
+    ]]
+  }]
+}

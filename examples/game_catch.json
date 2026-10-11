@@ -1,0 +1,37 @@
+{
+  "variables": {"очки": 0},
+  "sprites": [{
+    "name": "Кот",
+    "scripts": [[
+      {"op": "event_whenflagclicked"},
+      {"op": "data_setvariableto", "VARIABLE": "очки", "VALUE": 0},
+      {"op": "motion_gotoxy", "X": 0, "Y": -120},
+      {"op": "control_forever", "SUBSTACK": [
+        {"op": "control_if", "CONDITION": {"op": "sensing_keypressed", "KEY_OPTION": "стрелка влево"}, "SUBSTACK": [{"op": "motion_changexby", "DX": -10}]},
+        {"op": "control_if", "CONDITION": {"op": "sensing_keypressed", "KEY_OPTION": "стрелка вправо"}, "SUBSTACK": [{"op": "motion_changexby", "DX": 10}]}
+      ]}
+    ]]
+  }, {
+    "name": "Мяч",
+    "size": 50,
+    "scripts": [[
+      {"op": "event_whenflagclicked"},
+      {"op": "control_forever", "SUBSTACK": [
+        {"op": "motion_gotoxy", "X": {"op": "operator_random", "FROM": -200, "TO": 200}, "Y": 170},
+        {"op": "control_repeat_until",
+         "CONDITION": {"op": "operator_or",
+                       "OPERAND1": {"op": "sensing_touchingobject", "TOUCHINGOBJECTMENU": "Кот"},
+                       "OPERAND2": {"op": "operator_lt", "OPERAND1": {"op": "motion_yposition"}, "OPERAND2": -170}},
+         "SUBSTACK": [{"op": "motion_changeyby", "DY": -5}]},
+        {"op": "control_if", "CONDITION": {"op": "sensing_touchingobject", "TOUCHINGOBJECTMENU": "Кот"},
+         "SUBSTACK": [{"op": "data_changevariableby", "VARIABLE": "очки", "VALUE": 1}, {"op": "event_broadcast", "BROADCAST_INPUT": "поймал"}]}
+      ]}
+    ]]
+  }],
+  "stage": {
+    "scripts": [[
+      {"op": "event_whenbroadcastreceived", "BROADCAST_OPTION": "поймал"},
+      {"op": "sound_play", "SOUND_MENU": "хлопок"}
+    ]]
+  }
+}

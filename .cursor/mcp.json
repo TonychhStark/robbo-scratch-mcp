@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "robbo-scratch": {
+      "command": "node",
+      "args": ["${workspaceFolder}/mcp/server.js"],
+      "env": { "ROBBO_WORKDIR": "${workspaceFolder}" }
+    }
+  }
+}

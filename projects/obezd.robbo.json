@@ -1,0 +1,60 @@
+{
+  "sprites": [
+    {
+      "name": "Робот",
+      "scripts": [
+        [
+          {
+            "op": "event_whenflagclicked"
+          },
+          {
+            "op": "robot_set_motors_power",
+            "POWER": 40
+          },
+          {
+            "op": "robot_set_direction_to",
+            "ROBOT_DIRECTION": "direction_forward"
+          },
+          {
+            "op": "control_forever",
+            "SUBSTACK": [
+              {
+                "op": "control_if_else",
+                "CONDITION": {
+                  "op": "operator_lt",
+                  "OPERAND1": {
+                    "op": "robot_get_sensor_data",
+                    "ROBOT_SENSORS": "sensor1"
+                  },
+                  "OPERAND2": 30
+                },
+                "SUBSTACK": [
+                  {
+                    "op": "robot_motors_off"
+                  },
+                  {
+                    "op": "robot_turn_led_on",
+                    "ROBOT_POSITION": "position1"
+                  },
+                  {
+                    "op": "robot_turnright",
+                    "DEGREES": 90
+                  },
+                  {
+                    "op": "robot_turn_led_off",
+                    "ROBOT_POSITION": "position1"
+                  }
+                ],
+                "SUBSTACK2": [
+                  {
+                    "op": "robot_motors_on"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+}
