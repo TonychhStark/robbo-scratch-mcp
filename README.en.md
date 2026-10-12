@@ -53,6 +53,7 @@ Claude Code: `claude mcp add robbo-scratch -- npx -y -p github:TonychhStark/robb
 | `robbo_validate` | Check a program, get errors and a text rendering |
 | `robbo_build_sb3` | Build and save `.sb3` (+ source `.robbo.json`) |
 | `robbo_read_sb3` | Read an existing `.sb3` back into robbo-json |
+| `robbo_read_log` | Read the debug log after a run, save it to `logs/`, sensor stats |
 
 Resources: `robbo://docs/format`, `robbo://docs/blocks`.
 
@@ -69,6 +70,18 @@ Resources: `robbo://docs/format`, `robbo://docs/blocks`.
 ]]}]}
 ```
 More in [`examples/`](examples) and the full format in [`docs/FORMAT.md`](docs/FORMAT.md).
+
+## Debug log
+
+Build with `debug: true` (or `node cli.js build x.json x.sb3 --debug`) and the program writes
+a log into the list «лог» while it runs:
+```
+[12:40:16] Датчик1 = 12 (< 50) поэтому Повернуть направо на 45 градусов
+```
+("Sensor1 = 12 (< 50) therefore turn right 45°"). After the run, save the project in Robbo Scratch
+and call `robbo_read_log` (or `node cli.js log file.sb3`): the agent sees sensor values and chosen
+branches and can tune thresholds, power, angles and timing. Endless loops are logged only when the
+path changes (and once per second otherwise).
 
 ## CLI
 

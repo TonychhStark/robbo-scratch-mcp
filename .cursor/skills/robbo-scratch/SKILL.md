@@ -14,4 +14,10 @@ Workflow (never hand-write project.json):
 6. Show the user the text rendering returned by the tool and explain what to connect.
 
 To modify an existing project: `robbo_read_sb3` / `node cli.js read file.sb3` → edit the robbo-json → build again.
+Debugging / tuning values (thresholds, power, angles, timing): build with `debug: true` (MCP) or `--debug` (CLI) →
+the user runs it with the green flag and saves the project (File → Save to your computer) into `projects/` →
+`robbo_read_log` / `node cli.js log file.sb3` → find the cause from sensor values and chosen branches → edit the
+`.robbo.json` (never the debug .sb3) → build again. Log lines look like
+`[12:40:15] Датчик1 = 12 (< 50) поэтому Повернуть направо на 45 градусов`.
+
 Talk to the user in Russian.

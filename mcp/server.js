@@ -44,6 +44,8 @@ const TOOLS = [
         program_path: { type: 'string', description: 'Альтернатива: путь к .json файлу с программой' },
         output_path: { type: 'string', description: 'Куда сохранить, например projects/robot_square.sb3 (относительно папки проекта) или абсолютный путь' },
         save_program: { type: 'boolean', description: 'Сохранять ли рядом .robbo.json (по умолчанию да)' },
+        debug: { type: 'boolean', description: 'Режим отладки: встроить в программу запись лога «[12:40:15] Датчик1 = 12 (< 50) поэтому Повернуть направо на 45 градусов» в список «лог». Включай, когда нужно найти ошибку или подобрать значения (пороги датчиков, мощность, углы, время).' },
+        log_interval: { type: 'number', description: 'Только для debug: как часто (в секундах) повторять в логе одинаковые проходы бесконечного цикла. По умолчанию 1.' },
       },
       required: ['output_path'],
     },
@@ -54,6 +56,12 @@ const TOOLS = [
     description: 'Прочитать существующий .sb3 (сделанный в Robbo Scratch или этим инструментом) и вернуть его в формате robbo-json + в виде текста. Используй, чтобы объяснить или доработать готовый проект.',
     inputSchema: { type: 'object', properties: { path: { type: 'string' }, assets_dir: { type: 'string', description: 'Необязательно: папка, куда выгрузить свои костюмы/звуки проекта' } }, required: ['path'] },
     run: a => api.read(a),
+  },
+  {
+    name: 'robbo_read_log',
+    description: 'Прочитать лог отладки после запуска программы, собранной с debug: true. Принимает .sb3, сохранённый в Robbo Scratch после запуска, или .txt, экспортированный из списка «лог». Сохраняет копию в logs/, считает мин/макс/среднее по датчикам и сколько раз выполнялось каждое действие. Используй, чтобы найти ошибку и подкрутить значения в .robbo.json, потом собери снова.',
+    inputSchema: { type: 'object', properties: { path: { type: 'string', description: 'Путь к .sb3 или .txt с логом' }, save: { type: 'boolean', description: 'Сохранить копию в logs/ (по умолчанию да)' }, max_lines: { type: 'number', description: 'Сколько строк лога показать (по умолчанию 400)' } }, required: ['path'] },
+    run: a => api.readLog(a),
   },
 ];
 
@@ -82,7 +90,7 @@ function handle(msg) {
       protocolVersion: negotiateProtocol(params && params.protocolVersion),
       capabilities: { tools: {}, resources: {} },
       serverInfo: { name: 'robbo-scratch', version: pkg.version },
-      instructions: 'Генерация .sb3 для Robbo Scratch 3. Порядок: robbo_format_guide → robbo_list_blocks → robbo_validate → robbo_build_sb3.',
+      instructions: 'Генерация .sb3 для Robbo Scratch 3. Порядок: robbo_format_guide → robbo_list_blocks → robbo_validate → robbo_build_sb3. Отладка: robbo_build_sb3 с debug: true → пользователь запускает и сохраняет проект → robbo_read_log → правка значений → сборка заново.',
     });
   }
   if (method === 'ping') return reply(id, {});
