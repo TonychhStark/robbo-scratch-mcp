@@ -83,6 +83,8 @@ and call `robbo_read_log` (or `node cli.js log file.sb3`): the agent sees sensor
 branches and can tune thresholds, power, angles and timing. Endless loops are logged only when the
 path changes (and once per second otherwise).
 
+Step-by-step testing and limitations (Russian): [docs/DEBUG.md](docs/DEBUG.md).
+
 ## CLI
 
 ```
